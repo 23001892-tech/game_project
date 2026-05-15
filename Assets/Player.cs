@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class Player : MonoBehaviour
 {
@@ -8,8 +9,13 @@ public class Player : MonoBehaviour
 
     private bool facingRight = true;
     private float xInput;
+    private bool canMove = true;
+    private bool canJump = true;
     private bool isGrounded;
-    
+
+   private int comboStep = 0;
+    private bool isAttacking = false;
+    private int queuedComboClicks = 0;
     [Header("Movement Details")]
     [SerializeField] private float moveSpeed = 3.5f;
     [SerializeField] private float jumpForce = 8;
@@ -20,6 +26,14 @@ public class Player : MonoBehaviour
 
    
     [SerializeField] private LayerMask whatIsGround; // [8]
+
+    [Header("Attack Details")]
+[SerializeField] private int maxCombo = 4;
+[SerializeField] private float attack1Duration = 0.6f;
+[SerializeField] private float attack2Duration = 0.55f;
+[SerializeField] private float attack3Duration = 0.7f;
+[SerializeField] private float attack4Duration = 0.8f;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -39,6 +53,11 @@ public class Player : MonoBehaviour
         HandleFlip();
         
         
+    }
+    public void EnableMovementAndJump(bool enable)
+    {
+        canMove = enable;
+        canJump = enable;
     }
 
      private void Flip()
@@ -88,24 +107,92 @@ public class Player : MonoBehaviour
         }
     }
     private void TryToAttack()
+{
+    if (!isGrounded)
+        return;
+
+    if (!isAttacking)
     {
-        // Chỉ cho phép chém khi đang đứng trên mặt đất (tránh lỗi animation khi nhảy)
-        if (isGrounded)
+        queuedComboClicks = 0;
+        comboStep = 1;
+        StartCoroutine(ComboRoutine());
+    }
+    else
+    {
+        if (comboStep + queuedComboClicks < maxCombo)
         {
-            anim.SetTrigger("attack");
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // Dừng lại ngay lập tức
+            queuedComboClicks++;
+            Debug.Log("Queue next attack: " + queuedComboClicks);
+        }
+    }
+}
+
+private IEnumerator ComboRoutine()
+{
+    isAttacking = true;
+    EnableMovementAndJump(false);
+
+    while (true)
+    {
+        Debug.Log("Play Attack " + comboStep);
+
+        anim.SetTrigger("attack" + comboStep);
+
+        yield return new WaitForSeconds(GetAttackDuration(comboStep));
+
+        if (queuedComboClicks > 0 && comboStep < maxCombo)
+        {
+            queuedComboClicks--;
+            comboStep++;
+        }
+        else
+        {
+            break;
         }
     }
 
+    EndCombo();
+}
+
+private float GetAttackDuration(int step)
+{
+    if (step == 1) return attack1Duration;
+    if (step == 2) return attack2Duration;
+    if (step == 3) return attack3Duration;
+    if (step == 4) return attack4Duration;
+
+    return 0.6f;
+}
+
+private void EndCombo()
+{
+    Debug.Log("End Combo");
+
+    isAttacking = false;
+    queuedComboClicks = 0;
+    comboStep = 0;
+
+    EnableMovementAndJump(true);
+}
+    
+
     private void HandldeMovement()
     {
-        rb.linearVelocity = new Vector2(xInput * moveSpeed, rb.linearVelocity.y); // [4]
+        if (canMove) 
+        {
+            rb.linearVelocity = new Vector2(xInput * moveSpeed, rb.linearVelocity.y); // [4]
+        }
+        else
+        {
+             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); 
+        }
+
     }
          
 
     private void TryToJump()
     {
-        if (isGrounded)
+        if (isGrounded && canJump)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);  
         }
@@ -116,4 +203,32 @@ public class Player : MonoBehaviour
         // Vẽ tia line trực quan trong Unity Editor giúp dễ dàng điều chỉnh độ dài kiểm tra chạm đất
         Gizmos.DrawLine(transform.position, transform.position + new Vector3(0, -groundCheckDistance)); // [20]
     }
+    public void Animation_DisableMovementAndJump()
+{
+    EnableMovementAndJump(false);
+}
+
+public void Animation_EnableMovementAndJump()
+{
+    EnableMovementAndJump(true);
+}
+
+public void Animation_OpenComboWindow()
+{
+    // Sau này nếu muốn dùng combo window bằng animation event thì xử lý ở đây.
+    Debug.Log("Open Combo Window");
+}
+
+public void Animation_CloseComboWindow()
+{
+    // Sau này nếu muốn đóng combo window bằng animation event thì xử lý ở đây.
+    Debug.Log("Close Combo Window");
+}
+
+public void Animation_FinishAttack()
+{
+    // Hiện tại combo đang chạy bằng thời gian trong Player.cs.
+    // Hàm này để sau này dùng animation event kết thúc đòn đánh.
+    Debug.Log("Animation Finish Attack");
+}
 }
