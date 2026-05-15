@@ -1,0 +1,2041 @@
+fileFormatVersion: 2
+guid: 85d4ac799fd91384d8c471bd95064583
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6924639562210823900
+    second: sieuassetlenmienghang-Photoroom_0
+  - first:
+      213: 3475385989395705081
+    second: sieuassetlenmienghang-Photoroom_1
+  - first:
+      213: 6515219602202344895
+    second: sieuassetlenmienghang-Photoroom_2
+  - first:
+      213: 7768240157868815175
+    second: sieuassetlenmienghang-Photoroom_3
+  - first:
+      213: -4994652729110002478
+    second: sieuassetlenmienghang-Photoroom_4
+  - first:
+      213: 5433777473533863610
+    second: sieuassetlenmienghang-Photoroom_5
+  - first:
+      213: -2215591499847995497
+    second: sieuassetlenmienghang-Photoroom_6
+  - first:
+      213: -3829774218574110325
+    second: sieuassetlenmienghang-Photoroom_7
+  - first:
+      213: 6888237435535855156
+    second: sieuassetlenmienghang-Photoroom_8
+  - first:
+      213: -6227661747883753386
+    second: sieuassetlenmienghang-Photoroom_9
+  - first:
+      213: 3723730173453749183
+    second: sieuassetlenmienghang-Photoroom_10
+  - first:
+      213: 4920865686032889095
+    second: sieuassetlenmienghang-Photoroom_11
+  - first:
+      213: 512766603740799865
+    second: sieuassetlenmienghang-Photoroom_12
+  - first:
+      213: 1754850405442407474
+    second: sieuassetlenmienghang-Photoroom_13
+  - first:
+      213: 8659899613827805853
+    second: sieuassetlenmienghang-Photoroom_14
+  - first:
+      213: -5327072173006397649
+    second: sieuassetlenmienghang-Photoroom_15
+  - first:
+      213: -2919135777527235908
+    second: sieuassetlenmienghang-Photoroom_16
+  - first:
+      213: -2993644744790635018
+    second: sieuassetlenmienghang-Photoroom_17
+  - first:
+      213: 67881765085830066
+    second: sieuassetlenmienghang-Photoroom_18
+  - first:
+      213: 1717863101306510071
+    second: sieuassetlenmienghang-Photoroom_19
+  - first:
+      213: 7895342665470527035
+    second: sieuassetlenmienghang-Photoroom_20
+  - first:
+      213: -11319623385568131
+    second: sieuassetlenmienghang-Photoroom_21
+  - first:
+      213: 1504098676076604590
+    second: sieuassetlenmienghang-Photoroom_22
+  - first:
+      213: -7797111850511444132
+    second: sieuassetlenmienghang-Photoroom_23
+  - first:
+      213: -3432920981993517492
+    second: sieuassetlenmienghang-Photoroom_24
+  - first:
+      213: 419912808709318194
+    second: sieuassetlenmienghang-Photoroom_25
+  - first:
+      213: 4314008922959405731
+    second: sieuassetlenmienghang-Photoroom_26
+  - first:
+      213: -3501450352849011217
+    second: sieuassetlenmienghang-Photoroom_27
+  - first:
+      213: 584089018790954732
+    second: sieuassetlenmienghang-Photoroom_28
+  - first:
+      213: 8178633406606594755
+    second: sieuassetlenmienghang-Photoroom_29
+  - first:
+      213: -5846253291333944910
+    second: sieuassetlenmienghang-Photoroom_30
+  - first:
+      213: 3023810797743516709
+    second: sieuassetlenmienghang-Photoroom_31
+  - first:
+      213: -5742708971916593571
+    second: sieuassetlenmienghang-Photoroom_32
+  - first:
+      213: -5972760462937841839
+    second: sieuassetlenmienghang-Photoroom_33
+  - first:
+      213: -3841424135908219520
+    second: sieuassetlenmienghang-Photoroom_34
+  - first:
+      213: -170305718037028417
+    second: sieuassetlenmienghang-Photoroom_35
+  - first:
+      213: 240646549143409933
+    second: sieuassetlenmienghang-Photoroom_36
+  - first:
+      213: 4521190082990995728
+    second: sieuassetlenmienghang-Photoroom_37
+  - first:
+      213: 7353598411968516488
+    second: sieuassetlenmienghang-Photoroom_38
+  - first:
+      213: 6492617579660505771
+    second: sieuassetlenmienghang-Photoroom_39
+  - first:
+      213: -1046127631293613536
+    second: sieuassetlenmienghang-Photoroom_40
+  - first:
+      213: 4820598259153380782
+    second: sieuassetlenmienghang-Photoroom_41
+  - first:
+      213: -5942400846571015963
+    second: sieuassetlenmienghang-Photoroom_42
+  - first:
+      213: -100330654569957345
+    second: sieuassetlenmienghang-Photoroom_43
+  - first:
+      213: -5426177350990860195
+    second: sieuassetlenmienghang-Photoroom_44
+  - first:
+      213: 3977525492265760489
+    second: sieuassetlenmienghang-Photoroom_45
+  - first:
+      213: -1677279494863011024
+    second: sieuassetlenmienghang-Photoroom_46
+  - first:
+      213: 4214223183080847757
+    second: sieuassetlenmienghang-Photoroom_47
+  - first:
+      213: -5159131006777572585
+    second: sieuassetlenmienghang-Photoroom_48
+  - first:
+      213: -6586108270694427206
+    second: sieuassetlenmienghang-Photoroom_49
+  - first:
+      213: 7674205419076040602
+    second: sieuassetlenmienghang-Photoroom_50
+  - first:
+      213: 4032291500919972949
+    second: sieuassetlenmienghang-Photoroom_51
+  - first:
+      213: -2440245424888926587
+    second: sieuassetlenmienghang-Photoroom_52
+  - first:
+      213: 275351043098144986
+    second: sieuassetlenmienghang-Photoroom_53
+  - first:
+      213: 1435996643646462841
+    second: sieuassetlenmienghang-Photoroom_54
+  - first:
+      213: -7058067435326069203
+    second: sieuassetlenmienghang-Photoroom_55
+  - first:
+      213: 7107205644000695045
+    second: sieuassetlenmienghang-Photoroom_56
+  - first:
+      213: -1257644923339820528
+    second: sieuassetlenmienghang-Photoroom_57
+  - first:
+      213: -760936883694326330
+    second: sieuassetlenmienghang-Photoroom_58
+  - first:
+      213: -1981950291710926886
+    second: sieuassetlenmienghang-Photoroom_59
+  - first:
+      213: 5178613965737865146
+    second: sieuassetlenmienghang-Photoroom_60
+  - first:
+      213: -8532348619138393897
+    second: sieuassetlenmienghang-Photoroom_61
+  - first:
+      213: 8750110103137621024
+    second: sieuassetlenmienghang-Photoroom_62
+  - first:
+      213: 6742973571978611604
+    second: sieuassetlenmienghang-Photoroom_63
+  - first:
+      213: 6320906572930893786
+    second: sieuassetlenmienghang-Photoroom_64
+  - first:
+      213: -1463607274157137087
+    second: sieuassetlenmienghang-Photoroom_65
+  - first:
+      213: -2419889664957173669
+    second: sieuassetlenmienghang-Photoroom_66
+  - first:
+      213: -3933775441149634955
+    second: sieuassetlenmienghang-Photoroom_67
+  - first:
+      213: -7968650122263174527
+    second: sieuassetlenmienghang-Photoroom_68
+  - first:
+      213: -4636546923120794186
+    second: sieuassetlenmienghang-Photoroom_69
+  - first:
+      213: 8178239873383656773
+    second: sieuassetlenmienghang-Photoroom_70
+  - first:
+      213: -7617772984147353077
+    second: sieuassetlenmienghang-Photoroom_71
+  - first:
+      213: -6852983379108635347
+    second: sieuassetlenmienghang-Photoroom_72
+  - first:
+      213: -3216562394853283814
+    second: sieuassetlenmienghang-Photoroom_73
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 470
+        width: 232
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde41375ef2491060800000000000000
+      internalID: 6924639562210823900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_1
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 467
+        width: 285
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fcec4bd42d0b3030800000000000000
+      internalID: 3475385989395705081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_2
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 612
+        width: 71
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbdbee685b5ba6a50800000000000000
+      internalID: 6515219602202344895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_3
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 470
+        width: 1213
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 743f1b304455ecb60800000000000000
+      internalID: 7768240157868815175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_4
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 739
+        width: 199
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d486f04ecd6faab0800000000000000
+      internalID: -4994652729110002478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_5
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 774
+        width: 117
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab66182a2d7a86b40800000000000000
+      internalID: 5433777473533863610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_6
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 684
+        width: 121
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79f6f240543a041e0800000000000000
+      internalID: -2215591499847995497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_7
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 676
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81e0f3a3a8e9dac0800000000000000
+      internalID: -3829774218574110325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_8
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 672
+        width: 64
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e89a1c37fe79f50800000000000000
+      internalID: 6888237435535855156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_9
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 283
+        width: 194
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650c918c2a6e299a0800000000000000
+      internalID: -6227661747883753386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_10
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 285
+        width: 106
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb4d141dd85da330800000000000000
+      internalID: 3723730173453749183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_11
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 367
+        width: 87
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7053663054d6a4440800000000000000
+      internalID: 4920865686032889095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_12
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 367
+        width: 114
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97367a46286bd1700800000000000000
+      internalID: 512766603740799865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_13
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 369
+        width: 129
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c485a652b7a5810800000000000000
+      internalID: 1754850405442407474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_14
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 311
+        width: 418
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d92bfb011d42e2870800000000000000
+      internalID: 8659899613827805853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_15
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 386
+        width: 347
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2fd51b25107216b0800000000000000
+      internalID: -5327072173006397649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_16
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 189
+        width: 188
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbafa510a752d77d0800000000000000
+      internalID: -2919135777527235908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_17
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 390
+        width: 362
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fd0a0337ff6476d0800000000000000
+      internalID: -2993644744790635018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_18
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 289
+        width: 110
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bbdaae0b1a21f000800000000000000
+      internalID: 67881765085830066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_19
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 306
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa1026936317d710800000000000000
+      internalID: 1717863101306510071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_20
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 314
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b364b5ba254e19d60800000000000000
+      internalID: 7895342665470527035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_21
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 297
+        width: 109
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7cac1dccd8c7dff0800000000000000
+      internalID: -11319623385568131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_22
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 284
+        width: 124
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac6eaed6c1afd410800000000000000
+      internalID: 1504098676076604590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_23
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 289
+        width: 115
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57d64435181bc390800000000000000
+      internalID: -7797111850511444132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_24
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 221
+        width: 193
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e8a462e80db50d0800000000000000
+      internalID: -3432920981993517492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_25
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 196
+        width: 166
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23661c78974d3d500800000000000000
+      internalID: 419912808709318194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_26
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 235
+        width: 82
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a26cd242407edb30800000000000000
+      internalID: 4314008922959405731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_27
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 174
+        width: 147
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fedb4cf9479586fc0800000000000000
+      internalID: -3501450352849011217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_28
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 171
+        width: 117
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce6cd323ed91b1800800000000000000
+      internalID: 584089018790954732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_29
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 174
+        width: 122
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2dde440c7508170800000000000000
+      internalID: 8178633406606594755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_30
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 193
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9f4173b9feddea0800000000000000
+      internalID: -5846253291333944910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_31
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 170
+        width: 105
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52c2e7356ebb6f920800000000000000
+      internalID: 3023810797743516709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_32
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 173
+        width: 97
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d567670cd9ccd40b0800000000000000
+      internalID: -5742708971916593571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_33
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 172
+        width: 97
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f9716010e7c1da0800000000000000
+      internalID: -5972760462937841839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_34
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 176
+        width: 126
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0852493e91580bac0800000000000000
+      internalID: -3841424135908219520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_35
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 176
+        width: 134
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb16f2d0ad3f2adf0800000000000000
+      internalID: -170305718037028417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_36
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 167
+        width: 88
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d05dd1ee2c2f65300800000000000000
+      internalID: 240646549143409933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_37
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 92
+        width: 130
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01972ba1d6e7ebe30800000000000000
+      internalID: 4521190082990995728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_38
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 89
+        width: 123
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881924e6bca3d0660800000000000000
+      internalID: 7353598411968516488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 75
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba2fe121a496a1a50800000000000000
+      internalID: 6492617579660505771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_40
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 58
+        width: 37
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02af50346786b71f0800000000000000
+      internalID: -1046127631293613536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_41
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 72
+        width: 84
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea524b9739436e240800000000000000
+      internalID: 4820598259153380782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_42
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 82
+        width: 114
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e0772b0ae9588da0800000000000000
+      internalID: -5942400846571015963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_43
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 83
+        width: 36
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18764e1dcd8b9ef0800000000000000
+      internalID: -100330654569957345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_44
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 92
+        width: 75
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d507be9c27852b4b0800000000000000
+      internalID: -5426177350990860195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_45
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 94
+        width: 98
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6bf838c52033730800000000000000
+      internalID: 3977525492265760489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_46
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 91
+        width: 74
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033c4af9f2b19b8e0800000000000000
+      internalID: -1677279494863011024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_47
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 90
+        width: 44
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d89ffb738adeb7a30800000000000000
+      internalID: 4214223183080847757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_48
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 93
+        width: 85
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 713c15ffea51768b0800000000000000
+      internalID: -5159131006777572585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_49
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 93
+        width: 82
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab51ff82c617994a0800000000000000
+      internalID: -6586108270694427206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_50
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 89
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a97b7614b21408a60800000000000000
+      internalID: 7674205419076040602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_51
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 62
+        width: 47
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 554692f81c395f730800000000000000
+      internalID: 4032291500919972949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_52
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 88
+        width: 87
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e29bc07b1822ed0800000000000000
+      internalID: -2440245424888926587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_53
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 98
+        width: 63
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0f568905e32d300800000000000000
+      internalID: 275351043098144986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_54
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 96
+        width: 99
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b5333d65fade310800000000000000
+      internalID: 1435996643646462841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_55
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 79
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2623a41015bc0e90800000000000000
+      internalID: -7058067435326069203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_56
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 17
+        width: 74
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503105ca0edd1a260800000000000000
+      internalID: 7107205644000695045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_57
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 17
+        width: 75
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012b1c20b92fb8ee0800000000000000
+      internalID: -1257644923339820528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_58
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 18
+        width: 75
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd28e69feb9075f0800000000000000
+      internalID: -760936883694326330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_59
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 18
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf9614e5b2be74e0800000000000000
+      internalID: -1981950291710926886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_60
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 32
+        width: 57
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abfaea0e6f12ed740800000000000000
+      internalID: 5178613965737865146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_61
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 27
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d816702322079980800000000000000
+      internalID: -8532348619138393897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_62
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 24
+        width: 38
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024131b57c2ae6970800000000000000
+      internalID: 8750110103137621024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_63
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 24
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49bc1a7ecbad39d50800000000000000
+      internalID: 6742973571978611604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_64
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 24
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad74af9d90f58b750800000000000000
+      internalID: 6320906572930893786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_65
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 24
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 143af2d40f830bbe0800000000000000
+      internalID: -1463607274157137087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_66
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 24
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b50b69cbb23da6ed0800000000000000
+      internalID: -2419889664957173669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_67
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 17
+        width: 81
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576de1c041c6869c0800000000000000
+      internalID: -3933775441149634955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_68
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 17
+        width: 78
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182612bfeeaa96190800000000000000
+      internalID: -7968650122263174527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_69
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 17
+        width: 95
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b564fe832da7afb0800000000000000
+      internalID: -4636546923120794186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_70
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 17
+        width: 86
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54de7fca5d1fe7170800000000000000
+      internalID: 8178239873383656773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_71
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 19
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b026454e4db384690800000000000000
+      internalID: -7617772984147353077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_72
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 24
+        width: 60
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2dd294ecef45e0a0800000000000000
+      internalID: -6852983379108635347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sieuassetlenmienghang-Photoroom_73
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 0
+        width: 76
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18e3e04b897c53d0800000000000000
+      internalID: -3216562394853283814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sieuassetlenmienghang-Photoroom_0: 6924639562210823900
+      sieuassetlenmienghang-Photoroom_1: 3475385989395705081
+      sieuassetlenmienghang-Photoroom_10: 3723730173453749183
+      sieuassetlenmienghang-Photoroom_11: 4920865686032889095
+      sieuassetlenmienghang-Photoroom_12: 512766603740799865
+      sieuassetlenmienghang-Photoroom_13: 1754850405442407474
+      sieuassetlenmienghang-Photoroom_14: 8659899613827805853
+      sieuassetlenmienghang-Photoroom_15: -5327072173006397649
+      sieuassetlenmienghang-Photoroom_16: -2919135777527235908
+      sieuassetlenmienghang-Photoroom_17: -2993644744790635018
+      sieuassetlenmienghang-Photoroom_18: 67881765085830066
+      sieuassetlenmienghang-Photoroom_19: 1717863101306510071
+      sieuassetlenmienghang-Photoroom_2: 6515219602202344895
+      sieuassetlenmienghang-Photoroom_20: 7895342665470527035
+      sieuassetlenmienghang-Photoroom_21: -11319623385568131
+      sieuassetlenmienghang-Photoroom_22: 1504098676076604590
+      sieuassetlenmienghang-Photoroom_23: -7797111850511444132
+      sieuassetlenmienghang-Photoroom_24: -3432920981993517492
+      sieuassetlenmienghang-Photoroom_25: 419912808709318194
+      sieuassetlenmienghang-Photoroom_26: 4314008922959405731
+      sieuassetlenmienghang-Photoroom_27: -3501450352849011217
+      sieuassetlenmienghang-Photoroom_28: 584089018790954732
+      sieuassetlenmienghang-Photoroom_29: 8178633406606594755
+      sieuassetlenmienghang-Photoroom_3: 7768240157868815175
+      sieuassetlenmienghang-Photoroom_30: -5846253291333944910
+      sieuassetlenmienghang-Photoroom_31: 3023810797743516709
+      sieuassetlenmienghang-Photoroom_32: -5742708971916593571
+      sieuassetlenmienghang-Photoroom_33: -5972760462937841839
+      sieuassetlenmienghang-Photoroom_34: -3841424135908219520
+      sieuassetlenmienghang-Photoroom_35: -170305718037028417
+      sieuassetlenmienghang-Photoroom_36: 240646549143409933
+      sieuassetlenmienghang-Photoroom_37: 4521190082990995728
+      sieuassetlenmienghang-Photoroom_38: 7353598411968516488
+      sieuassetlenmienghang-Photoroom_39: 6492617579660505771
+      sieuassetlenmienghang-Photoroom_4: -4994652729110002478
+      sieuassetlenmienghang-Photoroom_40: -1046127631293613536
+      sieuassetlenmienghang-Photoroom_41: 4820598259153380782
+      sieuassetlenmienghang-Photoroom_42: -5942400846571015963
+      sieuassetlenmienghang-Photoroom_43: -100330654569957345
+      sieuassetlenmienghang-Photoroom_44: -5426177350990860195
+      sieuassetlenmienghang-Photoroom_45: 3977525492265760489
+      sieuassetlenmienghang-Photoroom_46: -1677279494863011024
+      sieuassetlenmienghang-Photoroom_47: 4214223183080847757
+      sieuassetlenmienghang-Photoroom_48: -5159131006777572585
+      sieuassetlenmienghang-Photoroom_49: -6586108270694427206
+      sieuassetlenmienghang-Photoroom_5: 5433777473533863610
+      sieuassetlenmienghang-Photoroom_50: 7674205419076040602
+      sieuassetlenmienghang-Photoroom_51: 4032291500919972949
+      sieuassetlenmienghang-Photoroom_52: -2440245424888926587
+      sieuassetlenmienghang-Photoroom_53: 275351043098144986
+      sieuassetlenmienghang-Photoroom_54: 1435996643646462841
+      sieuassetlenmienghang-Photoroom_55: -7058067435326069203
+      sieuassetlenmienghang-Photoroom_56: 7107205644000695045
+      sieuassetlenmienghang-Photoroom_57: -1257644923339820528
+      sieuassetlenmienghang-Photoroom_58: -760936883694326330
+      sieuassetlenmienghang-Photoroom_59: -1981950291710926886
+      sieuassetlenmienghang-Photoroom_6: -2215591499847995497
+      sieuassetlenmienghang-Photoroom_60: 5178613965737865146
+      sieuassetlenmienghang-Photoroom_61: -8532348619138393897
+      sieuassetlenmienghang-Photoroom_62: 8750110103137621024
+      sieuassetlenmienghang-Photoroom_63: 6742973571978611604
+      sieuassetlenmienghang-Photoroom_64: 6320906572930893786
+      sieuassetlenmienghang-Photoroom_65: -1463607274157137087
+      sieuassetlenmienghang-Photoroom_66: -2419889664957173669
+      sieuassetlenmienghang-Photoroom_67: -3933775441149634955
+      sieuassetlenmienghang-Photoroom_68: -7968650122263174527
+      sieuassetlenmienghang-Photoroom_69: -4636546923120794186
+      sieuassetlenmienghang-Photoroom_7: -3829774218574110325
+      sieuassetlenmienghang-Photoroom_70: 8178239873383656773
+      sieuassetlenmienghang-Photoroom_71: -7617772984147353077
+      sieuassetlenmienghang-Photoroom_72: -6852983379108635347
+      sieuassetlenmienghang-Photoroom_73: -3216562394853283814
+      sieuassetlenmienghang-Photoroom_8: 6888237435535855156
+      sieuassetlenmienghang-Photoroom_9: -6227661747883753386
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
