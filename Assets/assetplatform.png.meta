@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: abebf45c8d868d843ba3dc09509370bf
+guid: 9db8d7aca5e27554796a4d37f27990d7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6745032698325635120
-    second: mapcancuoi_0
+      213: 2551774580269489763
+    second: assetplatform_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mapcancuoi_0
+      name: assetplatform_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1807
-        height: 870
+        width: 180
+        height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 030181e908b2b9d50800000000000000
-      internalID: 6745032698325635120
+      spriteID: 36e95dbf579b96320800000000000000
+      internalID: 2551774580269489763
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mapcancuoi_0: 6745032698325635120
+      assetplatform_0: 2551774580269489763
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

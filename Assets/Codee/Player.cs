@@ -17,6 +17,16 @@ public class Player : MonoBehaviour
     private bool isAttacking = false;
     private int queuedComboClicks = 0;
     private Collider2D playerCollider;
+    
+    [Header("Stats")]
+    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private int currentHealth;
+
+    [SerializeField] private int maxMana = 50;
+    [SerializeField] private int currentMana;
+    
+    [Header("UI")]
+    [SerializeField] private PlayerUI playerUI;
 
     [Header("Movement Details")]
     [SerializeField] private float moveSpeed = 3.5f;
@@ -43,9 +53,18 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
         playerCollider = GetComponent<Collider2D>();
+    }
+    private void Start()
+    {
+        currentHealth = maxHealth;
+        currentMana = maxMana;
+        
+        playerUI.UpdateHealthBar(currentHealth, maxHealth);
+        playerUI.UpdateManaBar(currentMana, maxMana);
     }
 
     private void Update()
@@ -60,7 +79,16 @@ public class Player : MonoBehaviour
         
         HandleFlip();
         
-        
+        // TEST
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            TakeDamage(10);
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            UseMana(5);
+        }
     }
 
     public void DamageEnemies()
@@ -73,6 +101,28 @@ public class Player : MonoBehaviour
             enemy.GetComponent<Enemy>().TakeDamage();
         }
         
+    }
+    
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        if (currentHealth < 0)
+            currentHealth = 0;
+
+        playerUI.UpdateHealthBar(currentHealth, maxHealth);
+
+        Debug.Log("Player HP: " + currentHealth);
+    }
+    
+    public void UseMana(int amount)
+    {
+        currentMana -= amount;
+
+        if (currentMana < 0)
+            currentMana = 0;
+
+        playerUI.UpdateManaBar(currentMana, maxMana);
     }
     public void EnableMovementAndJump(bool enable)
     {
