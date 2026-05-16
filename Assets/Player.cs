@@ -13,31 +13,39 @@ public class Player : MonoBehaviour
     private bool canJump = true;
     private bool isGrounded;
 
-   private int comboStep = 0;
+    private int comboStep = 0;
     private bool isAttacking = false;
     private int queuedComboClicks = 0;
+    private Collider2D playerCollider;
+
     [Header("Movement Details")]
     [SerializeField] private float moveSpeed = 3.5f;
     [SerializeField] private float jumpForce = 8;
     
 
     [Header("Collision Details")]
-    [SerializeField] private float groundCheckDistance;
+    [SerializeField] private float groundCheckDistance = 0.1f;
+    [SerializeField] private LayerMask whatIsGround;
 
-   
-    [SerializeField] private LayerMask whatIsGround; // [8]
+
+    [Header("Attack Combo")]
+    [SerializeField] private int maxCombo = 4;
+    [SerializeField] private float attack1Duration = 0.6f;
+    [SerializeField] private float attack2Duration = 0.55f;
+    [SerializeField] private float attack3Duration = 0.7f;
+    [SerializeField] private float attack4Duration = 0.8f;
 
     [Header("Attack Details")]
-[SerializeField] private int maxCombo = 4;
-[SerializeField] private float attack1Duration = 0.6f;
-[SerializeField] private float attack2Duration = 0.55f;
-[SerializeField] private float attack3Duration = 0.7f;
-[SerializeField] private float attack4Duration = 0.8f;
+    [SerializeField] private float attackRadius;
+
+    [SerializeField] private Transform attackPoint;
+    [SerializeField] private LayerMask whatIsEnemy; // Lớp lọc mục tiêu kẻ địch
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
+        playerCollider = GetComponent<Collider2D>();
     }
 
     private void Update()
@@ -52,6 +60,22 @@ public class Player : MonoBehaviour
         
         HandleFlip();
         
+        
+    }
+
+    public void DamageEnemies()
+    {
+        // 1. Quét tất cả quái nằm trong vòng tròn bán kính attackRadius
+         Collider2D[] enemyColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsEnemy);
+
+         foreach (Collider2D enemy in enemyColliders)
+        {
+            Enemy enemyScript = enemy.GetComponent<Enemy>();
+            if (enemyScript != null)
+            {
+                enemyScript.TakeDamage();
+            }
+        }
         
     }
     public void EnableMovementAndJump(bool enable)
@@ -79,10 +103,23 @@ public class Player : MonoBehaviour
         }
     }
     private void HandleCollision()
-    {
-        // Bắn một tia Raycast xuống dưới để kiểm tra chạm đất
-        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, whatIsGround); // [8]
-    }
+{
+    Bounds bounds = playerCollider.bounds;
+
+    Vector2 boxCenter = new Vector2(bounds.center.x, bounds.min.y);
+    Vector2 boxSize = new Vector2(bounds.size.x * 0.8f, 0.08f);
+
+    RaycastHit2D hit = Physics2D.BoxCast(
+        boxCenter,
+        boxSize,
+        0f,
+        Vector2.down,
+        groundCheckDistance,
+        whatIsGround
+    );
+
+    isGrounded = hit.collider != null;
+}
     private void HandldeAnimations()
     {
     
@@ -198,10 +235,25 @@ private void EndCombo()
         }
     }
 
-    private void OnDrawGizmos()
+   private void OnDrawGizmos()
     {
-        // Vẽ tia line trực quan trong Unity Editor giúp dễ dàng điều chỉnh độ dài kiểm tra chạm đất
-        Gizmos.DrawLine(transform.position, transform.position + new Vector3(0, -groundCheckDistance)); // [20]
+        Collider2D col = GetComponent<Collider2D>();
+
+        if (col == null)
+            return;
+
+        Bounds bounds = col.bounds;
+
+        Vector2 boxCenter = new Vector2(bounds.center.x, bounds.min.y - groundCheckDistance);
+        Vector2 boxSize = new Vector2(bounds.size.x * 0.8f, 0.08f);
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(boxCenter, boxSize);
+
+        if (attackPoint != null) 
+        {
+            Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
+        }
     }
     public void Animation_DisableMovementAndJump()
 {

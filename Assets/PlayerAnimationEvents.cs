@@ -53,4 +53,10 @@ public class PlayerAnimationEvents : MonoBehaviour
             player.Animation_FinishAttack();
         }
     }
+
+    public void DamageEnemies()
+    {
+        player.DamageEnemies(); 
+    }
+
 }
