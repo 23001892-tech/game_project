@@ -70,11 +70,7 @@ public class Player : MonoBehaviour
 
          foreach (Collider2D enemy in enemyColliders)
         {
-            Enemy enemyScript = enemy.GetComponent<Enemy>();
-            if (enemyScript != null)
-            {
-                enemyScript.TakeDamage();
-            }
+            enemy.GetComponent<Enemy>().TakeDamage();
         }
         
     }
