@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     [Header("Enemy Info")]
@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
 
     [Header("Health")]
     [SerializeField] protected int maxHealth = 3;
+    [SerializeField] private Image healthBarFill;
     protected int currentHealth;
 
     protected Rigidbody2D rb;
@@ -19,12 +20,13 @@ public class Enemy : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
 
         currentHealth = maxHealth;
+        UpdateHealthBar();
     }
 
     public virtual void TakeDamage()
     {
         currentHealth--;
-
+        UpdateHealthBar();
         Debug.Log(enemyName + " took damage. HP: " + currentHealth);
 
         if (sr != null)
@@ -50,6 +52,14 @@ public class Enemy : MonoBehaviour
         if (sr != null)
         {
             sr.color = Color.white;
+        }
+    }
+    private void UpdateHealthBar()
+    {
+        if (healthBarFill != null)
+        {
+            healthBarFill.fillAmount =
+                (float)currentHealth / maxHealth;
         }
     }
 }

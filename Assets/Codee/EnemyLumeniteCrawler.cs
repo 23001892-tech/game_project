@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class EnemyLumeniteCrawler : Enemy
 {
     [Header("Crawler Settings")]
@@ -7,6 +7,7 @@ public class EnemyLumeniteCrawler : Enemy
     [SerializeField] private float attackRange = 1.2f;
     [SerializeField] private float leapForce = 6f;
     [SerializeField] private float attackCooldown = 1.2f;
+    [SerializeField] private Image healthBarFill;
 
     private Transform player;
     private float attackTimer;
@@ -20,6 +21,7 @@ public class EnemyLumeniteCrawler : Enemy
         moveSpeed = 3.5f;
         maxHealth = 2;
         currentHealth = maxHealth;
+        UpdateHealthBar();
 
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
 
@@ -84,6 +86,8 @@ public class EnemyLumeniteCrawler : Enemy
     public override void TakeDamage()
     {
         base.TakeDamage();
+        UpdateHealthBar();
+    
 
         // Bị đánh thì hơi lùi lại
         if (player != null && rb != null)
@@ -106,5 +110,13 @@ public class EnemyLumeniteCrawler : Enemy
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+    }
+    private void UpdateHealthBar()
+    {
+        if (healthBarFill != null)
+        {
+            healthBarFill.fillAmount =
+                (float)currentHealth / maxHealth;
+        }
     }
 }
