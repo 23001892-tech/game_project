@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: playerAttack2
+  m_Name: playerAttack4
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,19 +21,23 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -8346399850198030739, guid: ed9d86bd3dab7624e92e69af02c7c0e5, type: 3}
-    - time: 0.09090909
-      value: {fileID: 3853300910303056232, guid: ed9d86bd3dab7624e92e69af02c7c0e5, type: 3}
-    - time: 0.18181819
-      value: {fileID: 7731906640891799047, guid: ed9d86bd3dab7624e92e69af02c7c0e5, type: 3}
-    - time: 0.27272728
-      value: {fileID: -9052975627791375563, guid: ed9d86bd3dab7624e92e69af02c7c0e5, type: 3}
+      value: {fileID: -8761355660914736676, guid: db22806a39dc9964bbf350183d99a53e, type: 3}
+    - time: 0
+      value: {fileID: 6998417939820370803, guid: db22806a39dc9964bbf350183d99a53e, type: 3}
+    - time: 0.1
+      value: {fileID: -4211436970692961706, guid: db22806a39dc9964bbf350183d99a53e, type: 3}
+    - time: 0.2
+      value: {fileID: 8010678476360197577, guid: db22806a39dc9964bbf350183d99a53e, type: 3}
+    - time: 0.3
+      value: {fileID: -2656810954570497775, guid: db22806a39dc9964bbf350183d99a53e, type: 3}
+    - time: 0.4
+      value: {fileID: 2844456815699270708, guid: db22806a39dc9964bbf350183d99a53e, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 11
+  m_SampleRate: 10
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -50,16 +54,18 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -8346399850198030739, guid: ed9d86bd3dab7624e92e69af02c7c0e5, type: 3}
-    - {fileID: 3853300910303056232, guid: ed9d86bd3dab7624e92e69af02c7c0e5, type: 3}
-    - {fileID: 7731906640891799047, guid: ed9d86bd3dab7624e92e69af02c7c0e5, type: 3}
-    - {fileID: -9052975627791375563, guid: ed9d86bd3dab7624e92e69af02c7c0e5, type: 3}
+    - {fileID: -8761355660914736676, guid: db22806a39dc9964bbf350183d99a53e, type: 3}
+    - {fileID: 6998417939820370803, guid: db22806a39dc9964bbf350183d99a53e, type: 3}
+    - {fileID: -4211436970692961706, guid: db22806a39dc9964bbf350183d99a53e, type: 3}
+    - {fileID: 8010678476360197577, guid: db22806a39dc9964bbf350183d99a53e, type: 3}
+    - {fileID: -2656810954570497775, guid: db22806a39dc9964bbf350183d99a53e, type: 3}
+    - {fileID: 2844456815699270708, guid: db22806a39dc9964bbf350183d99a53e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.36363637
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -79,15 +85,8 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.09090909
-    functionName: DamageEnemies
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.18181819
-    functionName: DamageEnemies
+  - time: 0.3
+    functionName: DamageTargets
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

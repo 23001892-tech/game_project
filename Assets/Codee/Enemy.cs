@@ -1,65 +1,42 @@
 using UnityEngine;
-using UnityEngine.UI;
-public class Enemy : MonoBehaviour
+
+public class Enemy : Entity
 {
-    [Header("Enemy Info")]
-    public string enemyName;
-    public float moveSpeed = 1.5f;
+    private bool playerDetected; // Biến đánh dấu có phát hiện người chơi không
 
-    [Header("Health")]
-    [SerializeField] protected int maxHealth = 3;
-    [SerializeField] private Image healthBarFill;
-    protected int currentHealth;
-
-    protected Rigidbody2D rb;
-    protected SpriteRenderer sr;
-
-    protected virtual void Awake()
+    protected override void Update()
     {
-        rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
-
-        currentHealth = maxHealth;
-        UpdateHealthBar();
+        // Cố ý không gọi base.Update() để bỏ qua hàm nhận nút bấm HandleInput
+        HandleCollision();
+        HandleAnimations();
+        HandleMovement();
+        HandleFlip();
+        
+        HandleAttack(); // Gọi liên tục mỗi khung hình để kiểm tra và chém
     }
 
-    public virtual void TakeDamage()
+    protected override void HandleMovement()
     {
-        currentHealth--;
-        UpdateHealthBar();
-        Debug.Log(enemyName + " took damage. HP: " + currentHealth);
-
-        if (sr != null)
+        if (canMove)
         {
-            sr.color = Color.red;
-            Invoke(nameof(ResetColor), 0.15f);
-        }
-
-        if (currentHealth <= 0)
-        {
-            Die();
+            rb.linearVelocity = new Vector2(moveSpeed * facingDirection, rb.linearVelocity.y);
         }
     }
 
-    protected virtual void Die()
+    protected override void HandleCollision()
     {
-        Debug.Log(enemyName + " died.");
-        Destroy(gameObject);
+        base.HandleCollision(); // Vẫn gọi base để giữ lại tính năng quét mặt đất
+        
+        // Quét quanh attackPoint, nếu chạm vào layer whatIsTarget (Player) thì gán là true
+        playerDetected = Physics2D.OverlapCircle(attackPoint.position, attackRadius, whatIsTarget);
     }
 
-    private void ResetColor()
+    protected override void HandleAttack()
     {
-        if (sr != null)
+        // Nếu phát hiện người chơi, tự động kích hoạt hoạt ảnh chém
+        if (playerDetected)
         {
-            sr.color = Color.white;
-        }
-    }
-    private void UpdateHealthBar()
-    {
-        if (healthBarFill != null)
-        {
-            healthBarFill.fillAmount =
-                (float)currentHealth / maxHealth;
+            anim.SetTrigger("attack"); 
         }
     }
 }
