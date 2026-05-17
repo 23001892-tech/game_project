@@ -603,17 +603,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd77e38df772e044ba45dc5ea57d88ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  maxHealth: 10
+  currentHealth: 0
+  moveSpeed: 2
+  jumpForce: 12
+  maxCombo: 4
+  attack1Duration: 0.6
+  attack2Duration: 0.55
+  attack3Duration: 0.7
+  attack4Duration: 0.8
+  damageMaterial: {fileID: 2100000, guid: 8646453728596ba40b87ca0020cb7685, type: 2}
+  damageFeedbackDuration: 0.1
+  deathDestroyDelay: 3
+  deathJumpForce: 15
+  deathGravityScale: 3.5
   groundCheckDistance: 1.2
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
   attackPoint: {fileID: 1905504010}
   attackRadius: 0.59
+  attackDamage: 1
   whatIsTarget:
     serializedVersion: 2
     m_Bits: 256
-  moveSpeed: 2
-  jumpForce: 12
+  detectRange: 5
+  attackCooldown: 1.5
 --- !u!4 &280386012
 Transform:
   m_ObjectHideFlags: 0
@@ -1773,17 +1788,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d6d608422248134db38ae103bf46f30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
+  maxHealth: 10
+  currentHealth: 0
+  moveSpeed: 8
+  jumpForce: 12
+  maxCombo: 4
+  attack1Duration: 0.6
+  attack2Duration: 0.55
+  attack3Duration: 0.7
+  attack4Duration: 0.8
+  damageMaterial: {fileID: 2100000, guid: 8646453728596ba40b87ca0020cb7685, type: 2}
+  damageFeedbackDuration: 0.1
+  deathDestroyDelay: 3
+  deathJumpForce: 15
+  deathGravityScale: 3.5
   groundCheckDistance: 1.4
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
   attackPoint: {fileID: 1059228064}
   attackRadius: 0.49
+  attackDamage: 1
   whatIsTarget:
     serializedVersion: 2
     m_Bits: 128
-  moveSpeed: 8
-  jumpForce: 12
 --- !u!50 &924916409
 Rigidbody2D:
   serializedVersion: 5
@@ -1837,7 +1865,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8646453728596ba40b87ca0020cb7685, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

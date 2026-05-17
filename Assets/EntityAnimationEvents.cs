@@ -14,6 +14,14 @@ public class EntityAnimationEvents : MonoBehaviour
         }
     }
 
+    public void DamageTargets()
+    {
+        if (entity != null)
+        {
+            entity.Animation_DamageTargets();
+        }
+    }
+
     public void DisableMovementAndJump()
     {
         if (entity != null)
@@ -53,13 +61,4 @@ public class EntityAnimationEvents : MonoBehaviour
             entity.Animation_FinishAttack();
         }
     }
-
-    public void DamageEnemies()
-    {
-        if (entity != null)
-        {
-            entity.Animation_DamageTargets();
-        }
-    }
-
 }
