@@ -3,22 +3,31 @@ using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
-    [Header("Components")]
-    protected Animator anim;
     protected Rigidbody2D rb;
-    protected Collider2D entityCollider;
+    protected Animator anim;
     protected Collider2D col;
-    protected SpriteRenderer sr;
 
     protected SpriteRenderer[] spriteRenderers;
     protected Material[] originalMaterials;
 
-    [Header("Stats")]
-    [SerializeField] protected int maxHealth = 100;
+    [Header("Health & Damage")]
+    [SerializeField] protected int maxHealth = 10;
     [SerializeField] protected int currentHealth;
 
+    [SerializeField] protected Material damageMaterial;
+    [SerializeField] protected float damageFeedbackDuration = 0.15f;
+
+    protected Coroutine damageFeedbackCoroutine;
+    protected bool isDead;
+    protected bool isDying;
+
+    [Header("Death Details")]
+    [SerializeField] protected float deathDestroyDelay = 3f;
+    [SerializeField] protected float deathJumpForce = 15f;
+    [SerializeField] protected float deathGravityScale = 3.5f;
+
     [Header("Movement Details")]
-    [SerializeField] protected float moveSpeed = 2f;
+    [SerializeField] protected float moveSpeed = 3.5f;
     [SerializeField] protected float jumpForce = 8f;
 
     protected float xInput;
@@ -26,33 +35,7 @@ public class Entity : MonoBehaviour
     protected bool canJump = true;
 
     protected int facDir = 1;
-    protected int facingDir => facDir;
-    protected int facingDirection => facDir;
     protected bool facingRight = true;
-
-    [Header("Attack Combo")]
-    [SerializeField] protected int maxCombo = 4;
-    [SerializeField] protected float attack1Duration = 0.6f;
-    [SerializeField] protected float attack2Duration = 0.55f;
-    [SerializeField] protected float attack3Duration = 0.7f;
-    [SerializeField] protected float attack4Duration = 0.8f;
-
-    protected int comboStep = 0;
-    protected bool isAttacking = false;
-    protected int queuedComboClicks = 0;
-
-    [Header("Health & Damage Details")]
-    [SerializeField] protected Material damageMaterial;
-    [SerializeField] protected float damageFeedbackDuration = 0.15f;
-    protected Coroutine damageFeedbackCoroutine;
-
-    [Header("Death Details")]
-    [SerializeField] protected float deathDestroyDelay = 3f;
-    [SerializeField] protected float deathJumpForce = 15f;
-    [SerializeField] protected float deathGravityScale = 3.5f;
-
-    protected bool isDead;
-    protected bool isDying;
 
     [Header("Collision Details")]
     [SerializeField] protected float groundCheckDistance = 0.1f;
@@ -61,36 +44,40 @@ public class Entity : MonoBehaviour
 
     [Header("Attack Details")]
     [SerializeField] protected Transform attackPoint;
-    [SerializeField] protected float attackRadius = 0.6f;
-    [SerializeField] protected int attackDamage = 10;
+    [SerializeField] protected float attackRadius = 1f;
+    [SerializeField] protected int attackDamage = 1;
     [SerializeField] protected LayerMask whatIsTarget;
 
     protected virtual void Awake()
+{
+    rb = GetComponent<Rigidbody2D>();
+    anim = GetComponentInChildren<Animator>();
+
+    col = GetComponent<Collider2D>();
+
+    if (col == null)
     {
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponentInChildren<Animator>();
-        entityCollider = GetComponent<Collider2D>();
-        col = GetComponent<Collider2D>();
-        sr = GetComponentInChildren<SpriteRenderer>();
-
-        spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
-        originalMaterials = new Material[spriteRenderers.Length];
-
-        for (int i = 0; i < spriteRenderers.Length; i++)
-        {
-            originalMaterials[i] = spriteRenderers[i].material;
-        }
-
-        currentHealth = maxHealth;
+        col = GetComponentInChildren<Collider2D>();
     }
+
+    spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
+    originalMaterials = new Material[spriteRenderers.Length];
+
+    for (int i = 0; i < spriteRenderers.Length; i++)
+    {
+        originalMaterials[i] = spriteRenderers[i].material;
+    }
+
+    currentHealth = maxHealth;
+}
 
     protected virtual void Update()
     {
         if (isDead)
             return;
 
-        HandleInput();
         HandleCollision();
+        HandleInput();
         HandleMovement();
         HandleAnimations();
         HandleFlip();
@@ -98,54 +85,40 @@ public class Entity : MonoBehaviour
 
     protected virtual void HandleInput()
     {
-        xInput = Input.GetAxisRaw("Horizontal");
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TryToJump();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            HandleAttack();
-        }
+        // Entity cha không dùng input.
+        // Player sẽ override.
     }
 
     protected virtual void HandleCollision()
+{
+    if (col == null)
     {
-        if (entityCollider == null)
-            return;
-
-        Bounds bounds = entityCollider.bounds;
-
-        Vector2 boxCenter = new Vector2(bounds.center.x, bounds.min.y);
-        Vector2 boxSize = new Vector2(bounds.size.x * 0.8f, 0.08f);
-
-        RaycastHit2D hit = Physics2D.BoxCast(
-            boxCenter,
-            boxSize,
-            0f,
-            Vector2.down,
-            groundCheckDistance,
-            whatIsGround
-        );
-
-        isGrounded = hit.collider != null;
+        Debug.LogWarning(gameObject.name + " không có Collider2D để check ground.");
+        isGrounded = false;
+        return;
     }
+
+    Bounds bounds = col.bounds;
+
+    Vector2 boxCenter = new Vector2(bounds.center.x, bounds.min.y);
+    Vector2 boxSize = new Vector2(bounds.size.x * 0.8f, 0.08f);
+
+    RaycastHit2D hit = Physics2D.BoxCast(
+        boxCenter,
+        boxSize,
+        0f,
+        Vector2.down,
+        groundCheckDistance,
+        whatIsGround
+    );
+
+    isGrounded = hit.collider != null;
+}
 
     protected virtual void HandleMovement()
     {
-        if (rb == null)
-            return;
-
-        if (canMove)
-        {
-            MoveX(xInput);
-        }
-        else
-        {
-            StopMove();
-        }
+        // Entity cha không tự di chuyển.
+        // Player và Enemy sẽ override.
     }
 
     protected virtual void HandleAnimations()
@@ -160,100 +133,12 @@ public class Entity : MonoBehaviour
 
     protected virtual void TryToJump()
     {
-        if (isGrounded && canJump)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        }
+        // Player sẽ override.
     }
 
     protected virtual void HandleAttack()
     {
-        TryToAttack();
-    }
-
-    protected virtual void TryToAttack()
-    {
-        if (!isGrounded)
-            return;
-
-        if (!isAttacking)
-        {
-            queuedComboClicks = 0;
-            comboStep = 1;
-            StartCoroutine(ComboRoutine());
-        }
-        else
-        {
-            if (comboStep + queuedComboClicks < maxCombo)
-            {
-                queuedComboClicks++;
-                Debug.Log("Queue next attack: " + queuedComboClicks);
-            }
-        }
-    }
-
-    protected virtual IEnumerator ComboRoutine()
-    {
-        isAttacking = true;
-        EnableMovement(false);
-
-        while (true)
-        {
-            Debug.Log("Play Attack " + comboStep);
-
-            ResetAttackTriggers();
-
-            if (anim != null)
-            {
-                anim.SetTrigger("attack" + comboStep);
-            }
-
-            yield return new WaitForSeconds(GetAttackDuration(comboStep));
-
-            if (queuedComboClicks > 0 && comboStep < maxCombo)
-            {
-                queuedComboClicks--;
-                comboStep++;
-            }
-            else
-            {
-                break;
-            }
-        }
-
-        EndCombo();
-    }
-
-    protected virtual void ResetAttackTriggers()
-    {
-        if (anim == null)
-            return;
-
-        anim.ResetTrigger("attack1");
-        anim.ResetTrigger("attack2");
-        anim.ResetTrigger("attack3");
-        anim.ResetTrigger("attack4");
-    }
-
-    protected virtual float GetAttackDuration(int step)
-    {
-        if (step == 1) return attack1Duration;
-        if (step == 2) return attack2Duration;
-        if (step == 3) return attack3Duration;
-        if (step == 4) return attack4Duration;
-
-        return 0.6f;
-    }
-
-    protected virtual void EndCombo()
-    {
-        Debug.Log("End Combo");
-
-        isAttacking = false;
-        queuedComboClicks = 0;
-        comboStep = 0;
-
-        EnableMovement(true);
+        // Player hoặc Enemy sẽ override nếu cần.
     }
 
     protected virtual void MoveX(float direction)
@@ -314,6 +199,31 @@ public class Entity : MonoBehaviour
         }
     }
 
+    public virtual void DamageTargets()
+    {
+        if (attackPoint == null)
+        {
+            Debug.LogWarning(gameObject.name + " chưa có AttackPoint.");
+            return;
+        }
+
+        Collider2D[] targets = Physics2D.OverlapCircleAll(
+            attackPoint.position,
+            attackRadius,
+            whatIsTarget
+        );
+
+        foreach (Collider2D target in targets)
+        {
+            Entity targetEntity = target.GetComponentInParent<Entity>();
+
+            if (targetEntity != null && targetEntity != this)
+            {
+                targetEntity.TakeDamage(attackDamage);
+            }
+        }
+    }
+
     public virtual void TakeDamage()
     {
         TakeDamage(1);
@@ -329,7 +239,7 @@ public class Entity : MonoBehaviour
         if (currentHealth < 0)
             currentHealth = 0;
 
-        Debug.Log(gameObject.name + " HP: " + currentHealth);
+        Debug.Log(gameObject.name + " Current Health: " + currentHealth);
 
         PlayDamageFeedback();
 
@@ -424,31 +334,6 @@ public class Entity : MonoBehaviour
         Destroy(gameObject, deathDestroyDelay);
     }
 
-    public virtual void DamageTargets()
-    {
-        if (attackPoint == null)
-        {
-            Debug.LogWarning(gameObject.name + " chưa có AttackPoint.");
-            return;
-        }
-
-        Collider2D[] targets = Physics2D.OverlapCircleAll(
-            attackPoint.position,
-            attackRadius,
-            whatIsTarget
-        );
-
-        foreach (Collider2D target in targets)
-        {
-            Entity entityTarget = target.GetComponentInParent<Entity>();
-
-            if (entityTarget != null && entityTarget != this)
-            {
-                entityTarget.TakeDamage(attackDamage);
-            }
-        }
-    }
-
     public virtual void EnableMovement(bool enable)
     {
         canMove = enable;
@@ -463,10 +348,7 @@ public class Entity : MonoBehaviour
 
     public virtual void Animation_EnableMovement()
     {
-        if (!isAttacking)
-        {
-            EnableMovement(true);
-        }
+        EnableMovement(true);
     }
 
     public virtual void Animation_DamageTargets()
@@ -486,38 +368,43 @@ public class Entity : MonoBehaviour
 
     public virtual void Animation_OpenComboWindow()
     {
-        Debug.Log("Open Combo Window");
+        // Player override nếu cần.
     }
 
     public virtual void Animation_CloseComboWindow()
     {
-        Debug.Log("Close Combo Window");
+        // Player override nếu cần.
     }
 
     public virtual void Animation_FinishAttack()
     {
-        Debug.Log("Animation Finish Attack");
+        // Player override nếu cần.
     }
 
     protected virtual void OnDrawGizmos()
+{
+    Collider2D gizmoCol = GetComponent<Collider2D>();
+
+    if (gizmoCol == null)
     {
-        Collider2D gizmoCol = GetComponent<Collider2D>();
-
-        if (gizmoCol != null)
-        {
-            Bounds bounds = gizmoCol.bounds;
-
-            Vector2 boxCenter = new Vector2(bounds.center.x, bounds.min.y - groundCheckDistance);
-            Vector2 boxSize = new Vector2(bounds.size.x * 0.8f, 0.08f);
-
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawWireCube(boxCenter, boxSize);
-        }
-
-        if (attackPoint != null)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
-        }
+        gizmoCol = GetComponentInChildren<Collider2D>();
     }
+
+    if (gizmoCol != null)
+    {
+        Bounds bounds = gizmoCol.bounds;
+
+        Vector2 boxCenter = new Vector2(bounds.center.x, bounds.min.y - groundCheckDistance);
+        Vector2 boxSize = new Vector2(bounds.size.x * 0.8f, 0.08f);
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(boxCenter, boxSize);
+    }
+
+    if (attackPoint != null)
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
+    }
+}
 }

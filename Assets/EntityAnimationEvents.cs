@@ -22,6 +22,22 @@ public class EntityAnimationEvents : MonoBehaviour
         }
     }
 
+    public void DisableMovement()
+    {
+        if (entity != null)
+        {
+            entity.Animation_DisableMovement();
+        }
+    }
+
+    public void EnableMovement()
+    {
+        if (entity != null)
+        {
+            entity.Animation_EnableMovement();
+        }
+    }
+
     public void DisableMovementAndJump()
     {
         if (entity != null)

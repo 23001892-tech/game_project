@@ -29,17 +29,14 @@ public class Enemy : Entity
 
     protected override void Update()
     {
-        HandleCollision();
-        HandleInput();
-        HandleMovement();
-        HandleAnimations();
-        HandleFlip();
+        base.Update();
+
         HandleAttack();
     }
 
     protected override void HandleInput()
     {
-        // Enemy không dùng input.
+        // Enemy không dùng input người chơi.
     }
 
     protected override void HandleCollision()
@@ -88,7 +85,6 @@ public class Enemy : Entity
         if (playerDetected && !playerInAttackRange)
         {
             FaceTarget(player);
-
             MoveX(facDir);
         }
         else
