@@ -43,7 +43,7 @@ public class Player : Entity
 
         if (Input.GetKeyDown(KeyCode.H))
         {
-            TakeDamage(10);
+            TakeDamage(5);
         }
 
         if (Input.GetKeyDown(KeyCode.M))

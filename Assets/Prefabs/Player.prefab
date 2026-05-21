@@ -112,7 +112,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1684687934892386565, guid: 7293ead4d3929a243bae1324a1c1cc7b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -330,7 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030348c12d4ca4d4fb9447fec9082149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  maxHealth: 10
+  maxHealth: 100
   currentHealth: 0
   damageMaterial: {fileID: 2100000, guid: 8646453728596ba40b87ca0020cb7685, type: 2}
   damageFeedbackDuration: 0.15
@@ -351,7 +351,7 @@ MonoBehaviour:
     m_Bits: 128
   maxMana: 50
   currentMana: 0
-  playerUI: {fileID: 0}
+  playerUI: {fileID: 9060937649723499488, guid: fe9314c97b9be8a4fbebab2b07cb8d5d, type: 3}
   maxCombo: 4
   attack1Duration: 0.6
   attack2Duration: 0.55
