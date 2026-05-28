@@ -37,8 +37,7 @@ public class EnterNewMap : MonoBehaviour
             elapsed += Time.deltaTime;
             float t = elapsed / duration;
 
-            player.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
-            player.transform.localScale = Vector3.Lerp(startScale, Vector3.zero, t);
+
 
             yield return null;
         }
