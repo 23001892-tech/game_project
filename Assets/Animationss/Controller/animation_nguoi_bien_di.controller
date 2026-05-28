@@ -149,7 +149,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy
+  m_Name: animation_nguoi_bien_di
   serializedVersion: 6
   m_AnimatorParameters:
   - m_Name: xVelocity

@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 340eb4d4a01162e42b501fdd669f912d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6737304090538857176
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_0
+  - first:
+      213: -6466522610613836477
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_1
+  - first:
+      213: -7145157987364571220
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_2
+  - first:
+      213: 700778508076460359
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_3
+  - first:
+      213: 4417841324156559550
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_4
+  - first:
+      213: -4221713161951940013
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_5
+  - first:
+      213: 7597481454901157081
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_6
+  - first:
+      213: 7007081089834532454
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_7
+  - first:
+      213: 6071810643040269975
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 20
+        width: 39
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d25ab10a94082a0800000000000000
+      internalID: -6737304090538857176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_1
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 20
+        width: 37
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345a45e52fb4246a0800000000000000
+      internalID: -6466522610613836477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 20
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca7f61bcaac47dc90800000000000000
+      internalID: -7145157987364571220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_3
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 20
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7492028175aa9b900800000000000000
+      internalID: 700778508076460359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_4
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 20
+        width: 32
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0a46017435f4d30800000000000000
+      internalID: 4417841324156559550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_5
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 20
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352734e2f367965c0800000000000000
+      internalID: -4221713161951940013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_6
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 20
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc500b412daf6960800000000000000
+      internalID: 7597481454901157081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_7
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 20
+        width: 41
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66eb1f740272e3160800000000000000
+      internalID: 7007081089834532454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_8
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 20
+        width: 43
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796f9d92c97634450800000000000000
+      internalID: 6071810643040269975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_0: -6737304090538857176
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_1: -6466522610613836477
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_2: -7145157987364571220
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_3: 700778508076460359
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_4: 4417841324156559550
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_5: -4221713161951940013
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_6: 7597481454901157081
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_7: 7007081089834532454
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patienquai2 chayt_8: 6071810643040269975
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
