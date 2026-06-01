@@ -38,8 +38,8 @@ Năm 2037, thảm họa bùng phát. Những người từng được cứu số
 
 | Thành viên | Phụ trách |
 |---|---|
-| Dev 1 | Gameplay · Map design · UI · Loading screen |
-| Dev 2 | Animation (player & enemy) · AI quái |
+| Maramoce (Nguyễn Quốc Duy) | Gameplay · Map design · UI · Loading screen |
+| 23001892-tech (Nông Gia Khánh) | Animation (player & enemy) · AI quái |
 
 ---
 
