@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7928858964255100155, guid: d22bbe25e2df5014cb1533976306143e, type: 3}
+  m_Sprite: {fileID: 4878294357956323783, guid: 8f2a326530282514eba23f7893085393, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,7 +103,7 @@ Animator:
   m_GameObject: {fileID: 6539716097431004608}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 91fa1dcfc504e7343b7adfe334d7ef72, type: 2}
+  m_Controller: {fileID: 9100000, guid: 80d9f5daaa6c4aa46a6d1504380d80a1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 4941613669484656740}
   - component: {fileID: 5198297065853787657}
   m_Layer: 7
-  m_Name: Enemy
+  m_Name: quai2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

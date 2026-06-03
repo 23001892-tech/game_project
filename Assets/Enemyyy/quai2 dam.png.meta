@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: ae2a541e26c9f14478bc4506198c0d7a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4977263547028383572
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_0
+  - first:
+      213: -323364226669208590
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_1
+  - first:
+      213: 1441581921796773614
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_2
+  - first:
+      213: 9077344657691131559
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_3
+  - first:
+      213: 3959091281626024155
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_4
+  - first:
+      213: 2520103564380715831
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_5
+  - first:
+      213: 5819621102602105543
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_6
+  - first:
+      213: 8909605305044608317
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_7
+  - first:
+      213: 9050754061010503675
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_8
+  - first:
+      213: -3464352023367640713
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_9
+  - first:
+      213: -5762882530043391610
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_10
+  - first:
+      213: -8605516053697453272
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_11
+  - first:
+      213: 3658707392323540944
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_12
+  - first:
+      213: -4831941518092565179
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_13
+  - first:
+      213: 7688589188564911837
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_14
+  - first:
+      213: 2442355308529293280
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_15
+  - first:
+      213: -8794058933783886157
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_16
+  - first:
+      213: 5933469757005600451
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_17
+  - first:
+      213: -7143359673694796421
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_18
+  - first:
+      213: 388959172548096720
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_19
+  - first:
+      213: 1560641830020280029
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_20
+  - first:
+      213: 5843853974255275376
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_21
+  - first:
+      213: -9029258462092664785
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_22
+  - first:
+      213: -2739802409359276520
+    second: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 20
+        width: 39
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457a02a43dac21540800000000000000
+      internalID: 4977263547028383572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 20
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb1058f2fd238bf0800000000000000
+      internalID: -323364226669208590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_2
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 20
+        width: 53
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6525bbe17810410800000000000000
+      internalID: 1441581921796773614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_3
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 22
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae38715fd439fd70800000000000000
+      internalID: 9077344657691131559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_4
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 24
+        width: 58
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd84aa26b8481f630800000000000000
+      internalID: 3959091281626024155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_5
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 15
+        width: 48
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73bbb18f6d439f220800000000000000
+      internalID: 2520103564380715831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_6
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 8
+        width: 72
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c237f32f8273c050800000000000000
+      internalID: 5819621102602105543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_7
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 41
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35ae10e1d645ab70800000000000000
+      internalID: 8909605305044608317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_8
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 45
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf784f39ddcba9d70800000000000000
+      internalID: 9050754061010503675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_9
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 6
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779144e80362cefc0800000000000000
+      internalID: -3464352023367640713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_10
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 47
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 681957a3fd02600b0800000000000000
+      internalID: -5762882530043391610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_11
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 49
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823217e3eb0139880800000000000000
+      internalID: -8605516053697453272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_12
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 46
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d75a881df656c230800000000000000
+      internalID: 3658707392323540944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_13
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 43
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54581ae3ace71fcb0800000000000000
+      internalID: -4831941518092565179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_14
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 17
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd60250912b53ba60800000000000000
+      internalID: 7688589188564911837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_15
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 36
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e79d24863df4e120800000000000000
+      internalID: 2442355308529293280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_16
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 36
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b606fd1ef935f580800000000000000
+      internalID: -8794058933783886157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_17
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 41
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c697df9e4be75250800000000000000
+      internalID: 5933469757005600451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_18
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 34
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7542925930bddc90800000000000000
+      internalID: -7143359673694796421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_19
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 32
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2fbdf7e4cd56500800000000000000
+      internalID: 388959172548096720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_20
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 29
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde69fbc97388a510800000000000000
+      internalID: 1560641830020280029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_21
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 25
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d8dbe3a3a891150800000000000000
+      internalID: 5843853974255275376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_22
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 9
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f20e6cd8441a1b280800000000000000
+      internalID: -9029258462092664785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_23
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 11
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 816816b89344af9d0800000000000000
+      internalID: -2739802409359276520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_0: 4977263547028383572
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_1: -323364226669208590
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_10: -5762882530043391610
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_11: -8605516053697453272
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_12: 3658707392323540944
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_13: -4831941518092565179
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_14: 7688589188564911837
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_15: 2442355308529293280
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_16: -8794058933783886157
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_17: 5933469757005600451
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_18: -7143359673694796421
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_19: 388959172548096720
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_2: 1441581921796773614
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_20: 1560641830020280029
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_21: 5843853974255275376
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_22: -9029258462092664785
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_23: -2739802409359276520
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_3: 9077344657691131559
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_4: 3959091281626024155
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_5: 2520103564380715831
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_6: 5819621102602105543
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_7: 8909605305044608317
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_8: 9050754061010503675
+      A_2D_pixel_art_mutant_enemy_character_once_a_human_patient_bquai2damt_9: -3464352023367640713
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
