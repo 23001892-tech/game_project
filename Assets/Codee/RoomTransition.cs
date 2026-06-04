@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro; // Nếu bạn sử dụng TextMeshPro cho UI, nếu không thì có thể bỏ qua
 
 public class RoomTransition : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class RoomTransition : MonoBehaviour
     [Header("Cấu hìn chuyển phòng")]
     [SerializeField] private string sceneToLoad; // Tên của scene tiếp theo
 
-    [header("Giao diện tương tác chuyển phòng")]
+    [Header("Giao diện tương tác chuyển phòng")]
     [SerializeField] private GameObject interactMessageUI; // UI hiển thị khi người chơi có thể chuyển phòng
     private bool playerInZone = false; // Biến để kiểm tra xem người chơi có đang trong vùng trigger hay không
     

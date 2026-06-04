@@ -1,0 +1,6331 @@
+fileFormatVersion: 2
+guid: 8e6d9698c5b457c42b2479fcfb14c533
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7188968008496356689
+    second: backgroundmap2-reworked-Photoroom_0
+  - first:
+      213: -4691009289296461998
+    second: backgroundmap2-reworked-Photoroom_1
+  - first:
+      213: 8781227152358082588
+    second: backgroundmap2-reworked-Photoroom_2
+  - first:
+      213: 5342218002369852848
+    second: backgroundmap2-reworked-Photoroom_3
+  - first:
+      213: 8933401560501291654
+    second: backgroundmap2-reworked-Photoroom_4
+  - first:
+      213: -8322955797445855377
+    second: backgroundmap2-reworked-Photoroom_5
+  - first:
+      213: -2471067559927181534
+    second: backgroundmap2-reworked-Photoroom_6
+  - first:
+      213: -4204472357579348230
+    second: backgroundmap2-reworked-Photoroom_7
+  - first:
+      213: 2834149264601947343
+    second: backgroundmap2-reworked-Photoroom_8
+  - first:
+      213: 4569155365862759158
+    second: backgroundmap2-reworked-Photoroom_9
+  - first:
+      213: 5315768203973343531
+    second: backgroundmap2-reworked-Photoroom_10
+  - first:
+      213: -9185382017850519509
+    second: backgroundmap2-reworked-Photoroom_11
+  - first:
+      213: -5269749602295641415
+    second: backgroundmap2-reworked-Photoroom_12
+  - first:
+      213: -1983415039923677674
+    second: backgroundmap2-reworked-Photoroom_13
+  - first:
+      213: -5684805268329741024
+    second: backgroundmap2-reworked-Photoroom_14
+  - first:
+      213: 7590768805057911746
+    second: backgroundmap2-reworked-Photoroom_15
+  - first:
+      213: 2993921810998519462
+    second: backgroundmap2-reworked-Photoroom_16
+  - first:
+      213: -4337580788326838741
+    second: backgroundmap2-reworked-Photoroom_17
+  - first:
+      213: -6776943352915445397
+    second: backgroundmap2-reworked-Photoroom_18
+  - first:
+      213: -3465544737495027345
+    second: backgroundmap2-reworked-Photoroom_19
+  - first:
+      213: 8524722691171512730
+    second: backgroundmap2-reworked-Photoroom_20
+  - first:
+      213: 2874825131711770780
+    second: backgroundmap2-reworked-Photoroom_21
+  - first:
+      213: -5001851852759351593
+    second: backgroundmap2-reworked-Photoroom_22
+  - first:
+      213: -811564729042685434
+    second: backgroundmap2-reworked-Photoroom_23
+  - first:
+      213: -4396375216439827166
+    second: backgroundmap2-reworked-Photoroom_24
+  - first:
+      213: 2762808150875799736
+    second: backgroundmap2-reworked-Photoroom_25
+  - first:
+      213: -4531111663563838142
+    second: backgroundmap2-reworked-Photoroom_26
+  - first:
+      213: -7949946567259077863
+    second: backgroundmap2-reworked-Photoroom_27
+  - first:
+      213: -7197676791232053593
+    second: backgroundmap2-reworked-Photoroom_28
+  - first:
+      213: -8842106613030365333
+    second: backgroundmap2-reworked-Photoroom_29
+  - first:
+      213: 4138461397555798884
+    second: backgroundmap2-reworked-Photoroom_30
+  - first:
+      213: -3083827778598702279
+    second: backgroundmap2-reworked-Photoroom_31
+  - first:
+      213: -5938721648950558912
+    second: backgroundmap2-reworked-Photoroom_32
+  - first:
+      213: -4578984904381914660
+    second: backgroundmap2-reworked-Photoroom_33
+  - first:
+      213: 1608529179950738034
+    second: backgroundmap2-reworked-Photoroom_34
+  - first:
+      213: -3798345699789371125
+    second: backgroundmap2-reworked-Photoroom_35
+  - first:
+      213: 274642673214649544
+    second: backgroundmap2-reworked-Photoroom_36
+  - first:
+      213: 5678687446934741528
+    second: backgroundmap2-reworked-Photoroom_37
+  - first:
+      213: -8801946105295726838
+    second: backgroundmap2-reworked-Photoroom_38
+  - first:
+      213: 2777102091449275957
+    second: backgroundmap2-reworked-Photoroom_39
+  - first:
+      213: -6855328088478157731
+    second: backgroundmap2-reworked-Photoroom_40
+  - first:
+      213: 8751380463361245593
+    second: backgroundmap2-reworked-Photoroom_41
+  - first:
+      213: 3516291272436578029
+    second: backgroundmap2-reworked-Photoroom_42
+  - first:
+      213: -8308399198723543969
+    second: backgroundmap2-reworked-Photoroom_43
+  - first:
+      213: -1345258163753558911
+    second: backgroundmap2-reworked-Photoroom_44
+  - first:
+      213: -3823435653828899611
+    second: backgroundmap2-reworked-Photoroom_45
+  - first:
+      213: -2604327437815619867
+    second: backgroundmap2-reworked-Photoroom_46
+  - first:
+      213: 6893061696272008916
+    second: backgroundmap2-reworked-Photoroom_47
+  - first:
+      213: -4968737451801756962
+    second: backgroundmap2-reworked-Photoroom_48
+  - first:
+      213: -5466296833920358594
+    second: backgroundmap2-reworked-Photoroom_49
+  - first:
+      213: -5373053341105201465
+    second: backgroundmap2-reworked-Photoroom_50
+  - first:
+      213: 2078331084902144054
+    second: backgroundmap2-reworked-Photoroom_51
+  - first:
+      213: 6532432957829436587
+    second: backgroundmap2-reworked-Photoroom_52
+  - first:
+      213: -3678922896310152700
+    second: backgroundmap2-reworked-Photoroom_53
+  - first:
+      213: 2041877143853265458
+    second: backgroundmap2-reworked-Photoroom_54
+  - first:
+      213: -7669541808540210346
+    second: backgroundmap2-reworked-Photoroom_55
+  - first:
+      213: 2504629655806694168
+    second: backgroundmap2-reworked-Photoroom_56
+  - first:
+      213: 5925896120432448479
+    second: backgroundmap2-reworked-Photoroom_57
+  - first:
+      213: 7013644182600029059
+    second: backgroundmap2-reworked-Photoroom_58
+  - first:
+      213: 2198154673585029054
+    second: backgroundmap2-reworked-Photoroom_59
+  - first:
+      213: 3173821556899138398
+    second: backgroundmap2-reworked-Photoroom_60
+  - first:
+      213: -4016636610608893795
+    second: backgroundmap2-reworked-Photoroom_61
+  - first:
+      213: -8508797699511889866
+    second: backgroundmap2-reworked-Photoroom_62
+  - first:
+      213: -308619333347218971
+    second: backgroundmap2-reworked-Photoroom_63
+  - first:
+      213: 7702518693621281286
+    second: backgroundmap2-reworked-Photoroom_64
+  - first:
+      213: -5258433285036262181
+    second: backgroundmap2-reworked-Photoroom_65
+  - first:
+      213: -8954055295877825265
+    second: backgroundmap2-reworked-Photoroom_66
+  - first:
+      213: -101422508056753638
+    second: backgroundmap2-reworked-Photoroom_67
+  - first:
+      213: -362352131788542891
+    second: backgroundmap2-reworked-Photoroom_68
+  - first:
+      213: 4868031338351952260
+    second: backgroundmap2-reworked-Photoroom_69
+  - first:
+      213: 81433313686418207
+    second: backgroundmap2-reworked-Photoroom_70
+  - first:
+      213: 3315319302044376862
+    second: backgroundmap2-reworked-Photoroom_71
+  - first:
+      213: -2041923410649675843
+    second: backgroundmap2-reworked-Photoroom_72
+  - first:
+      213: -4603717202888319490
+    second: backgroundmap2-reworked-Photoroom_73
+  - first:
+      213: 3996111171775090010
+    second: backgroundmap2-reworked-Photoroom_74
+  - first:
+      213: 2149640766666033961
+    second: backgroundmap2-reworked-Photoroom_75
+  - first:
+      213: -1140992181381655858
+    second: backgroundmap2-reworked-Photoroom_76
+  - first:
+      213: 65681408605620835
+    second: backgroundmap2-reworked-Photoroom_77
+  - first:
+      213: 6329074195013773919
+    second: backgroundmap2-reworked-Photoroom_78
+  - first:
+      213: -3431500592378898890
+    second: backgroundmap2-reworked-Photoroom_79
+  - first:
+      213: -7239942602683414598
+    second: backgroundmap2-reworked-Photoroom_80
+  - first:
+      213: -7837329506840128222
+    second: backgroundmap2-reworked-Photoroom_81
+  - first:
+      213: -5338685033547519899
+    second: backgroundmap2-reworked-Photoroom_82
+  - first:
+      213: -8731222611015854335
+    second: backgroundmap2-reworked-Photoroom_83
+  - first:
+      213: -7815865229974370256
+    second: backgroundmap2-reworked-Photoroom_84
+  - first:
+      213: 1008397919381075882
+    second: backgroundmap2-reworked-Photoroom_85
+  - first:
+      213: 4992868687608823311
+    second: backgroundmap2-reworked-Photoroom_86
+  - first:
+      213: 2602169135550034029
+    second: backgroundmap2-reworked-Photoroom_87
+  - first:
+      213: 3812908352619681592
+    second: backgroundmap2-reworked-Photoroom_88
+  - first:
+      213: -1589544612067959506
+    second: backgroundmap2-reworked-Photoroom_89
+  - first:
+      213: 6312678377936569030
+    second: backgroundmap2-reworked-Photoroom_90
+  - first:
+      213: -658486344831033758
+    second: backgroundmap2-reworked-Photoroom_91
+  - first:
+      213: 7724841798968766785
+    second: backgroundmap2-reworked-Photoroom_92
+  - first:
+      213: -2605099798395753471
+    second: backgroundmap2-reworked-Photoroom_93
+  - first:
+      213: -4494524297089575482
+    second: backgroundmap2-reworked-Photoroom_94
+  - first:
+      213: -8800285999653424679
+    second: backgroundmap2-reworked-Photoroom_95
+  - first:
+      213: 2751992269696794478
+    second: backgroundmap2-reworked-Photoroom_96
+  - first:
+      213: 2322829660652851505
+    second: backgroundmap2-reworked-Photoroom_97
+  - first:
+      213: 3946188051122207519
+    second: backgroundmap2-reworked-Photoroom_98
+  - first:
+      213: -8128754580167070133
+    second: backgroundmap2-reworked-Photoroom_99
+  - first:
+      213: -9132707529298603504
+    second: backgroundmap2-reworked-Photoroom_100
+  - first:
+      213: -3583197452804045231
+    second: backgroundmap2-reworked-Photoroom_101
+  - first:
+      213: 379065194631169329
+    second: backgroundmap2-reworked-Photoroom_102
+  - first:
+      213: 7550650753166887194
+    second: backgroundmap2-reworked-Photoroom_103
+  - first:
+      213: -8081667060525895989
+    second: backgroundmap2-reworked-Photoroom_104
+  - first:
+      213: -6316735910584649994
+    second: backgroundmap2-reworked-Photoroom_105
+  - first:
+      213: -5469521764889466924
+    second: backgroundmap2-reworked-Photoroom_106
+  - first:
+      213: 8635721397981893960
+    second: backgroundmap2-reworked-Photoroom_107
+  - first:
+      213: -8071252911802764884
+    second: backgroundmap2-reworked-Photoroom_108
+  - first:
+      213: 4456802550896796486
+    second: backgroundmap2-reworked-Photoroom_109
+  - first:
+      213: -2642459009792562344
+    second: backgroundmap2-reworked-Photoroom_110
+  - first:
+      213: -8126683081644340361
+    second: backgroundmap2-reworked-Photoroom_111
+  - first:
+      213: -1620885401875992056
+    second: backgroundmap2-reworked-Photoroom_112
+  - first:
+      213: 6138222855002341271
+    second: backgroundmap2-reworked-Photoroom_113
+  - first:
+      213: -5075139114389114759
+    second: backgroundmap2-reworked-Photoroom_114
+  - first:
+      213: -3752217566275336205
+    second: backgroundmap2-reworked-Photoroom_115
+  - first:
+      213: 4315896060569796080
+    second: backgroundmap2-reworked-Photoroom_116
+  - first:
+      213: 806009784162057066
+    second: backgroundmap2-reworked-Photoroom_117
+  - first:
+      213: 3559357584256516439
+    second: backgroundmap2-reworked-Photoroom_118
+  - first:
+      213: -6048083834325743899
+    second: backgroundmap2-reworked-Photoroom_119
+  - first:
+      213: -7848206237724840858
+    second: backgroundmap2-reworked-Photoroom_120
+  - first:
+      213: -7362532895941778804
+    second: backgroundmap2-reworked-Photoroom_121
+  - first:
+      213: 1211150584031498908
+    second: backgroundmap2-reworked-Photoroom_122
+  - first:
+      213: 3916215458038644698
+    second: backgroundmap2-reworked-Photoroom_123
+  - first:
+      213: 4120813964548000320
+    second: backgroundmap2-reworked-Photoroom_124
+  - first:
+      213: -4716025224625466295
+    second: backgroundmap2-reworked-Photoroom_125
+  - first:
+      213: -5930925317505107166
+    second: backgroundmap2-reworked-Photoroom_126
+  - first:
+      213: 1498002815316108416
+    second: backgroundmap2-reworked-Photoroom_127
+  - first:
+      213: -6902600925303037935
+    second: backgroundmap2-reworked-Photoroom_128
+  - first:
+      213: -1391480489290977912
+    second: backgroundmap2-reworked-Photoroom_129
+  - first:
+      213: 391983407843624903
+    second: backgroundmap2-reworked-Photoroom_130
+  - first:
+      213: -2125147090995305555
+    second: backgroundmap2-reworked-Photoroom_131
+  - first:
+      213: 8471008603998918825
+    second: backgroundmap2-reworked-Photoroom_132
+  - first:
+      213: 992901002141830974
+    second: backgroundmap2-reworked-Photoroom_133
+  - first:
+      213: 3675366901480805651
+    second: backgroundmap2-reworked-Photoroom_134
+  - first:
+      213: -3112871296851823128
+    second: backgroundmap2-reworked-Photoroom_135
+  - first:
+      213: 5477379231739343674
+    second: backgroundmap2-reworked-Photoroom_136
+  - first:
+      213: 5815666654284445655
+    second: backgroundmap2-reworked-Photoroom_137
+  - first:
+      213: -4318901887536298074
+    second: backgroundmap2-reworked-Photoroom_138
+  - first:
+      213: 1017297112932375053
+    second: backgroundmap2-reworked-Photoroom_139
+  - first:
+      213: 1617874054934279909
+    second: backgroundmap2-reworked-Photoroom_140
+  - first:
+      213: -5619287110596029565
+    second: backgroundmap2-reworked-Photoroom_141
+  - first:
+      213: -3762162375990368619
+    second: backgroundmap2-reworked-Photoroom_142
+  - first:
+      213: 5991086664207667078
+    second: backgroundmap2-reworked-Photoroom_143
+  - first:
+      213: 5887344965468518544
+    second: backgroundmap2-reworked-Photoroom_144
+  - first:
+      213: 5155376142615039221
+    second: backgroundmap2-reworked-Photoroom_145
+  - first:
+      213: -5648954122745025745
+    second: backgroundmap2-reworked-Photoroom_146
+  - first:
+      213: -2135989230067037463
+    second: backgroundmap2-reworked-Photoroom_147
+  - first:
+      213: 5828679993584039477
+    second: backgroundmap2-reworked-Photoroom_148
+  - first:
+      213: 494180328263448730
+    second: backgroundmap2-reworked-Photoroom_149
+  - first:
+      213: 4774426979490187712
+    second: backgroundmap2-reworked-Photoroom_150
+  - first:
+      213: -2257494974370234657
+    second: backgroundmap2-reworked-Photoroom_151
+  - first:
+      213: 1355389469716630178
+    second: backgroundmap2-reworked-Photoroom_152
+  - first:
+      213: 8178529084877720741
+    second: backgroundmap2-reworked-Photoroom_153
+  - first:
+      213: -5237631550896860573
+    second: backgroundmap2-reworked-Photoroom_154
+  - first:
+      213: 1184154582284148679
+    second: backgroundmap2-reworked-Photoroom_155
+  - first:
+      213: -1542780553518755066
+    second: backgroundmap2-reworked-Photoroom_156
+  - first:
+      213: -274690138673460963
+    second: backgroundmap2-reworked-Photoroom_157
+  - first:
+      213: 6369284487439312060
+    second: backgroundmap2-reworked-Photoroom_158
+  - first:
+      213: -3704494613433217428
+    second: backgroundmap2-reworked-Photoroom_159
+  - first:
+      213: -967829351561824587
+    second: backgroundmap2-reworked-Photoroom_160
+  - first:
+      213: -3738957013985299229
+    second: backgroundmap2-reworked-Photoroom_161
+  - first:
+      213: 693512725839631317
+    second: backgroundmap2-reworked-Photoroom_162
+  - first:
+      213: 889050876759473854
+    second: backgroundmap2-reworked-Photoroom_163
+  - first:
+      213: -8811264372886273025
+    second: backgroundmap2-reworked-Photoroom_164
+  - first:
+      213: 5149252337312176568
+    second: backgroundmap2-reworked-Photoroom_165
+  - first:
+      213: 2994174603356443987
+    second: backgroundmap2-reworked-Photoroom_166
+  - first:
+      213: 5419887433925267370
+    second: backgroundmap2-reworked-Photoroom_167
+  - first:
+      213: -7624206160253759681
+    second: backgroundmap2-reworked-Photoroom_168
+  - first:
+      213: -4560958232109580081
+    second: backgroundmap2-reworked-Photoroom_169
+  - first:
+      213: -8082712871713888737
+    second: backgroundmap2-reworked-Photoroom_170
+  - first:
+      213: 2765365159894697958
+    second: backgroundmap2-reworked-Photoroom_171
+  - first:
+      213: -6512629027604278967
+    second: backgroundmap2-reworked-Photoroom_172
+  - first:
+      213: -6940111352194872771
+    second: backgroundmap2-reworked-Photoroom_173
+  - first:
+      213: -2143555032738273548
+    second: backgroundmap2-reworked-Photoroom_174
+  - first:
+      213: -7428427035775302411
+    second: backgroundmap2-reworked-Photoroom_175
+  - first:
+      213: 3274380435467863212
+    second: backgroundmap2-reworked-Photoroom_176
+  - first:
+      213: 5442590997741514575
+    second: backgroundmap2-reworked-Photoroom_177
+  - first:
+      213: -4498068607157670924
+    second: backgroundmap2-reworked-Photoroom_178
+  - first:
+      213: 7267350666690540352
+    second: backgroundmap2-reworked-Photoroom_179
+  - first:
+      213: 7106934367099523872
+    second: backgroundmap2-reworked-Photoroom_180
+  - first:
+      213: 8001060012559958276
+    second: backgroundmap2-reworked-Photoroom_181
+  - first:
+      213: 5949904291958857120
+    second: backgroundmap2-reworked-Photoroom_182
+  - first:
+      213: -9131623315212672083
+    second: backgroundmap2-reworked-Photoroom_183
+  - first:
+      213: 448616926380965634
+    second: backgroundmap2-reworked-Photoroom_184
+  - first:
+      213: -3286807305032036275
+    second: backgroundmap2-reworked-Photoroom_185
+  - first:
+      213: -3453757036454900745
+    second: backgroundmap2-reworked-Photoroom_186
+  - first:
+      213: -2728696573728751238
+    second: backgroundmap2-reworked-Photoroom_187
+  - first:
+      213: -3522131391349261758
+    second: backgroundmap2-reworked-Photoroom_188
+  - first:
+      213: 4177759535791300526
+    second: backgroundmap2-reworked-Photoroom_189
+  - first:
+      213: -8603931462874674697
+    second: backgroundmap2-reworked-Photoroom_190
+  - first:
+      213: -1680380397803490818
+    second: backgroundmap2-reworked-Photoroom_191
+  - first:
+      213: 489745387602307180
+    second: backgroundmap2-reworked-Photoroom_192
+  - first:
+      213: 6845111117790571673
+    second: backgroundmap2-reworked-Photoroom_193
+  - first:
+      213: 7719943864813922232
+    second: backgroundmap2-reworked-Photoroom_194
+  - first:
+      213: -6812796145749479241
+    second: backgroundmap2-reworked-Photoroom_195
+  - first:
+      213: 3913514646010394790
+    second: backgroundmap2-reworked-Photoroom_196
+  - first:
+      213: -1793523112828493230
+    second: backgroundmap2-reworked-Photoroom_197
+  - first:
+      213: 3040635799098316768
+    second: backgroundmap2-reworked-Photoroom_198
+  - first:
+      213: -8696181188457429243
+    second: backgroundmap2-reworked-Photoroom_199
+  - first:
+      213: -8542319155875869907
+    second: backgroundmap2-reworked-Photoroom_200
+  - first:
+      213: -8710316581984417377
+    second: backgroundmap2-reworked-Photoroom_201
+  - first:
+      213: -8178111844966902943
+    second: backgroundmap2-reworked-Photoroom_202
+  - first:
+      213: 5803085019390151491
+    second: backgroundmap2-reworked-Photoroom_203
+  - first:
+      213: -829095291827457134
+    second: backgroundmap2-reworked-Photoroom_204
+  - first:
+      213: 2503378000131875871
+    second: backgroundmap2-reworked-Photoroom_205
+  - first:
+      213: 1472441676388498608
+    second: backgroundmap2-reworked-Photoroom_206
+  - first:
+      213: 8624273595295909203
+    second: backgroundmap2-reworked-Photoroom_207
+  - first:
+      213: -3598529533943046696
+    second: backgroundmap2-reworked-Photoroom_208
+  - first:
+      213: 8099813561211696727
+    second: backgroundmap2-reworked-Photoroom_209
+  - first:
+      213: -3043877984096783535
+    second: backgroundmap2-reworked-Photoroom_210
+  - first:
+      213: 796438103543824686
+    second: backgroundmap2-reworked-Photoroom_211
+  - first:
+      213: 7933749328823005509
+    second: backgroundmap2-reworked-Photoroom_212
+  - first:
+      213: 4485855820336038874
+    second: backgroundmap2-reworked-Photoroom_213
+  - first:
+      213: -3751177331799222645
+    second: backgroundmap2-reworked-Photoroom_214
+  - first:
+      213: -4170154943750728859
+    second: backgroundmap2-reworked-Photoroom_215
+  - first:
+      213: -4540351080625248317
+    second: backgroundmap2-reworked-Photoroom_216
+  - first:
+      213: 3062765483353643665
+    second: backgroundmap2-reworked-Photoroom_217
+  - first:
+      213: -6876775705722255474
+    second: backgroundmap2-reworked-Photoroom_218
+  - first:
+      213: -356568613020695637
+    second: backgroundmap2-reworked-Photoroom_219
+  - first:
+      213: 8828897376167609956
+    second: backgroundmap2-reworked-Photoroom_220
+  - first:
+      213: -4124015245878523849
+    second: backgroundmap2-reworked-Photoroom_221
+  - first:
+      213: 3363320279113185793
+    second: backgroundmap2-reworked-Photoroom_222
+  - first:
+      213: -6161734682679946832
+    second: backgroundmap2-reworked-Photoroom_223
+  - first:
+      213: -1992902554155704519
+    second: backgroundmap2-reworked-Photoroom_224
+  - first:
+      213: 4522215270156854685
+    second: backgroundmap2-reworked-Photoroom_225
+  - first:
+      213: -3098629714506935064
+    second: backgroundmap2-reworked-Photoroom_226
+  - first:
+      213: 7656353713841603468
+    second: backgroundmap2-reworked-Photoroom_227
+  - first:
+      213: 3441989643586332335
+    second: backgroundmap2-reworked-Photoroom_228
+  - first:
+      213: -3494020826092900814
+    second: backgroundmap2-reworked-Photoroom_229
+  - first:
+      213: -8466430124420561721
+    second: backgroundmap2-reworked-Photoroom_230
+  - first:
+      213: 1591451315720532124
+    second: backgroundmap2-reworked-Photoroom_231
+  - first:
+      213: 7405389494531140115
+    second: backgroundmap2-reworked-Photoroom_232
+  - first:
+      213: 6805045242394173135
+    second: backgroundmap2-reworked-Photoroom_233
+  - first:
+      213: -3115315347432827843
+    second: backgroundmap2-reworked-Photoroom_234
+  - first:
+      213: 904384366163750105
+    second: backgroundmap2-reworked-Photoroom_235
+  - first:
+      213: -4743322655238684368
+    second: backgroundmap2-reworked-Photoroom_236
+  - first:
+      213: 8083513927849473383
+    second: backgroundmap2-reworked-Photoroom_237
+  - first:
+      213: 5621767956542899314
+    second: backgroundmap2-reworked-Photoroom_238
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 986
+        width: 167
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d9210a05854c360800000000000000
+      internalID: 7188968008496356689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_1
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 986
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f3d69c7ef26eeb0800000000000000
+      internalID: -4691009289296461998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_2
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 987
+        width: 77
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c188154f19f2dd970800000000000000
+      internalID: 8781227152358082588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_3
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 868
+        width: 51
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5b3f708fe532a40800000000000000
+      internalID: 5342218002369852848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_4
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 624
+        width: 808
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a89995361d9fb70800000000000000
+      internalID: 8933401560501291654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_5
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 945
+        width: 45
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6736f39ccbee7c80800000000000000
+      internalID: -8322955797445855377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_6
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 945
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f8c82852105bdd0800000000000000
+      internalID: -2471067559927181534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_7
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 945
+        width: 46
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6a882caa6b6a5c0800000000000000
+      internalID: -4204472357579348230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_8
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 942
+        width: 46
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcc980d7dbbe45720800000000000000
+      internalID: 2834149264601947343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_9
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 942
+        width: 73
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fad1d9c896e86f30800000000000000
+      internalID: 4569155365862759158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_10
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 885
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29b522740765c940800000000000000
+      internalID: 5315768203973343531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_11
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 885
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2052c398b7f68080800000000000000
+      internalID: -9185382017850519509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_12
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 885
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba89e338a61ed6b0800000000000000
+      internalID: -5269749602295641415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_13
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 885
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6169e2f978e7974e0800000000000000
+      internalID: -1983415039923677674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_14
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 884
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025cfe35ab38b11b0800000000000000
+      internalID: -5684805268329741024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_15
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 885
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cbd795b204d75960800000000000000
+      internalID: 7590768805057911746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_16
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 887
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a66cdd460c8c8920800000000000000
+      internalID: 2993921810998519462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_17
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 882
+        width: 77
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e48372141ddc3c0800000000000000
+      internalID: -4337580788326838741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_18
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 868
+        width: 29
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69b7822de573f1a0800000000000000
+      internalID: -6776943352915445397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_19
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 868
+        width: 26
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6172682c69e7efc0800000000000000
+      internalID: -3465544737495027345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_20
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 868
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a917df72f16ed4670800000000000000
+      internalID: 8524722691171512730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_21
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 868
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90bb0fc93e65e720800000000000000
+      internalID: 2874825131711770780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_22
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 868
+        width: 26
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de3629ad3ad59ab0800000000000000
+      internalID: -5001851852759351593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_23
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 827
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602bc25cd2ebcb4f0800000000000000
+      internalID: -811564729042685434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_24
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 827
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225e5cc9800fcf2c0800000000000000
+      internalID: -4396375216439827166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_25
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 827
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0818f0067775620800000000000000
+      internalID: 2762808150875799736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_26
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 827
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24de5a7e2f14e11c0800000000000000
+      internalID: -4531111663563838142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_27
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 827
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 913cf2bb7bd1ca190800000000000000
+      internalID: -7949946567259077863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_28
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 827
+        width: 14
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae3a82e717bc1c90800000000000000
+      internalID: -7197676791232053593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_29
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 827
+        width: 13
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b67513802e68a4580800000000000000
+      internalID: -8842106613030365333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_30
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 827
+        width: 14
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 463eafde6b4ce6930800000000000000
+      internalID: 4138461397555798884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_31
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 846
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933742469fa0435d0800000000000000
+      internalID: -3083827778598702279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_32
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 831
+        width: 95
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f316eff1c659da0800000000000000
+      internalID: -5938721648950558912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_33
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 779
+        width: 29
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1a07e6d7d2470c0800000000000000
+      internalID: -4578984904381914660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_34
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 782
+        width: 26
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a60dd44c4a25610800000000000000
+      internalID: 1608529179950738034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_35
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 779
+        width: 28
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b090ce5e5b0994bc0800000000000000
+      internalID: -3798345699789371125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_36
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 779
+        width: 27
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c47f116e0abfc300800000000000000
+      internalID: 274642673214649544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_37
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 783
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812e3016520cece40800000000000000
+      internalID: 5678687446934741528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_38
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 783
+        width: 25
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0717b5e6a439d580800000000000000
+      internalID: -8801946105295726838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_39
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 786
+        width: 70
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53614d173af3a8620800000000000000
+      internalID: 2777102091449275957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_40
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 724
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d547083bc6bfcd0a0800000000000000
+      internalID: -6855328088478157731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_41
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 724
+        width: 75
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991c0f42a26237970800000000000000
+      internalID: 8751380463361245593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_42
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 638
+        width: 19
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6736c38406cc030800000000000000
+      internalID: 3516291272436578029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_43
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 719
+        width: 61
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c61f3d2f2a2bc80800000000000000
+      internalID: -8308399198723543969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_44
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 724
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c564ad3dea45de0800000000000000
+      internalID: -1345258163753558911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_45
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 724
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ec07ffb78d60fac0800000000000000
+      internalID: -3823435653828899611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_46
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 724
+        width: 51
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ee523e5ef19bdbd0800000000000000
+      internalID: -2604327437815619867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_47
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 693
+        width: 25
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d6052d771319af50800000000000000
+      internalID: 6893061696272008916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_48
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 705
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda3d23fc9f7b0bb0800000000000000
+      internalID: -4968737451801756962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_49
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 705
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37a551cdffc324b0800000000000000
+      internalID: -5466296833920358594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_50
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 705
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ced23434741f65b0800000000000000
+      internalID: -5373053341105201465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_51
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 705
+        width: 25
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6389e393c17b7dc10800000000000000
+      internalID: 2078331084902144054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_52
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 648
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba45a723a2dd7aa50800000000000000
+      internalID: 6532432957829436587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_53
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 648
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 402d1691e17d1fcc0800000000000000
+      internalID: -3678922896310152700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_54
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 645
+        width: 61
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232fc5aa174365c10800000000000000
+      internalID: 2041877143853265458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_55
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 645
+        width: 79
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b24ff2c50509590800000000000000
+      internalID: -7669541808540210346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_56
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 644
+        width: 82
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8135440e66b32c220800000000000000
+      internalID: 2504629655806694168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_57
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 641
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd3dd32ff130d3250800000000000000
+      internalID: 5925896120432448479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_58
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 641
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3831cd46938755160800000000000000
+      internalID: 7013644182600029059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_59
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 641
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf7660870a618e10800000000000000
+      internalID: 2198154673585029054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_60
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 641
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b437fe3edab0c20800000000000000
+      internalID: 3173821556899138398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_61
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 641
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d90f3d0a84a0248c0800000000000000
+      internalID: -4016636610608893795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_62
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 599
+        width: 55
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 630dee6e29daae980800000000000000
+      internalID: -8508797699511889866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_63
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 598
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e96509f95097bbf0800000000000000
+      internalID: -308619333347218971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_64
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 599
+        width: 70
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6023a1131f7d4ea60800000000000000
+      internalID: 7702518693621281286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_65
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 598
+        width: 71
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdcb252a9ca4607b0800000000000000
+      internalID: -5258433285036262181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_66
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 598
+        width: 60
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d3ff5262eccb380800000000000000
+      internalID: -8954055295877825265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_67
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 464
+        width: 10
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1a4c0b24cca79ef0800000000000000
+      internalID: -101422508056753638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_68
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 577
+        width: 46
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c632de7aaa8faf0800000000000000
+      internalID: -362352131788542891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_69
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 577
+        width: 79
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48100f5d5b8be8340800000000000000
+      internalID: 4868031338351952260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_70
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 475
+        width: 48
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f137927da2f412100800000000000000
+      internalID: 81433313686418207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_71
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 475
+        width: 52
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1fd9530751620e20800000000000000
+      internalID: 3315319302044376862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_72
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 475
+        width: 53
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db70ca10a71a9a3e0800000000000000
+      internalID: -2041923410649675843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_73
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 474
+        width: 67
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd9c73789f4c10c0800000000000000
+      internalID: -4603717202888319490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_74
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 471
+        width: 24
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5dcf9c30f9057730800000000000000
+      internalID: 3996111171775090010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_75
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 471
+        width: 25
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92bc3d353ee05dd10800000000000000
+      internalID: 2149640766666033961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_76
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 472
+        width: 15
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec29f3108a16a20f0800000000000000
+      internalID: -1140992181381655858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_77
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 471
+        width: 20
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a0944a4e859e000800000000000000
+      internalID: 65681408605620835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_78
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 487
+        width: 10
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a23ee827365d750800000000000000
+      internalID: 6329074195013773919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_79
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 483
+        width: 10
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63696b0646cd060d0800000000000000
+      internalID: -3431500592378898890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_80
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 459
+        width: 90
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab786dccf8e868b90800000000000000
+      internalID: -7239942602683414598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_81
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 492
+        width: 109
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2255b1566563c3390800000000000000
+      internalID: -7837329506840128222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_82
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 499
+        width: 120
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568a4bf5f3e29e5b0800000000000000
+      internalID: -5338685033547519899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_83
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 498
+        width: 116
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1079a879b4774d680800000000000000
+      internalID: -8731222611015854335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_84
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 168
+        width: 58
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0380d0bcbf7788390800000000000000
+      internalID: -7815865229974370256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_85
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 168
+        width: 66
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7b3f0a09c8efd00800000000000000
+      internalID: 1008397919381075882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_86
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 436
+        width: 43
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e38173e9b3a4540800000000000000
+      internalID: 4992868687608823311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_87
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 423
+        width: 33
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60f1f9ba03cc1420800000000000000
+      internalID: 2602169135550034029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_88
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 451
+        width: 30
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837140fe1fb2ae430800000000000000
+      internalID: 3812908352619681592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_89
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 424
+        width: 11
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d9d0bd89dc0f9e0800000000000000
+      internalID: -1589544612067959506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_90
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 493
+        width: 10
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2c23ae9832b9750800000000000000
+      internalID: 6312678377936569030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_91
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 400
+        width: 29
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e96ee78269cd6f0800000000000000
+      internalID: -658486344831033758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_92
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 471
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1417f9d20b6243b60800000000000000
+      internalID: 7724841798968766785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_93
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 427
+        width: 83
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ced282983d8dbd0800000000000000
+      internalID: -2605099798395753471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_94
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 404
+        width: 177
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c51d9df6fd30a1c0800000000000000
+      internalID: -4494524297089575482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_95
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 419
+        width: 90
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d170dc528a1fd580800000000000000
+      internalID: -8800285999653424679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_96
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 427
+        width: 97
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6ff5eb736a013620800000000000000
+      internalID: 2751992269696794478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_97
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 426
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13154fcf4495c3020800000000000000
+      internalID: 2322829660652851505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_98
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 427
+        width: 52
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1bb70cef1da3c630800000000000000
+      internalID: 3946188051122207519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_99
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 427
+        width: 127
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4eefcef6ccd03f80800000000000000
+      internalID: -8128754580167070133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_100
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 328
+        width: 154
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0121f96a3ea124180800000000000000
+      internalID: -9132707529298603504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_101
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 332
+        width: 163
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156c789b6ece54ec0800000000000000
+      internalID: -3583197452804045231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_102
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 337
+        width: 24
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13584b049c5b24500800000000000000
+      internalID: 379065194631169329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_103
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 350
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a194c8ddadc49c860800000000000000
+      internalID: 7550650753166887194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_104
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 347
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcee06080a628df80800000000000000
+      internalID: -8081667060525895989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_105
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 263
+        width: 77
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f6f5a528227658a0800000000000000
+      internalID: -6316735910584649994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_106
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 353
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7ee700fea5814b0800000000000000
+      internalID: -5469521764889466924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_107
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 353
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84553f18bde38d770800000000000000
+      internalID: 8635721397981893960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_108
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 353
+        width: 38
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1b8a37d362dff80800000000000000
+      internalID: -8071252911802764884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_109
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 353
+        width: 38
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64322409e4eb9dd30800000000000000
+      internalID: 4456802550896796486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_110
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 351
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ba8cbe789145bd0800000000000000
+      internalID: -2642459009792562344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_111
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 368
+        width: 57
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b89645bc8383f80800000000000000
+      internalID: -8126683081644340361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_112
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 370
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802b09790557189e0800000000000000
+      internalID: -1620885401875992056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_113
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 378
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79f39983a295f2550800000000000000
+      internalID: 6138222855002341271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_114
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 376
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970752d5ddb7199b0800000000000000
+      internalID: -5075139114389114759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_115
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 382
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f78d2ae0027debc0800000000000000
+      internalID: -3752217566275336205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_116
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 382
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd35c9b99425eb30800000000000000
+      internalID: 4315896060569796080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_117
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 387
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6bf776d0a58f2b00800000000000000
+      internalID: 806009784162057066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_118
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 297
+        width: 27
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 751c3365dd0656130800000000000000
+      internalID: 3559357584256516439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_119
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 280
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e64b3bfbc3e01ca0800000000000000
+      internalID: -6048083834325743899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_120
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 280
+        width: 41
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ce7642202951390800000000000000
+      internalID: -7848206237724840858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_121
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 280
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82234ae65703d990800000000000000
+      internalID: -7362532895941778804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_122
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 280
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9254ba0a0fdec010800000000000000
+      internalID: 1211150584031498908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_123
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 331
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf7948c531395630800000000000000
+      internalID: 3916215458038644698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_124
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 335
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a4a5eb772103930800000000000000
+      internalID: 4120813964548000320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_125
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 335
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 944da667b005d8eb0800000000000000
+      internalID: -4716025224625466295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_126
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 337
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22bbcbcd8de11bda0800000000000000
+      internalID: -5930925317505107166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_127
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 340
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084a37faf99f9c410800000000000000
+      internalID: 1498002815316108416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_128
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 340
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110a70da7090530a0800000000000000
+      internalID: -6902600925303037935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_129
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 340
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88daceb0ed770bce0800000000000000
+      internalID: -1391480489290977912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_130
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 340
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7cd5625da907500800000000000000
+      internalID: 391983407843624903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_131
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 340
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da325c1faf5f182e0800000000000000
+      internalID: -2125147090995305555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_132
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 240
+        width: 130
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a812aaa1711f8570800000000000000
+      internalID: 8471008603998918825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_133
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 249
+        width: 96
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f0bc9633e77cd00800000000000000
+      internalID: 992901002141830974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_134
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 247
+        width: 120
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315ddf559b6810330800000000000000
+      internalID: 3675366901480805651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_135
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 264
+        width: 112
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e533a75c0cdcc4d0800000000000000
+      internalID: -3112871296851823128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_136
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 280
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33fcef046f830c40800000000000000
+      internalID: 5477379231739343674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_137
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 285
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d775b4620665b050800000000000000
+      internalID: 5815666654284445655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_138
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 286
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a782a5ad9d2014c0800000000000000
+      internalID: -4318901887536298074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_139
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 286
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a5d57955a2e1e00800000000000000
+      internalID: 1017297112932375053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_140
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 286
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6bdaf81e7d37610800000000000000
+      internalID: 1617874054934279909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_141
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 286
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3831ef925284402b0800000000000000
+      internalID: -5619287110596029565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_142
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 286
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59621c7704d1acbc0800000000000000
+      internalID: -3762162375990368619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_143
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 286
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f8da6349d942350800000000000000
+      internalID: 5991086664207667078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_144
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 286
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0987fe8bd0d04b150800000000000000
+      internalID: 5887344965468518544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_145
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 286
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fcc71099439b8740800000000000000
+      internalID: 5155376142615039221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_146
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 286
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2bed41a722ea91b0800000000000000
+      internalID: -5648954122745025745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_147
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 286
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea4bc9bc117b52e0800000000000000
+      internalID: -2135989230067037463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_148
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 231
+        width: 67
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536b00f8291a3e050800000000000000
+      internalID: 5828679993584039477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_149
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 230
+        width: 71
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98f029e36eabd600800000000000000
+      internalID: 494180328263448730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_150
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 230
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9cd86ba0c224240800000000000000
+      internalID: 4774426979490187712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_151
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 230
+        width: 63
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdebe621844cba0e0800000000000000
+      internalID: -2257494974370234657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_152
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 135
+        width: 379
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aac3c2aa8f4fc210800000000000000
+      internalID: 1355389469716630178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_153
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 201
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac4659fed8ff7170800000000000000
+      internalID: 8178529084877720741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_154
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 203
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3621a68cad13057b0800000000000000
+      internalID: -5237631550896860573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_155
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 209
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf92349156fe6010800000000000000
+      internalID: 1184154582284148679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_156
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 193
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6035225b241f69ae0800000000000000
+      internalID: -1542780553518755066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_157
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 203
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19c01536ca103cf0800000000000000
+      internalID: -274690138673460963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_158
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 203
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb4e933de7e346850800000000000000
+      internalID: 6369284487439312060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_159
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 203
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e07fdb6cdf69cc0800000000000000
+      internalID: -3704494613433217428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_160
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 207
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b6f5f025549192f0800000000000000
+      internalID: -967829351561824587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_161
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 68
+        width: 54
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e473f6d76e8c1cc0800000000000000
+      internalID: -3738957013985299229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_162
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 151
+        width: 84
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d352e6562adf9900800000000000000
+      internalID: 693512725839631317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_163
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 151
+        width: 77
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe7f70ef0b865c00800000000000000
+      internalID: 889050876759473854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_164
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 158
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff30f08acb918b580800000000000000
+      internalID: -8811264372886273025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_165
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 153
+        width: 25
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9975808b1d57740800000000000000
+      internalID: 5149252337312176568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_166
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 188
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3559e8c10f17d8920800000000000000
+      internalID: 2994174603356443987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_167
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 197
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf08b5c7ee473b40800000000000000
+      internalID: 5419887433925267370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_168
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 203
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3fcabb54e0613690800000000000000
+      internalID: -7624206160253759681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_169
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 183
+        width: 79
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc007b327a834b0c0800000000000000
+      internalID: -4560958232109580081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_170
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 175
+        width: 61
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f16240c977f64df80800000000000000
+      internalID: -8082712871713888737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_171
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 179
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7c3cd16fc806620800000000000000
+      internalID: 2765365159894697958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_172
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 192
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941dfbf976e7e95a0800000000000000
+      internalID: -6512629027604278967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_173
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 200
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3ac4c6de75cfaf90800000000000000
+      internalID: -6940111352194872771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_174
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 190
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f662250e009042e0800000000000000
+      internalID: -2143555032738273548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_175
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 182
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f484bce7fce8e890800000000000000
+      internalID: -7428427035775302411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_176
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 190
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca40d8b58afe07d20800000000000000
+      internalID: 3274380435467863212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_177
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 69
+        width: 29
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f2f162da7f78b40800000000000000
+      internalID: 5442590997741514575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_178
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 71
+        width: 37
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fbe70ffe66a391c0800000000000000
+      internalID: -4498068607157670924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_179
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 183
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043b9426de0dad460800000000000000
+      internalID: 7267350666690540352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_180
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 157
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0239bf81727e0a260800000000000000
+      internalID: 7106934367099523872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_181
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 191
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4010833a0b9790f60800000000000000
+      internalID: 8001060012559958276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_182
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 172
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad97c9fd6e429250800000000000000
+      internalID: 5949904291958857120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_183
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 166
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3e21ae9f4f54180800000000000000
+      internalID: -9131623315212672083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_184
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 153
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f3a29b7bec93600800000000000000
+      internalID: 448616926380965634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_185
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 165
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d40186a9b2ae262d0800000000000000
+      internalID: -3286807305032036275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_186
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 154
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb899d264ac110d0800000000000000
+      internalID: -3453757036454900745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_187
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 173
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7182176ce8b12ad0800000000000000
+      internalID: -2728696573728751238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_188
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 147
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24aff5e1920ee1fc0800000000000000
+      internalID: -3522131391349261758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_189
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 160
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaf57dfb9226af930800000000000000
+      internalID: 4177759535791300526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_190
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 164
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f94c8b8be1b89880800000000000000
+      internalID: -8603931462874674697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_191
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 154
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1b4656ee61ea8e0800000000000000
+      internalID: -1680380397803490818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_192
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 153
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c68eb62d5dcebc600800000000000000
+      internalID: 489745387602307180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_193
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 154
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99cebff6b48befe50800000000000000
+      internalID: 6845111117790571673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_194
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 116
+        width: 12
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b7a0340b00c22b60800000000000000
+      internalID: 7719943864813922232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_195
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 147
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0b37d40061471a0800000000000000
+      internalID: -6812796145749479241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_196
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 151
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8fcbaf5d89f4630800000000000000
+      internalID: 3913514646010394790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_197
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 123
+        width: 46
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 252a76b3b302c17e0800000000000000
+      internalID: -1793523112828493230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_198
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 108
+        width: 70
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e757983622823a20800000000000000
+      internalID: 3040635799098316768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_199
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 100
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5078f8f8845f05780800000000000000
+      internalID: -8696181188457429243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_200
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 126
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b0104acf5937980800000000000000
+      internalID: -8542319155875869907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_201
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 131
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99cf99c73dbe1780800000000000000
+      internalID: -8710316581984417377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_202
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 115
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16355534b92818e80800000000000000
+      internalID: -8178111844966902943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_203
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 129
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b042e3413b88050800000000000000
+      internalID: 5803085019390151491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_204
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 68
+        width: 37
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293fcad89367e74f0800000000000000
+      internalID: -829095291827457134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_205
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 112
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1463641709cdb220800000000000000
+      internalID: 2503378000131875871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_206
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 67
+        width: 22
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bcfd9147e92f6410800000000000000
+      internalID: 1472441676388498608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_207
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 68
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355c46d34239fa770800000000000000
+      internalID: 8624273595295909203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_208
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 67
+        width: 25
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd929764747f0ec0800000000000000
+      internalID: -3598529533943046696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_209
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 67
+        width: 9
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7563aeee481586070800000000000000
+      internalID: 8099813561211696727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_210
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 67
+        width: 10
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1537742c919f1c5d0800000000000000
+      internalID: -3043877984096783535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_211
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 67
+        width: 9
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e21c0574c348d0b00800000000000000
+      internalID: 796438103543824686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_212
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 92
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5413d71daf65a1e60800000000000000
+      internalID: 7933749328823005509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_213
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 114
+        width: 68
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad38fbcf916f04e30800000000000000
+      internalID: 4485855820336038874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_214
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 77
+        width: 84
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b861c90671421fbc0800000000000000
+      internalID: -3751177331799222645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_215
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 72
+        width: 85
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563166f4c22a026c0800000000000000
+      internalID: -4170154943750728859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_216
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 70
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c765cb7fbe6df0c0800000000000000
+      internalID: -4540351080625248317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_217
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 107
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a1f99daf0218a20800000000000000
+      internalID: 3062765483353643665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_218
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 90
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e87836c2ee8c090a0800000000000000
+      internalID: -6876775705722255474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_219
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 69
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba309d25cb63d0bf0800000000000000
+      internalID: -356568613020695637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_220
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 70
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46649d8d26b868a70800000000000000
+      internalID: 8828897376167609956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_221
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 98
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7388d1ddbfd84c6c0800000000000000
+      internalID: -4124015245878523849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_222
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 116
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ab86669f9ecae20800000000000000
+      internalID: 3363320279113185793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_223
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 35
+        width: 160
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b158aec3fe1d7aa0800000000000000
+      internalID: -6161734682679946832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_224
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 45
+        width: 147
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f94939fa9c754e0800000000000000
+      internalID: -1992902554155704519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_225
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 43
+        width: 113
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95eb8714d222ce30800000000000000
+      internalID: 4522215270156854685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_226
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 83
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4185021b47ff4d0800000000000000
+      internalID: -3098629714506935064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_227
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 77
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c83854c3325d04a60800000000000000
+      internalID: 7656353713841603468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_228
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 69
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa6698a285764cf20800000000000000
+      internalID: 3441989643586332335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_229
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 67
+        width: 42
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e6aee129eb28fc0800000000000000
+      internalID: -3494020826092900814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_230
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 73
+        width: 73
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c40f3ea8a2318a80800000000000000
+      internalID: -8466430124420561721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_231
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 67
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90b9de2a88f51610800000000000000
+      internalID: 1591451315720532124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_232
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 69
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a20f4828a35c660800000000000000
+      internalID: 7405389494531140115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_233
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 69
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcedd51e790607e50800000000000000
+      internalID: 6805045242394173135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_234
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 67
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3491f8723d24c4d0800000000000000
+      internalID: -3115315347432827843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_235
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 74
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc6b951ac40d8c00800000000000000
+      internalID: 904384366163750105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_236
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 69
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0318f6f1d255c2eb0800000000000000
+      internalID: -4743322655238684368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_237
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 69
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765f36ec6196e2070800000000000000
+      internalID: 8083513927849473383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: backgroundmap2-reworked-Photoroom_238
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 67
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 274c96bcb28840e40800000000000000
+      internalID: 5621767956542899314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      backgroundmap2-reworked-Photoroom_0: 7188968008496356689
+      backgroundmap2-reworked-Photoroom_1: -4691009289296461998
+      backgroundmap2-reworked-Photoroom_10: 5315768203973343531
+      backgroundmap2-reworked-Photoroom_100: -9132707529298603504
+      backgroundmap2-reworked-Photoroom_101: -3583197452804045231
+      backgroundmap2-reworked-Photoroom_102: 379065194631169329
+      backgroundmap2-reworked-Photoroom_103: 7550650753166887194
+      backgroundmap2-reworked-Photoroom_104: -8081667060525895989
+      backgroundmap2-reworked-Photoroom_105: -6316735910584649994
+      backgroundmap2-reworked-Photoroom_106: -5469521764889466924
+      backgroundmap2-reworked-Photoroom_107: 8635721397981893960
+      backgroundmap2-reworked-Photoroom_108: -8071252911802764884
+      backgroundmap2-reworked-Photoroom_109: 4456802550896796486
+      backgroundmap2-reworked-Photoroom_11: -9185382017850519509
+      backgroundmap2-reworked-Photoroom_110: -2642459009792562344
+      backgroundmap2-reworked-Photoroom_111: -8126683081644340361
+      backgroundmap2-reworked-Photoroom_112: -1620885401875992056
+      backgroundmap2-reworked-Photoroom_113: 6138222855002341271
+      backgroundmap2-reworked-Photoroom_114: -5075139114389114759
+      backgroundmap2-reworked-Photoroom_115: -3752217566275336205
+      backgroundmap2-reworked-Photoroom_116: 4315896060569796080
+      backgroundmap2-reworked-Photoroom_117: 806009784162057066
+      backgroundmap2-reworked-Photoroom_118: 3559357584256516439
+      backgroundmap2-reworked-Photoroom_119: -6048083834325743899
+      backgroundmap2-reworked-Photoroom_12: -5269749602295641415
+      backgroundmap2-reworked-Photoroom_120: -7848206237724840858
+      backgroundmap2-reworked-Photoroom_121: -7362532895941778804
+      backgroundmap2-reworked-Photoroom_122: 1211150584031498908
+      backgroundmap2-reworked-Photoroom_123: 3916215458038644698
+      backgroundmap2-reworked-Photoroom_124: 4120813964548000320
+      backgroundmap2-reworked-Photoroom_125: -4716025224625466295
+      backgroundmap2-reworked-Photoroom_126: -5930925317505107166
+      backgroundmap2-reworked-Photoroom_127: 1498002815316108416
+      backgroundmap2-reworked-Photoroom_128: -6902600925303037935
+      backgroundmap2-reworked-Photoroom_129: -1391480489290977912
+      backgroundmap2-reworked-Photoroom_13: -1983415039923677674
+      backgroundmap2-reworked-Photoroom_130: 391983407843624903
+      backgroundmap2-reworked-Photoroom_131: -2125147090995305555
+      backgroundmap2-reworked-Photoroom_132: 8471008603998918825
+      backgroundmap2-reworked-Photoroom_133: 992901002141830974
+      backgroundmap2-reworked-Photoroom_134: 3675366901480805651
+      backgroundmap2-reworked-Photoroom_135: -3112871296851823128
+      backgroundmap2-reworked-Photoroom_136: 5477379231739343674
+      backgroundmap2-reworked-Photoroom_137: 5815666654284445655
+      backgroundmap2-reworked-Photoroom_138: -4318901887536298074
+      backgroundmap2-reworked-Photoroom_139: 1017297112932375053
+      backgroundmap2-reworked-Photoroom_14: -5684805268329741024
+      backgroundmap2-reworked-Photoroom_140: 1617874054934279909
+      backgroundmap2-reworked-Photoroom_141: -5619287110596029565
+      backgroundmap2-reworked-Photoroom_142: -3762162375990368619
+      backgroundmap2-reworked-Photoroom_143: 5991086664207667078
+      backgroundmap2-reworked-Photoroom_144: 5887344965468518544
+      backgroundmap2-reworked-Photoroom_145: 5155376142615039221
+      backgroundmap2-reworked-Photoroom_146: -5648954122745025745
+      backgroundmap2-reworked-Photoroom_147: -2135989230067037463
+      backgroundmap2-reworked-Photoroom_148: 5828679993584039477
+      backgroundmap2-reworked-Photoroom_149: 494180328263448730
+      backgroundmap2-reworked-Photoroom_15: 7590768805057911746
+      backgroundmap2-reworked-Photoroom_150: 4774426979490187712
+      backgroundmap2-reworked-Photoroom_151: -2257494974370234657
+      backgroundmap2-reworked-Photoroom_152: 1355389469716630178
+      backgroundmap2-reworked-Photoroom_153: 8178529084877720741
+      backgroundmap2-reworked-Photoroom_154: -5237631550896860573
+      backgroundmap2-reworked-Photoroom_155: 1184154582284148679
+      backgroundmap2-reworked-Photoroom_156: -1542780553518755066
+      backgroundmap2-reworked-Photoroom_157: -274690138673460963
+      backgroundmap2-reworked-Photoroom_158: 6369284487439312060
+      backgroundmap2-reworked-Photoroom_159: -3704494613433217428
+      backgroundmap2-reworked-Photoroom_16: 2993921810998519462
+      backgroundmap2-reworked-Photoroom_160: -967829351561824587
+      backgroundmap2-reworked-Photoroom_161: -3738957013985299229
+      backgroundmap2-reworked-Photoroom_162: 693512725839631317
+      backgroundmap2-reworked-Photoroom_163: 889050876759473854
+      backgroundmap2-reworked-Photoroom_164: -8811264372886273025
+      backgroundmap2-reworked-Photoroom_165: 5149252337312176568
+      backgroundmap2-reworked-Photoroom_166: 2994174603356443987
+      backgroundmap2-reworked-Photoroom_167: 5419887433925267370
+      backgroundmap2-reworked-Photoroom_168: -7624206160253759681
+      backgroundmap2-reworked-Photoroom_169: -4560958232109580081
+      backgroundmap2-reworked-Photoroom_17: -4337580788326838741
+      backgroundmap2-reworked-Photoroom_170: -8082712871713888737
+      backgroundmap2-reworked-Photoroom_171: 2765365159894697958
+      backgroundmap2-reworked-Photoroom_172: -6512629027604278967
+      backgroundmap2-reworked-Photoroom_173: -6940111352194872771
+      backgroundmap2-reworked-Photoroom_174: -2143555032738273548
+      backgroundmap2-reworked-Photoroom_175: -7428427035775302411
+      backgroundmap2-reworked-Photoroom_176: 3274380435467863212
+      backgroundmap2-reworked-Photoroom_177: 5442590997741514575
+      backgroundmap2-reworked-Photoroom_178: -4498068607157670924
+      backgroundmap2-reworked-Photoroom_179: 7267350666690540352
+      backgroundmap2-reworked-Photoroom_18: -6776943352915445397
+      backgroundmap2-reworked-Photoroom_180: 7106934367099523872
+      backgroundmap2-reworked-Photoroom_181: 8001060012559958276
+      backgroundmap2-reworked-Photoroom_182: 5949904291958857120
+      backgroundmap2-reworked-Photoroom_183: -9131623315212672083
+      backgroundmap2-reworked-Photoroom_184: 448616926380965634
+      backgroundmap2-reworked-Photoroom_185: -3286807305032036275
+      backgroundmap2-reworked-Photoroom_186: -3453757036454900745
+      backgroundmap2-reworked-Photoroom_187: -2728696573728751238
+      backgroundmap2-reworked-Photoroom_188: -3522131391349261758
+      backgroundmap2-reworked-Photoroom_189: 4177759535791300526
+      backgroundmap2-reworked-Photoroom_19: -3465544737495027345
+      backgroundmap2-reworked-Photoroom_190: -8603931462874674697
+      backgroundmap2-reworked-Photoroom_191: -1680380397803490818
+      backgroundmap2-reworked-Photoroom_192: 489745387602307180
+      backgroundmap2-reworked-Photoroom_193: 6845111117790571673
+      backgroundmap2-reworked-Photoroom_194: 7719943864813922232
+      backgroundmap2-reworked-Photoroom_195: -6812796145749479241
+      backgroundmap2-reworked-Photoroom_196: 3913514646010394790
+      backgroundmap2-reworked-Photoroom_197: -1793523112828493230
+      backgroundmap2-reworked-Photoroom_198: 3040635799098316768
+      backgroundmap2-reworked-Photoroom_199: -8696181188457429243
+      backgroundmap2-reworked-Photoroom_2: 8781227152358082588
+      backgroundmap2-reworked-Photoroom_20: 8524722691171512730
+      backgroundmap2-reworked-Photoroom_200: -8542319155875869907
+      backgroundmap2-reworked-Photoroom_201: -8710316581984417377
+      backgroundmap2-reworked-Photoroom_202: -8178111844966902943
+      backgroundmap2-reworked-Photoroom_203: 5803085019390151491
+      backgroundmap2-reworked-Photoroom_204: -829095291827457134
+      backgroundmap2-reworked-Photoroom_205: 2503378000131875871
+      backgroundmap2-reworked-Photoroom_206: 1472441676388498608
+      backgroundmap2-reworked-Photoroom_207: 8624273595295909203
+      backgroundmap2-reworked-Photoroom_208: -3598529533943046696
+      backgroundmap2-reworked-Photoroom_209: 8099813561211696727
+      backgroundmap2-reworked-Photoroom_21: 2874825131711770780
+      backgroundmap2-reworked-Photoroom_210: -3043877984096783535
+      backgroundmap2-reworked-Photoroom_211: 796438103543824686
+      backgroundmap2-reworked-Photoroom_212: 7933749328823005509
+      backgroundmap2-reworked-Photoroom_213: 4485855820336038874
+      backgroundmap2-reworked-Photoroom_214: -3751177331799222645
+      backgroundmap2-reworked-Photoroom_215: -4170154943750728859
+      backgroundmap2-reworked-Photoroom_216: -4540351080625248317
+      backgroundmap2-reworked-Photoroom_217: 3062765483353643665
+      backgroundmap2-reworked-Photoroom_218: -6876775705722255474
+      backgroundmap2-reworked-Photoroom_219: -356568613020695637
+      backgroundmap2-reworked-Photoroom_22: -5001851852759351593
+      backgroundmap2-reworked-Photoroom_220: 8828897376167609956
+      backgroundmap2-reworked-Photoroom_221: -4124015245878523849
+      backgroundmap2-reworked-Photoroom_222: 3363320279113185793
+      backgroundmap2-reworked-Photoroom_223: -6161734682679946832
+      backgroundmap2-reworked-Photoroom_224: -1992902554155704519
+      backgroundmap2-reworked-Photoroom_225: 4522215270156854685
+      backgroundmap2-reworked-Photoroom_226: -3098629714506935064
+      backgroundmap2-reworked-Photoroom_227: 7656353713841603468
+      backgroundmap2-reworked-Photoroom_228: 3441989643586332335
+      backgroundmap2-reworked-Photoroom_229: -3494020826092900814
+      backgroundmap2-reworked-Photoroom_23: -811564729042685434
+      backgroundmap2-reworked-Photoroom_230: -8466430124420561721
+      backgroundmap2-reworked-Photoroom_231: 1591451315720532124
+      backgroundmap2-reworked-Photoroom_232: 7405389494531140115
+      backgroundmap2-reworked-Photoroom_233: 6805045242394173135
+      backgroundmap2-reworked-Photoroom_234: -3115315347432827843
+      backgroundmap2-reworked-Photoroom_235: 904384366163750105
+      backgroundmap2-reworked-Photoroom_236: -4743322655238684368
+      backgroundmap2-reworked-Photoroom_237: 8083513927849473383
+      backgroundmap2-reworked-Photoroom_238: 5621767956542899314
+      backgroundmap2-reworked-Photoroom_24: -4396375216439827166
+      backgroundmap2-reworked-Photoroom_25: 2762808150875799736
+      backgroundmap2-reworked-Photoroom_26: -4531111663563838142
+      backgroundmap2-reworked-Photoroom_27: -7949946567259077863
+      backgroundmap2-reworked-Photoroom_28: -7197676791232053593
+      backgroundmap2-reworked-Photoroom_29: -8842106613030365333
+      backgroundmap2-reworked-Photoroom_3: 5342218002369852848
+      backgroundmap2-reworked-Photoroom_30: 4138461397555798884
+      backgroundmap2-reworked-Photoroom_31: -3083827778598702279
+      backgroundmap2-reworked-Photoroom_32: -5938721648950558912
+      backgroundmap2-reworked-Photoroom_33: -4578984904381914660
+      backgroundmap2-reworked-Photoroom_34: 1608529179950738034
+      backgroundmap2-reworked-Photoroom_35: -3798345699789371125
+      backgroundmap2-reworked-Photoroom_36: 274642673214649544
+      backgroundmap2-reworked-Photoroom_37: 5678687446934741528
+      backgroundmap2-reworked-Photoroom_38: -8801946105295726838
+      backgroundmap2-reworked-Photoroom_39: 2777102091449275957
+      backgroundmap2-reworked-Photoroom_4: 8933401560501291654
+      backgroundmap2-reworked-Photoroom_40: -6855328088478157731
+      backgroundmap2-reworked-Photoroom_41: 8751380463361245593
+      backgroundmap2-reworked-Photoroom_42: 3516291272436578029
+      backgroundmap2-reworked-Photoroom_43: -8308399198723543969
+      backgroundmap2-reworked-Photoroom_44: -1345258163753558911
+      backgroundmap2-reworked-Photoroom_45: -3823435653828899611
+      backgroundmap2-reworked-Photoroom_46: -2604327437815619867
+      backgroundmap2-reworked-Photoroom_47: 6893061696272008916
+      backgroundmap2-reworked-Photoroom_48: -4968737451801756962
+      backgroundmap2-reworked-Photoroom_49: -5466296833920358594
+      backgroundmap2-reworked-Photoroom_5: -8322955797445855377
+      backgroundmap2-reworked-Photoroom_50: -5373053341105201465
+      backgroundmap2-reworked-Photoroom_51: 2078331084902144054
+      backgroundmap2-reworked-Photoroom_52: 6532432957829436587
+      backgroundmap2-reworked-Photoroom_53: -3678922896310152700
+      backgroundmap2-reworked-Photoroom_54: 2041877143853265458
+      backgroundmap2-reworked-Photoroom_55: -7669541808540210346
+      backgroundmap2-reworked-Photoroom_56: 2504629655806694168
+      backgroundmap2-reworked-Photoroom_57: 5925896120432448479
+      backgroundmap2-reworked-Photoroom_58: 7013644182600029059
+      backgroundmap2-reworked-Photoroom_59: 2198154673585029054
+      backgroundmap2-reworked-Photoroom_6: -2471067559927181534
+      backgroundmap2-reworked-Photoroom_60: 3173821556899138398
+      backgroundmap2-reworked-Photoroom_61: -4016636610608893795
+      backgroundmap2-reworked-Photoroom_62: -8508797699511889866
+      backgroundmap2-reworked-Photoroom_63: -308619333347218971
+      backgroundmap2-reworked-Photoroom_64: 7702518693621281286
+      backgroundmap2-reworked-Photoroom_65: -5258433285036262181
+      backgroundmap2-reworked-Photoroom_66: -8954055295877825265
+      backgroundmap2-reworked-Photoroom_67: -101422508056753638
+      backgroundmap2-reworked-Photoroom_68: -362352131788542891
+      backgroundmap2-reworked-Photoroom_69: 4868031338351952260
+      backgroundmap2-reworked-Photoroom_7: -4204472357579348230
+      backgroundmap2-reworked-Photoroom_70: 81433313686418207
+      backgroundmap2-reworked-Photoroom_71: 3315319302044376862
+      backgroundmap2-reworked-Photoroom_72: -2041923410649675843
+      backgroundmap2-reworked-Photoroom_73: -4603717202888319490
+      backgroundmap2-reworked-Photoroom_74: 3996111171775090010
+      backgroundmap2-reworked-Photoroom_75: 2149640766666033961
+      backgroundmap2-reworked-Photoroom_76: -1140992181381655858
+      backgroundmap2-reworked-Photoroom_77: 65681408605620835
+      backgroundmap2-reworked-Photoroom_78: 6329074195013773919
+      backgroundmap2-reworked-Photoroom_79: -3431500592378898890
+      backgroundmap2-reworked-Photoroom_8: 2834149264601947343
+      backgroundmap2-reworked-Photoroom_80: -7239942602683414598
+      backgroundmap2-reworked-Photoroom_81: -7837329506840128222
+      backgroundmap2-reworked-Photoroom_82: -5338685033547519899
+      backgroundmap2-reworked-Photoroom_83: -8731222611015854335
+      backgroundmap2-reworked-Photoroom_84: -7815865229974370256
+      backgroundmap2-reworked-Photoroom_85: 1008397919381075882
+      backgroundmap2-reworked-Photoroom_86: 4992868687608823311
+      backgroundmap2-reworked-Photoroom_87: 2602169135550034029
+      backgroundmap2-reworked-Photoroom_88: 3812908352619681592
+      backgroundmap2-reworked-Photoroom_89: -1589544612067959506
+      backgroundmap2-reworked-Photoroom_9: 4569155365862759158
+      backgroundmap2-reworked-Photoroom_90: 6312678377936569030
+      backgroundmap2-reworked-Photoroom_91: -658486344831033758
+      backgroundmap2-reworked-Photoroom_92: 7724841798968766785
+      backgroundmap2-reworked-Photoroom_93: -2605099798395753471
+      backgroundmap2-reworked-Photoroom_94: -4494524297089575482
+      backgroundmap2-reworked-Photoroom_95: -8800285999653424679
+      backgroundmap2-reworked-Photoroom_96: 2751992269696794478
+      backgroundmap2-reworked-Photoroom_97: 2322829660652851505
+      backgroundmap2-reworked-Photoroom_98: 3946188051122207519
+      backgroundmap2-reworked-Photoroom_99: -8128754580167070133
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
