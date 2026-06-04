@@ -1,0 +1,587 @@
+fileFormatVersion: 2
+guid: 258b48424e4e2434a942e65b4d094b1b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8480595981656109764
+    second: yta1Skill_0
+  - first:
+      213: -281267588446278124
+    second: yta1Skill_1
+  - first:
+      213: 65018537952283198
+    second: yta1Skill_2
+  - first:
+      213: -7288959187185194935
+    second: yta1Skill_3
+  - first:
+      213: -7772609781836954956
+    second: yta1Skill_4
+  - first:
+      213: -1597541425191620602
+    second: yta1Skill_5
+  - first:
+      213: 1324667701259212808
+    second: yta1Skill_6
+  - first:
+      213: -5304956140073849881
+    second: yta1Skill_7
+  - first:
+      213: -1071494198007444159
+    second: yta1Skill_8
+  - first:
+      213: 5426543455608462681
+    second: yta1Skill_9
+  - first:
+      213: 2736814128744555358
+    second: yta1Skill_10
+  - first:
+      213: -1033852458834791501
+    second: yta1Skill_11
+  - first:
+      213: -8604981292924001845
+    second: yta1Skill_12
+  - first:
+      213: 7596013234827931775
+    second: yta1Skill_13
+  - first:
+      213: -2796027670488271615
+    second: yta1Skill_14
+  - first:
+      213: 3855376046177681817
+    second: yta1Skill_15
+  - first:
+      213: -1197856810542130331
+    second: yta1Skill_16
+  - first:
+      213: 618102204334516250
+    second: yta1Skill_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: yta1Skill_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 22
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c2b73afc1121b570800000000000000
+      internalID: 8480595981656109764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 22
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e24d75e9cb81cf0800000000000000
+      internalID: -281267588446278124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_2
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 22
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a067a040ef6e000800000000000000
+      internalID: 65018537952283198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_3
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 22
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 948a181ec3a68da90800000000000000
+      internalID: -7288959187185194935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_4
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 22
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2c1ef9594222490800000000000000
+      internalID: -7772609781836954956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_5
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 22
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6007b75b98464d9e0800000000000000
+      internalID: -1597541425191620602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_6
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 22
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8081df2814a226210800000000000000
+      internalID: 1324667701259212808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_7
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 22
+        width: 45
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ebeed95f720166b0800000000000000
+      internalID: -5304956140073849881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_8
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 22
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14dcfd434b94121f0800000000000000
+      internalID: -1071494198007444159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_9
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 22
+        width: 47
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d53c59584fe4b40800000000000000
+      internalID: 5426543455608462681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_10
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 22
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53e61823fd1bf520800000000000000
+      internalID: 2736814128744555358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_11
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 22
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b3fcf09aa407a1f0800000000000000
+      internalID: -1033852458834791501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_12
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 22
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc12260fa17f49880800000000000000
+      internalID: -8604981292924001845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_13
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 22
+        width: 50
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70b51baac57a6960800000000000000
+      internalID: 7596013234827931775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_14
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 22
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105326ec5a38239d0800000000000000
+      internalID: -2796027670488271615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_15
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 22
+        width: 52
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99188fb561c018530800000000000000
+      internalID: 3855376046177681817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_16
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 52
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b9adbc39b506fe0800000000000000
+      internalID: -1197856810542130331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Skill_17
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 22
+        width: 47
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18ae341ea0f39800800000000000000
+      internalID: 618102204334516250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bb9109700a301ee46b99804cb93fc2e3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      yta1Skill_0: 8480595981656109764
+      yta1Skill_1: -281267588446278124
+      yta1Skill_10: 2736814128744555358
+      yta1Skill_11: -1033852458834791501
+      yta1Skill_12: -8604981292924001845
+      yta1Skill_13: 7596013234827931775
+      yta1Skill_14: -2796027670488271615
+      yta1Skill_15: 3855376046177681817
+      yta1Skill_16: -1197856810542130331
+      yta1Skill_17: 618102204334516250
+      yta1Skill_2: 65018537952283198
+      yta1Skill_3: -7288959187185194935
+      yta1Skill_4: -7772609781836954956
+      yta1Skill_5: -1597541425191620602
+      yta1Skill_6: 1324667701259212808
+      yta1Skill_7: -5304956140073849881
+      yta1Skill_8: -1071494198007444159
+      yta1Skill_9: 5426543455608462681
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

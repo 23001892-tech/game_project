@@ -3,10 +3,12 @@ using UnityEngine;
 public class Enemy : Entity
 {
     [Header("Enemy AI")]
-    [SerializeField] private float detectRange = 5f;
+    [SerializeField] protected float detectRange = 5f;
     [SerializeField] private float attackCooldown = 1.5f;
 
-    private Transform player;
+    protected Transform player;
+    protected bool isAttacking;
+    protected bool isHurt;
     private bool playerDetected;
     private bool playerInAttackRange;
     private float attackTimer;

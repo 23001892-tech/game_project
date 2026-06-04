@@ -1,0 +1,613 @@
+fileFormatVersion: 2
+guid: af7cde19cf0669e4aa347a16d5dbbddd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1185614088498378039
+    second: yta1Attack_0
+  - first:
+      213: -1710392794862321277
+    second: yta1Attack_1
+  - first:
+      213: 6449221590147859867
+    second: yta1Attack_2
+  - first:
+      213: -3874037412268356095
+    second: yta1Attack_3
+  - first:
+      213: 4455220041943410097
+    second: yta1Attack_4
+  - first:
+      213: -8356379696424580549
+    second: yta1Attack_5
+  - first:
+      213: 8930404245710809680
+    second: yta1Attack_6
+  - first:
+      213: -5690033587732989797
+    second: yta1Attack_7
+  - first:
+      213: 6293127965488354597
+    second: yta1Attack_8
+  - first:
+      213: -1006080914693393223
+    second: yta1Attack_9
+  - first:
+      213: -8554630252732627684
+    second: yta1Attack_10
+  - first:
+      213: 7382209211196368142
+    second: yta1Attack_11
+  - first:
+      213: 3216399198712630792
+    second: yta1Attack_12
+  - first:
+      213: 4512940225786754973
+    second: yta1Attack_13
+  - first:
+      213: -1871469119362799777
+    second: yta1Attack_14
+  - first:
+      213: 6949117618616855399
+    second: yta1Attack_15
+  - first:
+      213: 3802400707926579168
+    second: yta1Attack_16
+  - first:
+      213: -7369599909440406914
+    second: yta1Attack_17
+  - first:
+      213: 821088141390141081
+    second: yta1Attack_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: yta1Attack_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 22
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735f4a95bb5247010800000000000000
+      internalID: 1185614088498378039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 22
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38108dba0d67348e0800000000000000
+      internalID: -1710392794862321277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_2
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 22
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b950b86eddc308950800000000000000
+      internalID: 6449221590147859867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_3
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 22
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ecb23cf77ac3ac0800000000000000
+      internalID: -3874037412268356095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_4
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 22
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5ec3cf50f14dd30800000000000000
+      internalID: 4455220041943410097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_5
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 22
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a835aa0fc280c80800000000000000
+      internalID: -8356379696424580549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_6
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 22
+        width: 44
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05aab3e985b2feb70800000000000000
+      internalID: 8930404245710809680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_7
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 22
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b98322b5990f801b0800000000000000
+      internalID: -5690033587732989797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_8
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 22
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 525920dca8ea55750800000000000000
+      internalID: 6293127965488354597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_9
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 22
+        width: 55
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b476601dbea902f0800000000000000
+      internalID: -1006080914693393223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_10
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 22
+        width: 58
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c15cf090c19d74980800000000000000
+      internalID: -8554630252732627684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_11
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 48
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05e9fa3a20e27660800000000000000
+      internalID: 7382209211196368142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_12
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 22
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e0e1fa702f2ac20800000000000000
+      internalID: 3216399198712630792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_13
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 47
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d97379a893f21ae30800000000000000
+      internalID: 4512940225786754973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_14
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 22
+        width: 49
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57644c50c43706e0800000000000000
+      internalID: -1871469119362799777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_15
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 22
+        width: 60
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76be018f7a9307060800000000000000
+      internalID: 6949117618616855399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_16
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 22
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e758a14c47d4c430800000000000000
+      internalID: 3802400707926579168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_17
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 22
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7abd0d9debe9b990800000000000000
+      internalID: -7369599909440406914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yta1Attack_18
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 22
+        width: 47
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99658d47057156b00800000000000000
+      internalID: 821088141390141081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 01a14f16c7f3c8443b9bd0a0eb0cecf1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      yta1Attack_0: 1185614088498378039
+      yta1Attack_1: -1710392794862321277
+      yta1Attack_10: -8554630252732627684
+      yta1Attack_11: 7382209211196368142
+      yta1Attack_12: 3216399198712630792
+      yta1Attack_13: 4512940225786754973
+      yta1Attack_14: -1871469119362799777
+      yta1Attack_15: 6949117618616855399
+      yta1Attack_16: 3802400707926579168
+      yta1Attack_17: -7369599909440406914
+      yta1Attack_18: 821088141390141081
+      yta1Attack_2: 6449221590147859867
+      yta1Attack_3: -3874037412268356095
+      yta1Attack_4: 4455220041943410097
+      yta1Attack_5: -8356379696424580549
+      yta1Attack_6: 8930404245710809680
+      yta1Attack_7: -5690033587732989797
+      yta1Attack_8: 6293127965488354597
+      yta1Attack_9: -1006080914693393223
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
