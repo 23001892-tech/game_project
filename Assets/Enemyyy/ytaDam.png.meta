@@ -1,0 +1,717 @@
+fileFormatVersion: 2
+guid: 708e4575c94aa0049b609021961fc5fd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3690264444695920109
+    second: ytaDam_0
+  - first:
+      213: -875941954395879284
+    second: ytaDam_1
+  - first:
+      213: 7540063098610688720
+    second: ytaDam_2
+  - first:
+      213: 2992935588303578484
+    second: ytaDam_3
+  - first:
+      213: -5486540540588790557
+    second: ytaDam_4
+  - first:
+      213: -4836291240317808092
+    second: ytaDam_5
+  - first:
+      213: -6379831098838967950
+    second: ytaDam_6
+  - first:
+      213: 6008714263827299322
+    second: ytaDam_7
+  - first:
+      213: -1089872015934927567
+    second: ytaDam_8
+  - first:
+      213: -5957568591233311579
+    second: ytaDam_9
+  - first:
+      213: 8425228739607495121
+    second: ytaDam_10
+  - first:
+      213: 6704184021986647423
+    second: ytaDam_11
+  - first:
+      213: 8477642490076827683
+    second: ytaDam_12
+  - first:
+      213: -3507468686547413206
+    second: ytaDam_13
+  - first:
+      213: -469070645034196150
+    second: ytaDam_14
+  - first:
+      213: -2245204061195617573
+    second: ytaDam_15
+  - first:
+      213: 3078970864656965510
+    second: ytaDam_16
+  - first:
+      213: -8051531510353915087
+    second: ytaDam_17
+  - first:
+      213: 7143042084511798662
+    second: ytaDam_18
+  - first:
+      213: -1220831967733426982
+    second: ytaDam_19
+  - first:
+      213: 4974904978010978898
+    second: ytaDam_20
+  - first:
+      213: 1077541643533725118
+    second: ytaDam_21
+  - first:
+      213: 5507131041030692775
+    second: ytaDam_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ytaDam_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 22
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31245a61a0c89ccc0800000000000000
+      internalID: -3690264444695920109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_1
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 22
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c884f54fe6708d3f0800000000000000
+      internalID: -875941954395879284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_2
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 66
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2a8b0707fa3a860800000000000000
+      internalID: 7540063098610688720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_3
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 55
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475a5707f0b098920800000000000000
+      internalID: 2992935588303578484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_4
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 22
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ecec608274ebd3b0800000000000000
+      internalID: -5486540540588790557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_5
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 22
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422168e9dba02ecb0800000000000000
+      internalID: -4836291240317808092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_6
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 22
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27996bada694677a0800000000000000
+      internalID: -6379831098838967950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_7
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 22
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afbbf3499cd336350800000000000000
+      internalID: 6008714263827299322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_8
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 22
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d4f870d2fffd0f0800000000000000
+      internalID: -1089872015934927567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_9
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 21
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac938a4ee6725da0800000000000000
+      internalID: -5957568591233311579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_10
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 21
+        width: 53
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d187bf56ec6ce470800000000000000
+      internalID: 8425228739607495121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_11
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 18
+        width: 59
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d1d5309db0a0d50800000000000000
+      internalID: 6704184021986647423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_12
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 19
+        width: 55
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32099c1ade2a6a570800000000000000
+      internalID: 8477642490076827683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_13
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 57
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27198d10d7f25fc0800000000000000
+      internalID: -3507468686547413206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_14
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 48
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a436c2ccbb68d79f0800000000000000
+      internalID: -469070645034196150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_15
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 22
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdabb2c4dce67d0e0800000000000000
+      internalID: -2245204061195617573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_16
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 22
+        width: 50
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68fd7a530b3baba20800000000000000
+      internalID: 3078970864656965510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_17
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 40
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1339d7b00c6334090800000000000000
+      internalID: -8051531510353915087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_18
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 18
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685ddfe2eee212360800000000000000
+      internalID: 7143042084511798662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_19
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 24
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4dec82bcbbe0fe0800000000000000
+      internalID: -1220831967733426982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_20
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 17
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25abaa528b96a0540800000000000000
+      internalID: 4974904978010978898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_21
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 13
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebda48d6a6234fe00800000000000000
+      internalID: 1077541643533725118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDam_22
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 13
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af5928f0824d6c40800000000000000
+      internalID: 5507131041030692775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 71d7d46df7dd1c940b6b49f6fcfdf567
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      ytaDam_0: -3690264444695920109
+      ytaDam_1: -875941954395879284
+      ytaDam_10: 8425228739607495121
+      ytaDam_11: 6704184021986647423
+      ytaDam_12: 8477642490076827683
+      ytaDam_13: -3507468686547413206
+      ytaDam_14: -469070645034196150
+      ytaDam_15: -2245204061195617573
+      ytaDam_16: 3078970864656965510
+      ytaDam_17: -8051531510353915087
+      ytaDam_18: 7143042084511798662
+      ytaDam_19: -1220831967733426982
+      ytaDam_2: 7540063098610688720
+      ytaDam_20: 4974904978010978898
+      ytaDam_21: 1077541643533725118
+      ytaDam_22: 5507131041030692775
+      ytaDam_3: 2992935588303578484
+      ytaDam_4: -5486540540588790557
+      ytaDam_5: -4836291240317808092
+      ytaDam_6: -6379831098838967950
+      ytaDam_7: 6008714263827299322
+      ytaDam_8: -1089872015934927567
+      ytaDam_9: -5957568591233311579
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

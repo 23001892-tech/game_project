@@ -1,0 +1,483 @@
+fileFormatVersion: 2
+guid: 2130de57a29f621498940ccbfbc49d69
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 267853890599901266
+    second: A_2D_pixel_art_infected_custom-2D_pixel_art_skill_dash_animat_south-east-Sheet_0
+  - first:
+      213: 8262128247897876330
+    second: A_2D_pixel_art_infected_custom-2D_pixel_art_skill_dash_animat_south-east-Sheet_1
+  - first:
+      213: 2121608769779028990
+    second: A_2D_pixel_art_infected_custom-2D_pixel_art_skill_dash_animat_south-east-Sheet_2
+  - first:
+      213: -5548815703489163682
+    second: A_2D_pixel_art_infected_custom-2D_pixel_art_skill_dash_animat_south-east-Sheet_3
+  - first:
+      213: 7448092670013700055
+    second: A_2D_pixel_art_infected_custom-2D_pixel_art_skill_dash_animat_south-east-Sheet_4
+  - first:
+      213: -3064249052671558041
+    second: A_2D_pixel_art_infected_custom-2D_pixel_art_skill_dash_animat_south-east-Sheet_5
+  - first:
+      213: 3104450550719285524
+    second: A_2D_pixel_art_infected_custom-2D_pixel_art_skill_dash_animat_south-east-Sheet_6
+  - first:
+      213: -8833485140574640047
+    second: A_2D_pixel_art_infected_custom-2D_pixel_art_skill_dash_animat_south-east-Sheet_7
+  - first:
+      213: 5775747528723262448
+    second: A_2D_pixel_art_infected_custom-2D_pixel_art_skill_dash_animat_south-east-Sheet_8
+  - first:
+      213: 2076836994777031488
+    second: A_2D_pixel_art_infected_custom-2D_pixel_art_skill_dash_animat_south-east-Sheet_9
+  - first:
+      213: -2389615891867396791
+    second: A_2D_pixel_art_infected_custom-2D_pixel_art_skill_dash_animat_south-east-Sheet_10
+  - first:
+      213: -4361362313678713834
+    second: A_2D_pixel_art_infected_custom-2D_pixel_art_skill_dash_animat_south-east-Sheet_11
+  - first:
+      213: -858386338426534016
+    second: A_2D_pixel_art_infected_custom-2D_pixel_art_skill_dash_animat_south-east-Sheet_12
+  - first:
+      213: 3748539415436487659
+    second: A_2D_pixel_art_infected_custom-2D_pixel_art_skill_dash_animat_south-east-Sheet_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ytaDash_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 22
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f336cd9f1902fb543bcf3cfe667952ab
+      internalID: -1442661741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDash_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 22
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545dca9d4c375e341bcbf03f32c3b378
+      internalID: -2108027309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDash_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 22
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a19bf9ad152934da2f5755a616693e
+      internalID: -985625679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDash_3
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 22
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12286410a7241b54a9da81ca94894de5
+      internalID: -734864524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDash_4
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 22
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dea17ec3838fc046a31725280d9aa08
+      internalID: 1457567892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDash_5
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 22
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97610291ceda2fd4e9c961902e8d1c79
+      internalID: -1576835379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDash_6
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 22
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698f63a9ee8fd7e4ca67b2af69bf24ad
+      internalID: -1433781766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDash_7
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 16
+        width: 67
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99388bde7e312004cb868da78ad736c5
+      internalID: 725026918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDash_8
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 22
+        width: 61
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4ab0be810d64b4dbaae1a12638866c
+      internalID: 82424764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDash_9
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 15
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d4f70884e7ec342afa616f5a7f2f14
+      internalID: 222386294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDash_10
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 22
+        width: 53
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453777a3e41ea29418e73303c27f5ca8
+      internalID: -1364017525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDash_11
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 22
+        width: 54
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9928f51a6e8f7d4a9abeec0c55129c6
+      internalID: 1075527192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDash_12
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 22
+        width: 54
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc49d66a53964e4bb57e1812e67ec23
+      internalID: 1739038971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ytaDash_13
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 22
+        width: 59
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ab439ef94353647adc14b0ab90df83
+      internalID: -618853200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c2fd8fb0f58fde644ad995dddeba383e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      ytaDash_0: -1442661741
+      ytaDash_1: -2108027309
+      ytaDash_10: -1364017525
+      ytaDash_11: 1075527192
+      ytaDash_12: 1739038971
+      ytaDash_13: -618853200
+      ytaDash_2: -985625679
+      ytaDash_3: -734864524
+      ytaDash_4: 1457567892
+      ytaDash_5: -1576835379
+      ytaDash_6: -1433781766
+      ytaDash_7: 725026918
+      ytaDash_8: 82424764
+      ytaDash_9: 222386294
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

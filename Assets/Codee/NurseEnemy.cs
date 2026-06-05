@@ -15,18 +15,19 @@ public class NurseEnemy : Enemy
     [SerializeField] private int skillDamage = 15;
     [SerializeField] private float skillRadius = 0.75f;
 
-    [SerializeField] private float skillMinRange = 2f;
-    [SerializeField] private float skillMaxRange = 5f;
-    [SerializeField] private float skillCooldown = 6f;
-    [SerializeField] private float skillLockTime = 1.2f;
+    [SerializeField] private float skillMinRange = 1.5f;
+    [SerializeField] private float skillMaxRange = 6f;
+    [SerializeField] private float skillCooldown = 5f;
+    [SerializeField] private float skillLockTime = 2f;
 
     [Header("Skill Condition")]
     [SerializeField] private bool useHpCondition = false;
     [SerializeField] private float skillHpPercent = 0.7f;
 
-    [Header("Skill Dash")]
-    [SerializeField] private float skillDashSpeed = 8f;
-    [SerializeField] private float skillDashTime = 0.18f;
+    [Header("Skill Dash To Player")]
+    [SerializeField] private float skillDashSpeed = 18f;
+    [SerializeField] private float skillDashMaxTime = 0.35f;
+    [SerializeField] private float skillStopDistance = 0.75f;
 
     [Header("Crystal Infection Damage Over Time")]
     [SerializeField] private bool applyInfection = true;
@@ -41,12 +42,15 @@ public class NurseEnemy : Enemy
     [SerializeField] private string isMovingParam = "isMoving";
 
     [SerializeField] private string attackTriggerParam = "attack";
-    [SerializeField] private string skillTriggerParam = "skill";
+    [SerializeField] private string skillDashTriggerParam = "skill";
+    [SerializeField] private string skillStabTriggerParam = "skillHit";
 
     private float lastNormalAttackTime = -999f;
     private float lastSkillTime = -999f;
 
     private bool isUsingSkill;
+    private bool skillDamageDone;
+
     private Coroutine attackStateResetCoroutine;
     private Coroutine skillDashCoroutine;
 
@@ -71,7 +75,6 @@ public class NurseEnemy : Enemy
             return;
         }
 
-        // Cực quan trọng: cập nhật ground check như Entity/Enemy gốc
         HandleCollision();
 
         if (isHurt)
@@ -81,8 +84,8 @@ public class NurseEnemy : Enemy
             return;
         }
 
-        // Khi đang skill thì không StopMove liên tục,
-        // nếu không cú lao tới sẽ bị chặn.
+        // Khi đang dùng skill, không cho AI thường can thiệp.
+        // Nếu không, nó sẽ StopMove hoặc đánh thường chen vào.
         if (isUsingSkill)
         {
             UpdateNurseAnimator();
@@ -181,12 +184,9 @@ public class NurseEnemy : Enemy
         float xVel = rb.linearVelocity.x;
         float yVel = rb.linearVelocity.y;
 
-        // Dùng cho Animator giống Enemy/Entity gốc
         SetFloatSafe(xVelocityParam, xVel);
         SetFloatSafe(yVelocityParam, yVel);
         SetBoolSafe(isGroundedParam, isGrounded);
-
-        // Dùng thêm nếu Animator của Nurse nối bằng isMoving
         SetBoolSafe(isMovingParam, Mathf.Abs(xVel) > 0.05f);
     }
 
@@ -195,16 +195,12 @@ public class NurseEnemy : Enemy
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
 
         if (playerObj != null)
-        {
             player = playerObj.transform;
-        }
     }
 
     private void ChasePlayer()
     {
         FaceTarget(player);
-
-        // Dùng MoveX của Entity để giống quái thường
         MoveX(facDir);
     }
 
@@ -225,7 +221,8 @@ public class NurseEnemy : Enemy
 
         StopNurseMove();
 
-        ResetTriggerSafe(skillTriggerParam);
+        ResetTriggerSafe(skillDashTriggerParam);
+        ResetTriggerSafe(skillStabTriggerParam);
         SetTriggerSafe(attackTriggerParam);
 
         StartAttackResetCoroutine(normalAttackLockTime);
@@ -250,20 +247,26 @@ public class NurseEnemy : Enemy
     {
         isUsingSkill = true;
         isAttacking = true;
+        skillDamageDone = false;
 
         lastSkillTime = Time.time;
 
         StopNurseMove();
 
         ResetTriggerSafe(attackTriggerParam);
-        SetTriggerSafe(skillTriggerParam);
+        ResetTriggerSafe(skillStabTriggerParam);
+
+        // Chỉ bật animation Dash.
+        // Không lướt ngay ở đây.
+        // Animation Event trong ytaSkillDash sẽ gọi NurseSkillDash().
+        SetTriggerSafe(skillDashTriggerParam);
 
         StartAttackResetCoroutine(skillLockTime);
     }
 
-    public void NurseSkillLunge()
+    public void NurseSkillDash()
     {
-        if (player == null)
+        if (!isUsingSkill)
             return;
 
         if (skillDashCoroutine != null)
@@ -271,20 +274,42 @@ public class NurseEnemy : Enemy
             StopCoroutine(skillDashCoroutine);
         }
 
-        skillDashCoroutine = StartCoroutine(SkillDashCoroutine());
+        skillDashCoroutine = StartCoroutine(DashToPlayerForSkill());
     }
 
-    private IEnumerator SkillDashCoroutine()
+    // Giữ lại tên cũ để nếu Animation Event cũ còn gọi thì vẫn chạy.
+    public void NurseSkillLunge()
     {
-        float timer = 0f;
+        NurseSkillDash();
+    }
+
+    private IEnumerator DashToPlayerForSkill()
+    {
+        if (player == null)
+        {
+            EndNurseSkill();
+            yield break;
+        }
 
         FaceTarget(player);
 
-        float direction = facDir;
+        float dashDirection = facDir;
+        float timer = 0f;
 
-        while (timer < skillDashTime)
+        while (timer < skillDashMaxTime)
         {
-            rb.linearVelocity = new Vector2(direction * skillDashSpeed, rb.linearVelocity.y);
+            if (player == null)
+                break;
+
+            float distanceToPlayer = Mathf.Abs(player.position.x - transform.position.x);
+
+            if (distanceToPlayer <= skillStopDistance)
+                break;
+
+            rb.linearVelocity = new Vector2(
+                dashDirection * skillDashSpeed,
+                rb.linearVelocity.y
+            );
 
             UpdateNurseAnimator();
 
@@ -296,6 +321,10 @@ public class NurseEnemy : Enemy
         UpdateNurseAnimator();
 
         skillDashCoroutine = null;
+
+        // Lướt xong mới chuyển sang animation Stab.
+        // Damage KHÔNG xảy ra ở đây.
+        SetTriggerSafe(skillStabTriggerParam);
     }
 
     public void NurseNormalAttackDamage()
@@ -305,6 +334,11 @@ public class NurseEnemy : Enemy
 
     public void NurseSkillDamage()
     {
+        if (skillDamageDone)
+            return;
+
+        skillDamageDone = true;
+
         DamagePlayer(skillDamage, skillRadius, applyInfection);
     }
 
@@ -371,6 +405,12 @@ public class NurseEnemy : Enemy
         isAttacking = false;
         isUsingSkill = false;
 
+        if (skillDashCoroutine != null)
+        {
+            StopCoroutine(skillDashCoroutine);
+            skillDashCoroutine = null;
+        }
+
         StopAttackResetCoroutine();
         StopNurseMove();
         UpdateNurseAnimator();
@@ -428,5 +468,8 @@ public class NurseEnemy : Enemy
 
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, skillMaxRange);
+
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere(transform.position, skillStopDistance);
     }
 }
