@@ -254,4 +254,51 @@ public class Player : Entity
         PlayerPrefs.SetInt("HasSavedGame", 1);
         PlayerPrefs.Save();
     }
+    protected override void Die()
+    {
+        if (isDead) return;
+
+        isDead = true;
+        isDying = false;
+        canMove = false;
+        canJump = false;
+
+        Debug.Log("Player đã tử trận!");
+
+        StopAllCoroutines(); 
+        isAttacking = false;
+
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.bodyType = RigidbodyType2D.Static; 
+        }
+
+        if (anim != null)
+        {
+            anim.SetTrigger("die");
+            
+
+        }
+
+        if (col != null) col.enabled = false;
+
+        StartCoroutine(ShowGameOverScreenWithDelay(1.5f));
+        
+    }
+
+    private IEnumerator ShowGameOverScreenWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        
+        // Gọi GameManager bật UI lên
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.ShowGameOverScreen();
+        }
+        else
+        {
+            Debug.LogError("Chưa có GameManager Singleton trong Scene để bật UI Game Over!");
+        }
+    }
 }

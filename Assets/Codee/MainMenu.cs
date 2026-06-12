@@ -46,29 +46,23 @@ public class MainMenu : MonoBehaviour
     }
 }
 
-    // Hàm gọi khi nhấn vào nút NEW GAME
     public void NewGame()
     {
-        PlayerPrefs.DeleteKey("PlayerX");
-        PlayerPrefs.DeleteKey("PlayerY");
+        PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("HasSavedGame", 1);
         PlayerPrefs.SetString("LastSavedScene", newGameSceneName);
         PlayerPrefs.Save();
-        //SceneManager.LoadScene(newGameSceneName);
         LoadingProgress.Instance.LoadScene(newGameSceneName);
     }
 
-    // Hàm gọi khi nhấn vào nút CONTINUE
     public void ContinueGame()
     {
-        // Kiểm tra lại một lần nữa cho chắc chắn
         if (PlayerPrefs.HasKey("LastSavedScene"))
         {
             string savedScene = PlayerPrefs.GetString("LastSavedScene");
             Debug.Log("Đang tải lại màn chơi cũ: " + savedScene);
             
-            // Tải màn chơi đã lưu
-            // SceneManager.LoadScene(savedScene);
+
             LoadingProgress.Instance.LoadScene(savedScene);
         }
         else

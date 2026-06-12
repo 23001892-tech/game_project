@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class EnemyDeadSave : MonoBehaviour
 {
-    private void Awake()
+    private void Start()
     {
         String key = SceneManager.GetActiveScene().name + "_" + gameObject.name;
         if (PlayerPrefs.GetInt(key, 0) == 1)
