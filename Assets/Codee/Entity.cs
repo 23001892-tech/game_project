@@ -303,36 +303,28 @@ public class Entity : MonoBehaviour
     }
 
     protected virtual void Die()
+{
+    if (isDead) return;
+
+    isDead = true;
+    isDying = false;
+    canMove = false;
+    canJump = false;
+
+    // Lưu trạng thái chết nếu là enemy
+    var enemySave = GetComponent<EnemyDeadSave>();
+    if (enemySave != null) enemySave.MarkAsDead();
+
+    if (anim != null) anim.enabled = false;
+    if (col != null) col.enabled = false;
+    if (rb != null)
     {
-        if (isDead)
-            return;
-
-        isDead = true;
-        isDying = false;
-
-        Debug.Log(gameObject.name + " died.");
-
-        canMove = false;
-        canJump = false;
-
-        if (anim != null)
-        {
-            anim.enabled = false;
-        }
-
-        if (col != null)
-        {
-            col.enabled = false;
-        }
-
-        if (rb != null)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, deathJumpForce);
-            rb.gravityScale = deathGravityScale;
-        }
-
-        Destroy(gameObject, deathDestroyDelay);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, deathJumpForce);
+        rb.gravityScale = deathGravityScale;
     }
+
+    Destroy(gameObject, deathDestroyDelay);
+}
 
     public virtual void EnableMovement(bool enable)
     {

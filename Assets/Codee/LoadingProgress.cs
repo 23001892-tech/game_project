@@ -32,7 +32,7 @@ public class LoadingProgress : MonoBehaviour
         operation.allowSceneActivation = false;
 
         float fakeTimer = 0f;
-        float minFillTime = 2.5f; // thời gian tối thiểu để bar chạy lên 90%
+        float minFillTime = 1.5f; // thời gian tối thiểu để bar chạy lên 90%
 
         // Giai đoạn 1: chờ cả 2 — scene thật VÀ fake timer
         while (operation.progress < 0.9f || fakeTimer < minFillTime)
@@ -57,7 +57,7 @@ public class LoadingProgress : MonoBehaviour
         while (loadingAnimation.GetCurrentProgress() < 0.99f)
             yield return null;
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         operation.allowSceneActivation = true;
     }
 }
