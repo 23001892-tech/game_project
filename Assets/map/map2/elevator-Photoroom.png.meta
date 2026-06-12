@@ -1,0 +1,1535 @@
+fileFormatVersion: 2
+guid: bba5b77b9fa37ea4aa4015e507c9c1ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8041452389310097202
+    second: elevator-Photoroom_0
+  - first:
+      213: -7749591889872210996
+    second: elevator-Photoroom_1
+  - first:
+      213: -8439332845228637332
+    second: elevator-Photoroom_2
+  - first:
+      213: 1773663332073502267
+    second: elevator-Photoroom_3
+  - first:
+      213: 5688950072817880347
+    second: elevator-Photoroom_4
+  - first:
+      213: -4047204216120319016
+    second: elevator-Photoroom_5
+  - first:
+      213: 8463410858289120904
+    second: elevator-Photoroom_6
+  - first:
+      213: -8521918671357047746
+    second: elevator-Photoroom_7
+  - first:
+      213: 570982398253508447
+    second: elevator-Photoroom_8
+  - first:
+      213: 3763709870231561174
+    second: elevator-Photoroom_9
+  - first:
+      213: 8510123673874613281
+    second: elevator-Photoroom_10
+  - first:
+      213: 7436195164885273475
+    second: elevator-Photoroom_11
+  - first:
+      213: -1204401419234052135
+    second: elevator-Photoroom_12
+  - first:
+      213: -5758270184215049656
+    second: elevator-Photoroom_13
+  - first:
+      213: -1768711942107367798
+    second: elevator-Photoroom_14
+  - first:
+      213: -5526854322807240666
+    second: elevator-Photoroom_15
+  - first:
+      213: -3058836727239424165
+    second: elevator-Photoroom_16
+  - first:
+      213: -378053966166413936
+    second: elevator-Photoroom_17
+  - first:
+      213: 3860877166725911102
+    second: elevator-Photoroom_18
+  - first:
+      213: -4194821999712598862
+    second: elevator-Photoroom_19
+  - first:
+      213: 4699544649693902995
+    second: elevator-Photoroom_20
+  - first:
+      213: -3109757919063012541
+    second: elevator-Photoroom_21
+  - first:
+      213: 1780183945261659364
+    second: elevator-Photoroom_22
+  - first:
+      213: -7513722669076518393
+    second: elevator-Photoroom_23
+  - first:
+      213: -161490726654645195
+    second: elevator-Photoroom_24
+  - first:
+      213: -3021838017879362206
+    second: elevator-Photoroom_25
+  - first:
+      213: -43465548219654750
+    second: elevator-Photoroom_26
+  - first:
+      213: 2298158800376112478
+    second: elevator-Photoroom_27
+  - first:
+      213: 3433145803759732444
+    second: elevator-Photoroom_28
+  - first:
+      213: 8381427066759194227
+    second: elevator-Photoroom_29
+  - first:
+      213: 1222715689251622788
+    second: elevator-Photoroom_30
+  - first:
+      213: -1137735347587092418
+    second: elevator-Photoroom_31
+  - first:
+      213: 3915288577531631479
+    second: elevator-Photoroom_32
+  - first:
+      213: -7751295980379556601
+    second: elevator-Photoroom_33
+  - first:
+      213: -7379406932721372609
+    second: elevator-Photoroom_34
+  - first:
+      213: -2934287604323121793
+    second: elevator-Photoroom_35
+  - first:
+      213: -890717182100122449
+    second: elevator-Photoroom_36
+  - first:
+      213: -7170703888032394314
+    second: elevator-Photoroom_37
+  - first:
+      213: -7467618831458911141
+    second: elevator-Photoroom_38
+  - first:
+      213: -8342858865168246709
+    second: elevator-Photoroom_39
+  - first:
+      213: -897522972861261712
+    second: elevator-Photoroom_40
+  - first:
+      213: -7768410791897959467
+    second: elevator-Photoroom_41
+  - first:
+      213: -8803929174759900231
+    second: elevator-Photoroom_42
+  - first:
+      213: 7497867302844738317
+    second: elevator-Photoroom_43
+  - first:
+      213: -3930662571726139952
+    second: elevator-Photoroom_44
+  - first:
+      213: -8687532748740285252
+    second: elevator-Photoroom_45
+  - first:
+      213: -5290003257979150105
+    second: elevator-Photoroom_46
+  - first:
+      213: 1079171939432387560
+    second: elevator-Photoroom_47
+  - first:
+      213: -6332366598989872566
+    second: elevator-Photoroom_48
+  - first:
+      213: -7370561499516850552
+    second: elevator-Photoroom_49
+  - first:
+      213: 2100143015773719157
+    second: elevator-Photoroom_50
+  - first:
+      213: 3767728099331680039
+    second: elevator-Photoroom_51
+  - first:
+      213: 3688418564314315708
+    second: elevator-Photoroom_52
+  - first:
+      213: -7017581490010128201
+    second: elevator-Photoroom_53
+  - first:
+      213: -3462255731631290518
+    second: elevator-Photoroom_54
+  - first:
+      213: 6598170186682288120
+    second: elevator-Photoroom_55
+  - first:
+      213: -8920965131862396181
+    second: elevator-Photoroom_56
+  - first:
+      213: 3994278092709215200
+    second: elevator-Photoroom_57
+  - first:
+      213: 6361162625955283306
+    second: elevator-Photoroom_58
+  - first:
+      213: -5445290071334442793
+    second: elevator-Photoroom_59
+  - first:
+      213: -4007275404699706314
+    second: elevator-Photoroom_60
+  - first:
+      213: -5012645187246797711
+    second: elevator-Photoroom_61
+  - first:
+      213: 4689568752910317046
+    second: elevator-Photoroom_62
+  - first:
+      213: -3456449793048681222
+    second: elevator-Photoroom_63
+  - first:
+      213: -1544638121877021957
+    second: elevator-Photoroom_64
+  - first:
+      213: -872893529374719366
+    second: elevator-Photoroom_65
+  - first:
+      213: -1445441311435624366
+    second: elevator-Photoroom_66
+  - first:
+      213: -8515636455973871620
+    second: elevator-Photoroom_67
+  - first:
+      213: 3766192664602958888
+    second: elevator-Photoroom_68
+  - first:
+      213: -1507807887183734651
+    second: elevator-Photoroom_69
+  - first:
+      213: 8994096533688395639
+    second: elevator-Photoroom_70
+  - first:
+      213: 6049135904212805981
+    second: elevator-Photoroom_71
+  - first:
+      213: -8731807999828679939
+    second: elevator-Photoroom_72
+  - first:
+      213: 6038742996079187247
+    second: elevator-Photoroom_73
+  - first:
+      213: -4254525515656638918
+    second: elevator-Photoroom_74
+  - first:
+      213: -5823781959120440379
+    second: elevator-Photoroom_75
+  - first:
+      213: 6332748341932959293
+    second: elevator-Photoroom_76
+  - first:
+      213: -7093121442890174368
+    second: elevator-Photoroom_77
+  - first:
+      213: -983967139318459517
+    second: elevator-Photoroom_78
+  - first:
+      213: 2197192577669270187
+    second: elevator-Photoroom_79
+  - first:
+      213: 6067750080576113151
+    second: elevator-Photoroom_80
+  - first:
+      213: -4038157142290507644
+    second: elevator-Photoroom_81
+  - first:
+      213: 6620162146952242815
+    second: elevator-Photoroom_82
+  - first:
+      213: 7487889895908057467
+    second: elevator-Photoroom_83
+  - first:
+      213: 4329354378728714682
+    second: elevator-Photoroom_84
+  - first:
+      213: 1257073747742673326
+    second: elevator-Photoroom_85
+  - first:
+      213: 1436059499691157620
+    second: elevator-Photoroom_86
+  - first:
+      213: -5206069274551388758
+    second: elevator-Photoroom_87
+  - first:
+      213: 4065615022267198806
+    second: elevator-Photoroom_88
+  - first:
+      213: 804139200253568584
+    second: elevator-Photoroom_89
+  - first:
+      213: -9166158929727944224
+    second: elevator-Photoroom_90
+  - first:
+      213: 4099909376548402232
+    second: elevator-Photoroom_91
+  - first:
+      213: 8680474336627184067
+    second: elevator-Photoroom_92
+  - first:
+      213: -813565394160099626
+    second: elevator-Photoroom_93
+  - first:
+      213: 5936153663920138629
+    second: elevator-Photoroom_94
+  - first:
+      213: 6975783331200659015
+    second: elevator-Photoroom_95
+  - first:
+      213: 3483199674520142341
+    second: elevator-Photoroom_96
+  - first:
+      213: 8653506154194515209
+    second: elevator-Photoroom_97
+  - first:
+      213: -3146892292126450779
+    second: elevator-Photoroom_98
+  - first:
+      213: 3888354015589877110
+    second: elevator-Photoroom_99
+  - first:
+      213: 6989670058404375039
+    second: elevator-Photoroom_100
+  - first:
+      213: -3633278331015763709
+    second: elevator-Photoroom_101
+  - first:
+      213: -3337497107515753662
+    second: elevator-Photoroom_102
+  - first:
+      213: 2013811090349525587
+    second: elevator-Photoroom_103
+  - first:
+      213: -1226364380967120611
+    second: elevator-Photoroom_104
+  - first:
+      213: 2430882766377161222
+    second: elevator-Photoroom_105
+  - first:
+      213: -1451558269997705366
+    second: elevator-Photoroom_106
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: elevator-Photoroom_15
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 914
+        width: 280
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6280eb3a64bac43b0800000000000000
+      internalID: -5526854322807240666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_16
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 917
+        width: 219
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b57c9f6f334dc85d0800000000000000
+      internalID: -3058836727239424165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_17
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 799
+        width: 189
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09d29b8bbe1e0caf0800000000000000
+      internalID: -378053966166413936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_22
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 887
+        width: 534
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e4bc2ccddb74b810800000000000000
+      internalID: 1780183945261659364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_29
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 740
+        width: 347
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376a601b28fc05470800000000000000
+      internalID: 8381427066759194227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_30
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 729
+        width: 121
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48fc32fe075f7f010800000000000000
+      internalID: 1222715689251622788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_31
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 768
+        width: 128
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e307aa6bab3f530f0800000000000000
+      internalID: -1137735347587092418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_32
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 776
+        width: 142
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777dae89736e55630800000000000000
+      internalID: 3915288577531631479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_33
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 768
+        width: 139
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705309cbf5ddd6490800000000000000
+      internalID: -7751295980379556601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_46
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 612
+        width: 196
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e06e7380122696b0800000000000000
+      internalID: -5290003257979150105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_47
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 632
+        width: 149
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3df65492df9fe00800000000000000
+      internalID: 1079171939432387560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_48
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 637
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4209a7e02aee18a0800000000000000
+      internalID: -6332366598989872566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_49
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 604
+        width: 127
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ea02afd5186b990800000000000000
+      internalID: -7370561499516850552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_50
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 604
+        width: 126
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ac5b022f4352d10800000000000000
+      internalID: 2100143015773719157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_51
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 604
+        width: 125
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7272cea7eb8a94430800000000000000
+      internalID: 3767728099331680039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_52
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 604
+        width: 120
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb39e46425ef2330800000000000000
+      internalID: 3688418564314315708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_53
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 480
+        width: 138
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b00799c0da8c9e90800000000000000
+      internalID: -7017581490010128201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_54
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 476
+        width: 303
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a678e8281c893ffc0800000000000000
+      internalID: -3462255731631290518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_71
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 379
+        width: 44
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d596aa02e09d2f350800000000000000
+      internalID: 6049135904212805981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_72
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 391
+        width: 45
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df22c4323e262d680800000000000000
+      internalID: -8731807999828679939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_73
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 381
+        width: 77
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f259d23a2ccedc350800000000000000
+      internalID: 6038742996079187247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_74
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 380
+        width: 76
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e437fb593e4f4c0800000000000000
+      internalID: -4254525515656638918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_75
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 468
+        width: 72
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c33c45f925cd2fa0800000000000000
+      internalID: -5823781959120440379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_76
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 356
+        width: 268
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36abdc801172e750800000000000000
+      internalID: 6332748341932959293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_77
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 356
+        width: 163
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06033dfe0ab209d90800000000000000
+      internalID: -7093121442890174368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_78
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 371
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383144e991f3852f0800000000000000
+      internalID: -983967139318459517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_82
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 248
+        width: 135
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f766394c56a8fdb50800000000000000
+      internalID: 6620162146952242815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_83
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 254
+        width: 173
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7126d210345ae760800000000000000
+      internalID: 7487889895908057467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_84
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 253
+        width: 166
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab138ea9ed4f41c30800000000000000
+      internalID: 4329354378728714682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_85
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 203
+        width: 106
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9cbaec9e5027110800000000000000
+      internalID: 1257073747742673326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_86
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 203
+        width: 99
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 478aa63a188ede310800000000000000
+      internalID: 1436059499691157620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_87
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 203
+        width: 96
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa5f946e39350c7b0800000000000000
+      internalID: -5206069274551388758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_88
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 203
+        width: 98
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d6abb7257fb6830800000000000000
+      internalID: 4065615022267198806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_89
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 204
+        width: 101
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 846a4159750e82b00800000000000000
+      internalID: 804139200253568584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_90
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 203
+        width: 102
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e98ace84034bc080800000000000000
+      internalID: -9166158929727944224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_97
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 22
+        width: 134
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905bb6ebffd671870800000000000000
+      internalID: 8653506154194515209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_98
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 22
+        width: 134
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab536d122ef354d0800000000000000
+      internalID: -3146892292126450779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_99
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 22
+        width: 136
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675c234306536f530800000000000000
+      internalID: 3888354015589877110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_100
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 51
+        width: 152
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff96060a2eb400160800000000000000
+      internalID: 6989670058404375039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_101
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 171
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3096ead9b90049dc0800000000000000
+      internalID: -3633278331015763709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_102
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 58
+        width: 79
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b31a34014dea1d0800000000000000
+      internalID: -3337497107515753662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_103
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 58
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a860d548e72fb10800000000000000
+      internalID: 2013811090349525587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_104
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 65
+        width: 69
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d115343d7141bfee0800000000000000
+      internalID: -1226364380967120611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_105
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 65
+        width: 139
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60297842ffa3cb120800000000000000
+      internalID: 2430882766377161222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elevator-Photoroom_106
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 65
+        width: 110
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a679102b1770bdbe0800000000000000
+      internalID: -1451558269997705366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 13724ae3878781742a7c38b9c2d76992
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      elevator-Photoroom_0: 8041452389310097202
+      elevator-Photoroom_1: -7749591889872210996
+      elevator-Photoroom_10: 8510123673874613281
+      elevator-Photoroom_100: 6989670058404375039
+      elevator-Photoroom_101: -3633278331015763709
+      elevator-Photoroom_102: -3337497107515753662
+      elevator-Photoroom_103: 2013811090349525587
+      elevator-Photoroom_104: -1226364380967120611
+      elevator-Photoroom_105: 2430882766377161222
+      elevator-Photoroom_106: -1451558269997705366
+      elevator-Photoroom_11: 7436195164885273475
+      elevator-Photoroom_12: -1204401419234052135
+      elevator-Photoroom_13: -5758270184215049656
+      elevator-Photoroom_14: -1768711942107367798
+      elevator-Photoroom_15: -5526854322807240666
+      elevator-Photoroom_16: -3058836727239424165
+      elevator-Photoroom_17: -378053966166413936
+      elevator-Photoroom_18: 3860877166725911102
+      elevator-Photoroom_19: -4194821999712598862
+      elevator-Photoroom_2: -8439332845228637332
+      elevator-Photoroom_20: 4699544649693902995
+      elevator-Photoroom_21: -3109757919063012541
+      elevator-Photoroom_22: 1780183945261659364
+      elevator-Photoroom_23: -7513722669076518393
+      elevator-Photoroom_24: -161490726654645195
+      elevator-Photoroom_25: -3021838017879362206
+      elevator-Photoroom_26: -43465548219654750
+      elevator-Photoroom_27: 2298158800376112478
+      elevator-Photoroom_28: 3433145803759732444
+      elevator-Photoroom_29: 8381427066759194227
+      elevator-Photoroom_3: 1773663332073502267
+      elevator-Photoroom_30: 1222715689251622788
+      elevator-Photoroom_31: -1137735347587092418
+      elevator-Photoroom_32: 3915288577531631479
+      elevator-Photoroom_33: -7751295980379556601
+      elevator-Photoroom_34: -7379406932721372609
+      elevator-Photoroom_35: -2934287604323121793
+      elevator-Photoroom_36: -890717182100122449
+      elevator-Photoroom_37: -7170703888032394314
+      elevator-Photoroom_38: -7467618831458911141
+      elevator-Photoroom_39: -8342858865168246709
+      elevator-Photoroom_4: 5688950072817880347
+      elevator-Photoroom_40: -897522972861261712
+      elevator-Photoroom_41: -7768410791897959467
+      elevator-Photoroom_42: -8803929174759900231
+      elevator-Photoroom_43: 7497867302844738317
+      elevator-Photoroom_44: -3930662571726139952
+      elevator-Photoroom_45: -8687532748740285252
+      elevator-Photoroom_46: -5290003257979150105
+      elevator-Photoroom_47: 1079171939432387560
+      elevator-Photoroom_48: -6332366598989872566
+      elevator-Photoroom_49: -7370561499516850552
+      elevator-Photoroom_5: -4047204216120319016
+      elevator-Photoroom_50: 2100143015773719157
+      elevator-Photoroom_51: 3767728099331680039
+      elevator-Photoroom_52: 3688418564314315708
+      elevator-Photoroom_53: -7017581490010128201
+      elevator-Photoroom_54: -3462255731631290518
+      elevator-Photoroom_55: 6598170186682288120
+      elevator-Photoroom_56: -8920965131862396181
+      elevator-Photoroom_57: 3994278092709215200
+      elevator-Photoroom_58: 6361162625955283306
+      elevator-Photoroom_59: -5445290071334442793
+      elevator-Photoroom_6: 8463410858289120904
+      elevator-Photoroom_60: -4007275404699706314
+      elevator-Photoroom_61: -5012645187246797711
+      elevator-Photoroom_62: 4689568752910317046
+      elevator-Photoroom_63: -3456449793048681222
+      elevator-Photoroom_64: -1544638121877021957
+      elevator-Photoroom_65: -872893529374719366
+      elevator-Photoroom_66: -1445441311435624366
+      elevator-Photoroom_67: -8515636455973871620
+      elevator-Photoroom_68: 3766192664602958888
+      elevator-Photoroom_69: -1507807887183734651
+      elevator-Photoroom_7: -8521918671357047746
+      elevator-Photoroom_70: 8994096533688395639
+      elevator-Photoroom_71: 6049135904212805981
+      elevator-Photoroom_72: -8731807999828679939
+      elevator-Photoroom_73: 6038742996079187247
+      elevator-Photoroom_74: -4254525515656638918
+      elevator-Photoroom_75: -5823781959120440379
+      elevator-Photoroom_76: 6332748341932959293
+      elevator-Photoroom_77: -7093121442890174368
+      elevator-Photoroom_78: -983967139318459517
+      elevator-Photoroom_79: 2197192577669270187
+      elevator-Photoroom_8: 570982398253508447
+      elevator-Photoroom_80: 6067750080576113151
+      elevator-Photoroom_81: -4038157142290507644
+      elevator-Photoroom_82: 6620162146952242815
+      elevator-Photoroom_83: 7487889895908057467
+      elevator-Photoroom_84: 4329354378728714682
+      elevator-Photoroom_85: 1257073747742673326
+      elevator-Photoroom_86: 1436059499691157620
+      elevator-Photoroom_87: -5206069274551388758
+      elevator-Photoroom_88: 4065615022267198806
+      elevator-Photoroom_89: 804139200253568584
+      elevator-Photoroom_9: 3763709870231561174
+      elevator-Photoroom_90: -9166158929727944224
+      elevator-Photoroom_91: 4099909376548402232
+      elevator-Photoroom_92: 8680474336627184067
+      elevator-Photoroom_93: -813565394160099626
+      elevator-Photoroom_94: 5936153663920138629
+      elevator-Photoroom_95: 6975783331200659015
+      elevator-Photoroom_96: 3483199674520142341
+      elevator-Photoroom_97: 8653506154194515209
+      elevator-Photoroom_98: -3146892292126450779
+      elevator-Photoroom_99: 3888354015589877110
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: db547e09d41f02949997342cc457e13b
+guid: 8efc5735b681ceb4280b9eed548ec150
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5337068942155867653
-    second: backgroundmap2_0
+      213: 5687229223528037969
+    second: ChatGPT Image Jun 10, 2026, 11_30_47 PM_0
+  - first:
+      213: -5140576204072990397
+    second: ChatGPT Image Jun 10, 2026, 11_30_47 PM_1
+  - first:
+      213: -2410977699994557459
+    second: ChatGPT Image Jun 10, 2026, 11_30_47 PM_2
+  - first:
+      213: 6257474795495238029
+    second: ChatGPT Image Jun 10, 2026, 11_30_47 PM_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: backgroundmap2_0
+      name: buttonmenu_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1774
-        height: 887
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 443
+        y: 648
+        width: 660
+        height: 297
+      alignment: 9
+      pivot: {x: 0.5, y: 0.18680096}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bf99709f21ceee5b0800000000000000
-      internalID: -5337068942155867653
+      spriteID: 9aadb1c6bb105e149b0181ce9bcf9684
+      internalID: -901350758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonmenu_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c149d309f65a24e89a54d45d8bcb18
+      internalID: 2015842316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonmenu_2
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 419
+        width: 513
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66bad5a3fe834a24da2abab14b98b96b
+      internalID: -114063148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buttonmenu_3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 326
+        width: 514
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eeae60c5c6a1134ba0c18757826f47d
+      internalID: -1880340679
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 10f8c462d708f8d449569029ba4eed1f
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +208,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":4.0},"gridSpriteSize":{"x":1536.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      backgroundmap2_0: -5337068942155867653
+      buttonmenu_0: -901350758
+      buttonmenu_1: 2015842316
+      buttonmenu_2: -114063148
+      buttonmenu_3: -1880340679
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

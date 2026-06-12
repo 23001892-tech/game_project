@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Player : Entity
 {
     [Header("Player Mana")]
@@ -29,13 +29,34 @@ public class Player : Entity
     }
 
     private void Start()
+{
+    if (playerUI != null)
     {
+        playerUI.UpdateHealthBar(currentHealth, maxHealth);
+        playerUI.UpdateManaBar(currentMana, maxMana);
+    }
+
+    string savedScene = PlayerPrefs.GetString("LastSavedScene", "");
+    string currentScene = SceneManager.GetActiveScene().name;
+
+    if (savedScene == currentScene &&
+        PlayerPrefs.HasKey("PlayerX") &&
+        PlayerPrefs.HasKey("PlayerY"))
+    {
+        float x = PlayerPrefs.GetFloat("PlayerX");
+        float y = PlayerPrefs.GetFloat("PlayerY");
+        transform.position = new Vector3(x, y, 0f);
+
+        currentHealth = PlayerPrefs.GetInt("PlayerHealth", maxHealth);
+        currentMana = PlayerPrefs.GetInt("PlayerMana", maxMana);
+
         if (playerUI != null)
         {
             playerUI.UpdateHealthBar(currentHealth, maxHealth);
             playerUI.UpdateManaBar(currentMana, maxMana);
         }
     }
+}
 
     protected override void Update()
     {
@@ -222,5 +243,15 @@ public class Player : Entity
     public override void Animation_FinishAttack()
     {
         Debug.Log("Animation Finish Attack");
+    }
+    private void OnApplicationQuit()
+    {
+        PlayerPrefs.SetFloat("PlayerX", transform.position.x);
+        PlayerPrefs.SetFloat("PlayerY", transform.position.y);
+        PlayerPrefs.SetInt("PlayerHealth", currentHealth);
+        PlayerPrefs.SetInt("PlayerMana", currentMana);
+        PlayerPrefs.SetString("LastSavedScene", SceneManager.GetActiveScene().name);
+        PlayerPrefs.SetInt("HasSavedGame", 1);
+        PlayerPrefs.Save();
     }
 }
