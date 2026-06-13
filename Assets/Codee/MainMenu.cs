@@ -1,3 +1,4 @@
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement; // Thao tác chuyển Scene (màn chơi)
 using UnityEngine.UI; // Thao tác với các thành phần UI truyền thống
@@ -10,64 +11,84 @@ public class MainMenu : MonoBehaviour
     [Header("Các nút bấm")]
     [SerializeField] private Button continueButton;
 
-   private void Start()
-{
-    if (continueButton != null)
+    private void Start()
     {
-        // 1. Kiểm tra chính xác xem có file dữ liệu cũ hay không
-        bool hasSave = PlayerPrefs.HasKey("HasSavedGame") && PlayerPrefs.HasKey("LastSavedScene");
-
-        // 2. Cho phép hoặc khóa bấm nút
-        continueButton.interactable = hasSave;
-
-        // 3. Ép độ mờ/sáng trực tiếp bằng CanvasGroup (Bỏ qua cơ chế Color trộn của Image)
-        CanvasGroup canvasGroup = continueButton.GetComponent<CanvasGroup>();
-        if (canvasGroup == null)
+        if (continueButton != null)
         {
-            // Nếu chưa có thì tự động thêm component này vào nút Continue
-            canvasGroup = continueButton.gameObject.AddComponent<CanvasGroup>();
-        }
+            // 1. Kiểm tra chính xác xem có file JSON tồn tại hay không thông qua SaveSystem
+            // Đồng thời check xem trong file đó đã từng lưu scene nào chưa
+            bool hasSave = SaveSystem.LoadGame() && !string.IsNullOrEmpty(SaveSystem.currentData.lastSavedScene);
 
-        // 4. Thay đổi độ sáng hiển thị dựa trên việc có file save hay không
-        if (hasSave)
-        {
-            canvasGroup.alpha = 1.0f; // Sáng rõ 100%, rực rỡ như ảnh gốc khi CÓ SAVE
-            Debug.Log("Nút Continue phát sáng vì ĐÃ CÓ FILE SAVE!");
+            continueButton.interactable = hasSave;
+
+            CanvasGroup canvasGroup = continueButton.GetComponent<CanvasGroup>();
+            if (canvasGroup == null)
+            {
+                canvasGroup = continueButton.gameObject.AddComponent<CanvasGroup>();
+            }
+
+            if (hasSave)
+            {
+                canvasGroup.alpha = 1.0f; // 
+                Debug.Log("Nút Continue phát sáng vì ĐÃ CÓ FILE SAVE JSON!");
+            }
+            else
+            {
+                canvasGroup.alpha = 0.25f; // 
+                Debug.Log("Nút Continue tối đen vì CHƯA CÓ FILE SAVE JSON!");
+            }
         }
         else
         {
-            canvasGroup.alpha = 0.25f; // Tối sầm và mờ tịt hẳn đi khi KHÔNG CÓ SAVE
-            Debug.Log("Nút Continue tối đen vì CHƯA CÓ FILE SAVE!");
+            Debug.LogError("Cảnh báo: Bạn chưa kéo thả nút Continue vào ô biến trên Inspector!");
         }
     }
-    else
-    {
-        Debug.LogError("Cảnh báo: Bạn chưa kéo thả nút Continue vào ô biến trên Inspector!");
-    }
-}
 
     public void NewGame()
     {
-        PlayerPrefs.DeleteAll();
-        PlayerPrefs.SetInt("HasSavedGame", 1);
-        PlayerPrefs.SetString("LastSavedScene", newGameSceneName);
-        PlayerPrefs.Save();
-        LoadingProgress.Instance.LoadScene(newGameSceneName);
+        SaveSystem.ClearSaveData();
+
+        SaveSystem.currentData.lastSavedScene = newGameSceneName;
+        SaveSystem.SaveGame();
+
+        
+        GameSession.CurrentGameState = GameState.NewGame;
+        GameSession.SessionStarted = false; // Đặt lại trạng thái session để khi vào scene mới sẽ biết là bắt đầu mới chứ không phải tiếp tục
+
+
+        // 4. Load vào màn chơi mới bằng LoadingProgress xịn của bạn
+        if (LoadingProgress.Instance != null)
+        {
+            LoadingProgress.Instance.LoadScene(newGameSceneName);
+        }
+        else
+        {
+            SceneManager.LoadScene(newGameSceneName);
+        }
     }
 
     public void ContinueGame()
     {
-        if (PlayerPrefs.HasKey("LastSavedScene"))
+        GameSession.CurrentGameState = GameState.Continue;
+        GameSession.SessionStarted = false; // Đặt lại trạng thái session để khi vào scene mới sẽ biết là tiếp tục chứ không phải bắt đầu mới
+        
+        if (SaveSystem.LoadGame() && !string.IsNullOrEmpty(SaveSystem.currentData.lastSavedScene))
         {
-            string savedScene = PlayerPrefs.GetString("LastSavedScene");
-            Debug.Log("Đang tải lại màn chơi cũ: " + savedScene);
+            string savedScene = SaveSystem.currentData.lastSavedScene;
+            Debug.Log("Đang tải lại màn chơi cũ từ JSON: " + savedScene);
             
-
-            LoadingProgress.Instance.LoadScene(savedScene);
+            if (LoadingProgress.Instance != null)
+            {
+                LoadingProgress.Instance.LoadScene(savedScene);
+            }
+            else
+            {
+                SceneManager.LoadScene(savedScene);
+            }
         }
         else
         {
-            Debug.LogWarning("Không tìm thấy dữ liệu màn chơi cũ!");
+            Debug.LogWarning("Không tìm thấy dữ liệu file JSON hoặc tên Scene trống rỗng!");
         }
     }
 

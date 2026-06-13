@@ -61,3 +61,4 @@ public class LoadingProgress : MonoBehaviour
         operation.allowSceneActivation = true;
     }
 }
+    

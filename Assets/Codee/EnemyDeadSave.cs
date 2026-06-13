@@ -4,10 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class EnemyDeadSave : MonoBehaviour
 {
+    private string key => SceneManager.GetActiveScene().name + "_" + gameObject.name;
     private void Start()
     {
-        String key = SceneManager.GetActiveScene().name + "_" + gameObject.name;
-        if (PlayerPrefs.GetInt(key, 0) == 1)
+        if (SaveSystem.currentData.defeatedEnemyIDs.Contains(key))
         {
             Destroy(gameObject);
         }
@@ -15,8 +15,10 @@ public class EnemyDeadSave : MonoBehaviour
     
     public void MarkAsDead()
     {
-        String key = SceneManager.GetActiveScene().name + "_" + gameObject.name;
-        PlayerPrefs.SetInt(key, 1);
-        PlayerPrefs.Save();
+        if (!SaveSystem.currentData.defeatedEnemyIDs.Contains(key))
+        {
+            SaveSystem.currentData.defeatedEnemyIDs.Add(key);
+            SaveSystem.SaveGame();
+        }
     }
 }

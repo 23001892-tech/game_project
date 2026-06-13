@@ -122,14 +122,28 @@ public class Entity : MonoBehaviour
     }
 
     protected virtual void HandleAnimations()
-    {
-        if (anim == null || rb == null)
-            return;
+{
+    if (anim == null) return;
 
-        anim.SetFloat("xVelocity", rb.linearVelocity.x);
-        anim.SetFloat("yVelocity", rb.linearVelocity.y);
+    if (HasParameter("isGrounded", anim))
+    {
         anim.SetBool("isGrounded", isGrounded);
     }
+    
+    if (HasParameter("yVelocity", anim))
+    {
+        anim.SetFloat("yVelocity", rb.linearVelocity.y);
+    }
+}
+
+private bool HasParameter(string paramName, Animator animator)
+{
+    foreach (AnimatorControllerParameter param in animator.parameters)
+    {
+        if (param.name == paramName) return true;
+    }
+    return false;
+}
 
     protected virtual void TryToJump()
     {

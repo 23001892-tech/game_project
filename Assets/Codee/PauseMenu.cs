@@ -49,10 +49,15 @@ public class PauseMenu : MonoBehaviour
 
     // 2. Hàm xử lý nút EXIT TO MAIN MENU
     public void ExitToMainMenu()
+{
+    Time.timeScale = 1f;
+
+    Player player = FindAnyObjectByType<Player>(); // Unity mới dùng FindAnyObjectByType, bản cũ dùng FindObjectOfType
+    if (player != null)
     {
-        Time.timeScale = 1f; // TỐI QUAN TRỌNG: Phải trả thời gian về 1 trước khi chuyển màn hình!
-        
-        // Thay chữ "MainMenu" bằng tên chính xác cái Scene màn hình chính của bạn nhé
-        SceneManager.LoadScene("MainMenu"); 
+        player.SaveCurrentState();
+    }
+
+    SceneManager.LoadScene("MainMenu");
     }
 }

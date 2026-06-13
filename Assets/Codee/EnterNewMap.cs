@@ -15,6 +15,7 @@ public class EnterNewMap : MonoBehaviour
 
     private IEnumerator PlayerFall(GameObject player)
     {
+        var playerScript = player.GetComponent<Player>();
         var playerMovement = player.GetComponent<MonoBehaviour>(); // script thật của bạn
         if (playerMovement != null) playerMovement.enabled = false;
 
@@ -42,6 +43,7 @@ public class EnterNewMap : MonoBehaviour
             yield return null;
         }
 
+        if (playerScript != null) playerScript.syncBeforeLoad();
         // gọi loading manager
         LoadingProgress.Instance.LoadScene(nextMapName);
     }

@@ -3,7 +3,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Player : Entity
 {
+
     [Header("Player Mana")]
+
     [SerializeField] private int maxMana = 50;
     [SerializeField] private int currentMana;
 
@@ -29,34 +31,56 @@ public class Player : Entity
     }
 
     private void Start()
-{
-    if (playerUI != null)
     {
-        playerUI.UpdateHealthBar(currentHealth, maxHealth);
-        playerUI.UpdateManaBar(currentMana, maxMana);
-    }
+        var sprite = GetComponentInChildren<SpriteRenderer>();
+        if (sprite != null) sprite.enabled = true;
 
-    string savedScene = PlayerPrefs.GetString("LastSavedScene", "");
-    string currentScene = SceneManager.GetActiveScene().name;
-
-    if (savedScene == currentScene &&
-        PlayerPrefs.HasKey("PlayerX") &&
-        PlayerPrefs.HasKey("PlayerY"))
-    {
-        float x = PlayerPrefs.GetFloat("PlayerX");
-        float y = PlayerPrefs.GetFloat("PlayerY");
-        transform.position = new Vector3(x, y, 0f);
-
-        currentHealth = PlayerPrefs.GetInt("PlayerHealth", maxHealth);
-        currentMana = PlayerPrefs.GetInt("PlayerMana", maxMana);
-
-        if (playerUI != null)
+        if (PlayerUI.Instance != null)
         {
-            playerUI.UpdateHealthBar(currentHealth, maxHealth);
-            playerUI.UpdateManaBar(currentMana, maxMana);
+            PlayerUI.Instance.UpdateHealthBar(currentHealth, maxHealth);
+            PlayerUI.Instance.UpdateManaBar(currentMana, maxMana);
+        }
+
+
+        if (!GameSession.SessionStarted)
+        {
+            if (GameSession.CurrentGameState == GameState.NewGame || !SaveSystem.LoadGame())
+            {
+                currentHealth = maxHealth;
+                currentMana = maxMana;
+                // không đổi transform.position -> giữ vị trí spawn gốc trong scene
+            }
+            else
+            {
+                string currentScene = SceneManager.GetActiveScene().name;
+
+                if (SaveSystem.currentData.lastSavedScene == currentScene)
+                {
+                    transform.position = new Vector3(SaveSystem.currentData.playerX, SaveSystem.currentData.playerY, 0f);
+                }
+
+                currentHealth = SaveSystem.currentData.currentHealth;
+                currentMana = SaveSystem.currentData.currentMana;
+            }
+
+            GameSession.SessionStarted = true;
+        }
+
+        SaveSystem.currentData.lastSavedScene = SceneManager.GetActiveScene().name;
+        SaveSystem.currentData.playerX = transform.position.x;
+        SaveSystem.currentData.playerY = transform.position.y;
+        SaveSystem.currentData.currentHealth = currentHealth;
+        SaveSystem.currentData.currentMana = currentMana;
+
+        SaveSystem.SaveGame();
+
+        // 4. Cập nhật UI cuối cùng sau khi đã chốt xong xuôi máu mana
+        if (PlayerUI.Instance != null)
+        {
+            PlayerUI.Instance.UpdateHealthBar(currentHealth, maxHealth);
+            PlayerUI.Instance.UpdateManaBar(currentMana, maxMana);
         }
     }
-}
 
     protected override void Update()
     {
@@ -197,9 +221,9 @@ public class Player : Entity
     {
         base.TakeDamage(damage);
 
-        if (playerUI != null)
+        if (PlayerUI.Instance != null)
         {
-            playerUI.UpdateHealthBar(currentHealth, maxHealth);
+            PlayerUI.Instance.UpdateHealthBar(currentHealth, maxHealth);
         }
     }
 
@@ -210,9 +234,9 @@ public class Player : Entity
         if (currentMana < 0)
             currentMana = 0;
 
-        if (playerUI != null)
+        if (PlayerUI.Instance != null)
         {
-            playerUI.UpdateManaBar(currentMana, maxMana);
+            PlayerUI.Instance.UpdateManaBar(currentMana, maxMana);
         }
     }
 
@@ -244,61 +268,59 @@ public class Player : Entity
     {
         Debug.Log("Animation Finish Attack");
     }
+
+    public void SaveCurrentState()
+    {
+        SaveSystem.currentData.playerX = transform.position.x;
+        SaveSystem.currentData.playerY = transform.position.y;
+        SaveSystem.currentData.currentHealth = currentHealth;
+        SaveSystem.currentData.currentMana = currentMana;
+        SaveSystem.currentData.lastSavedScene = SceneManager.GetActiveScene().name;
+
+        SaveSystem.SaveGame();
+    }
+
     private void OnApplicationQuit()
     {
-        PlayerPrefs.SetFloat("PlayerX", transform.position.x);
-        PlayerPrefs.SetFloat("PlayerY", transform.position.y);
-        PlayerPrefs.SetInt("PlayerHealth", currentHealth);
-        PlayerPrefs.SetInt("PlayerMana", currentMana);
-        PlayerPrefs.SetString("LastSavedScene", SceneManager.GetActiveScene().name);
-        PlayerPrefs.SetInt("HasSavedGame", 1);
-        PlayerPrefs.Save();
+        SaveCurrentState();
     }
     protected override void Die()
     {
         if (isDead) return;
-
         isDead = true;
-        isDying = false;
         canMove = false;
         canJump = false;
 
-        Debug.Log("Player đã tử trận!");
-
-        StopAllCoroutines(); 
-        isAttacking = false;
-
+        // 1. Khóa vật lý
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
-            rb.bodyType = RigidbodyType2D.Static; 
+            rb.bodyType = RigidbodyType2D.Static;
         }
-
-        if (anim != null)
-        {
-            anim.SetTrigger("die");
-            
-
-        }
-
         if (col != null) col.enabled = false;
 
-        StartCoroutine(ShowGameOverScreenWithDelay(1.5f));
-        
+        // 2. Chạy Coroutine xử lý chuỗi sự kiện chết theo thời gian
+        StartCoroutine(PlayerDeathRoutine());
     }
 
-    private IEnumerator ShowGameOverScreenWithDelay(float delay)
+    private IEnumerator PlayerDeathRoutine()
     {
-        yield return new WaitForSeconds(delay);
-        
-        // Gọi GameManager bật UI lên
-        if (GameManager.Instance != null)
+        yield return new WaitForSeconds(0.001f);
+
+        if (GameManager.Instance != null) GameManager.Instance.ShowGameOverScreen();
+
+        SpriteRenderer[] allSprites = GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer s in allSprites)
         {
-            GameManager.Instance.ShowGameOverScreen();
+            if (s != null) s.enabled = false;
         }
-        else
+    }
+    public void syncBeforeLoad()
+    {
+        if (SaveSystem.LoadGame())
         {
-            Debug.LogError("Chưa có GameManager Singleton trong Scene để bật UI Game Over!");
+            SaveSystem.currentData.currentHealth = currentHealth;
+            SaveSystem.currentData.currentMana = currentMana;
         }
     }
 }
