@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: -4319697872164943780
     second: map-composite_0
+  - first:
+      213: -4665844527973997065
+    second: map-composite_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 2
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -104,9 +107,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1089
-        width: 6816
-        height: 3296
+        y: 1
+        width: 2944
+        height: 3968
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,6 +120,28 @@ TextureImporter:
       bones: []
       spriteID: c5809980ca95d04c0800000000000000
       internalID: -4319697872164943780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map-composite_1
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 513
+        width: 4352
+        height: 3551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5e8ec5f179f3fb0800000000000000
+      internalID: -4665844527973997065
       vertices: []
       indices: 
       edges: []
@@ -136,6 +161,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       map-composite_0: -4319697872164943780
+      map-composite_1: -4665844527973997065
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

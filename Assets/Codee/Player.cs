@@ -1,11 +1,10 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class Player : Entity
 {
-
     [Header("Player Mana")]
-
     [SerializeField] private int maxMana = 50;
     [SerializeField] private int currentMana;
 
@@ -23,17 +22,65 @@ public class Player : Entity
     private bool isAttacking = false;
     private int queuedComboClicks = 0;
 
+    [Header("Jump")]
+    [SerializeField] private int maxAirJumps = 1;
+    [SerializeField] private float fallMultiplier = 2.2f;
+    [SerializeField] private float lowJumpMultiplier = 1.6f;
+    [SerializeField] private float maxFallSpeed = 18f;
+
+    private int airJumpCount = 0;
+
+    [Header("Wall Grab / Wall Jump")]
+    [SerializeField] private KeyCode wallGrabKey = KeyCode.LeftControl;
+    [SerializeField] private float wallCheckDistance = 0.18f;
+    [SerializeField] private float wallJumpXForce = 8f;
+    [SerializeField] private float wallJumpYForce = 10f;
+    [SerializeField] private float wallJumpControlLockTime = 0.18f;
+    [SerializeField] private float wallJumpCooldown = 0.15f;
+
+    private bool isTouchingWall;
+    private bool isWallGrabbing;
+    private bool isWallJumping;
+
+    private int wallSide; // -1 = tường bên trái, 1 = tường bên phải
+    private float wallJumpTimer;
+    private float lastWallJumpTime = -999f;
+
+    [Header("Dash / Dodge")]
+    [SerializeField] private KeyCode dashKey = KeyCode.Mouse1;
+    [SerializeField] private float dashSpeed = 14f;
+    [SerializeField] private float dashDuration = 0.18f;
+    [SerializeField] private float dashCooldown = 0.8f;
+    [SerializeField] private bool invincibleWhileDashing = true;
+
+    private bool isDashing;
+    private float lastDashTime = -999f;
+
+    private float normalGravityScale = 1f;
+
     protected override void Awake()
     {
         base.Awake();
 
         currentMana = maxMana;
+
+        if (rb != null)
+        {
+            normalGravityScale = rb.gravityScale;
+        }
     }
 
     private void Start()
     {
+        // GỘP: Vừa bật SpriteRenderer, vừa check cả playerUI cục bộ lẫn Singleton Instance
         var sprite = GetComponentInChildren<SpriteRenderer>();
         if (sprite != null) sprite.enabled = true;
+
+        if (playerUI != null)
+        {
+            playerUI.UpdateHealthBar(currentHealth, maxHealth);
+            playerUI.UpdateManaBar(currentMana, maxMana);
+        }
 
         if (PlayerUI.Instance != null)
         {
@@ -41,20 +88,18 @@ public class Player : Entity
             PlayerUI.Instance.UpdateManaBar(currentMana, maxMana);
         }
 
-
         if (!GameSession.SessionStarted)
         {
             if (GameSession.CurrentGameState == GameState.NewGame || !SaveSystem.LoadGame())
             {
                 currentHealth = maxHealth;
                 currentMana = maxMana;
-                // không đổi transform.position -> giữ vị trí spawn gốc trong scene
             }
             else
             {
-                string currentScene = SceneManager.GetActiveScene().name;
+                string currentSceneName = SceneManager.GetActiveScene().name;
 
-                if (SaveSystem.currentData.lastSavedScene == currentScene)
+                if (SaveSystem.currentData.lastSavedScene == currentSceneName)
                 {
                     transform.position = new Vector3(SaveSystem.currentData.playerX, SaveSystem.currentData.playerY, 0f);
                 }
@@ -74,11 +119,31 @@ public class Player : Entity
 
         SaveSystem.SaveGame();
 
-        // 4. Cập nhật UI cuối cùng sau khi đã chốt xong xuôi máu mana
         if (PlayerUI.Instance != null)
         {
             PlayerUI.Instance.UpdateHealthBar(currentHealth, maxHealth);
             PlayerUI.Instance.UpdateManaBar(currentMana, maxMana);
+        }
+
+        string savedScene = PlayerPrefs.GetString("LastSavedScene", "");
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        if (savedScene == currentScene &&
+            PlayerPrefs.HasKey("PlayerX") &&
+            PlayerPrefs.HasKey("PlayerY"))
+        {
+            float x = PlayerPrefs.GetFloat("PlayerX");
+            float y = PlayerPrefs.GetFloat("PlayerY");
+            transform.position = new Vector3(x, y, 0f);
+
+            currentHealth = PlayerPrefs.GetInt("PlayerHealth", maxHealth);
+            currentMana = PlayerPrefs.GetInt("PlayerMana", maxMana);
+
+            if (playerUI != null)
+            {
+                playerUI.UpdateHealthBar(currentHealth, maxHealth);
+                playerUI.UpdateManaBar(currentMana, maxMana);
+            }
         }
     }
 
@@ -97,6 +162,59 @@ public class Player : Entity
         }
     }
 
+    protected override void HandleCollision()
+    {
+        base.HandleCollision();
+        CheckWall();
+
+        if (isGrounded)
+        {
+            airJumpCount = 0;
+            isWallJumping = false;
+            isWallGrabbing = false;
+
+            if (!isDashing && rb != null)
+            {
+                rb.gravityScale = normalGravityScale;
+            }
+        }
+    }
+
+    private void CheckWall()
+    {
+        if (col == null)
+        {
+            isTouchingWall = false;
+            wallSide = 0;
+            return;
+        }
+
+        Bounds bounds = col.bounds;
+        Vector2 boxSize = new Vector2(0.08f, bounds.size.y * 0.75f);
+
+        Vector2 rightBoxCenter = new Vector2(bounds.max.x, bounds.center.y);
+        Vector2 leftBoxCenter = new Vector2(bounds.min.x, bounds.center.y);
+
+        RaycastHit2D rightHit = Physics2D.BoxCast(rightBoxCenter, boxSize, 0f, Vector2.right, wallCheckDistance, whatIsGround);
+        RaycastHit2D leftHit = Physics2D.BoxCast(leftBoxCenter, boxSize, 0f, Vector2.left, wallCheckDistance, whatIsGround);
+
+        if (rightHit.collider != null)
+        {
+            isTouchingWall = true;
+            wallSide = 1;
+        }
+        else if (leftHit.collider != null)
+        {
+            isTouchingWall = true;
+            wallSide = -1;
+        }
+        else
+        {
+            isTouchingWall = false;
+            wallSide = 0;
+        }
+    }
+
     protected override void HandleInput()
     {
         xInput = Input.GetAxisRaw("Horizontal");
@@ -110,32 +228,243 @@ public class Player : Entity
         {
             TryToAttack();
         }
+
+        if (Input.GetKeyDown(dashKey))
+        {
+            TryDash();
+        }
     }
 
     protected override void HandleMovement()
     {
-        if (canMove)
+        if (!canMove)
+        {
+            StopMove();
+            return;
+        }
+
+        if (isDashing)
+        {
+            return;
+        }
+
+        HandleWallGrab();
+
+        if (isWallJumping)
+        {
+            wallJumpTimer -= Time.deltaTime;
+
+            if (wallJumpTimer <= 0)
+            {
+                isWallJumping = false;
+            }
+
+            ApplyBetterJump();
+            return;
+        }
+
+        if (!isWallGrabbing)
         {
             MoveX(xInput);
+            ApplyBetterJump();
+        }
+    }
+
+    private void HandleWallGrab()
+    {
+        if (rb == null) return;
+
+        bool holdingGrabKey = Input.GetKey(wallGrabKey);
+
+        isWallGrabbing = holdingGrabKey && isTouchingWall && !isGrounded && !isWallJumping && !isDashing;
+
+        if (isWallGrabbing)
+        {
+            rb.gravityScale = 0f;
+            rb.linearVelocity = Vector2.zero;
         }
         else
         {
-            StopMove();
+            rb.gravityScale = normalGravityScale;
+        }
+    }
+
+    private void ApplyBetterJump()
+    {
+        if (rb == null) return;
+        if (isWallGrabbing || isDashing) return;
+
+        if (rb.linearVelocity.y < 0)
+        {
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1f) * Time.deltaTime;
+        }
+        else if (rb.linearVelocity.y > 0 && !Input.GetKey(KeyCode.Space))
+        {
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1f) * Time.deltaTime;
+        }
+
+        if (rb.linearVelocity.y < -maxFallSpeed)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, -maxFallSpeed);
         }
     }
 
     protected override void TryToJump()
     {
-        if (isGrounded && canJump)
+        if (!canJump || rb == null) return;
+        if (isDashing) return;
+
+        if (CanWallJump())
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            WallJump();
+            return;
+        }
+
+        if (isGrounded)
+        {
+            NormalJump();
+            return;
+        }
+
+        if (airJumpCount < maxAirJumps)
+        {
+            AirJump();
+            return;
+        }
+
+        Debug.Log("Hết số lần nhảy trên không.");
+    }
+
+    private bool CanWallJump()
+    {
+        if (!isTouchingWall || isGrounded) return false;
+        if (!Input.GetKey(wallGrabKey) && !isWallGrabbing) return false;
+        if (Time.time < lastWallJumpTime + wallJumpCooldown) return false;
+
+        return true;
+    }
+
+    private void NormalJump()
+    {
+        rb.gravityScale = normalGravityScale;
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+
+        airJumpCount = 0;
+        isWallGrabbing = false;
+    }
+
+    private void AirJump()
+    {
+        rb.gravityScale = normalGravityScale;
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+
+        airJumpCount++;
+        isWallGrabbing = false;
+
+        Debug.Log("Air Jump: " + airJumpCount + "/" + maxAirJumps);
+    }
+
+    private void WallJump()
+    {
+        int jumpDirection = -wallSide;
+
+        if (jumpDirection == 0)
+        {
+            jumpDirection = facingRight ? -1 : 1;
+        }
+
+        rb.gravityScale = normalGravityScale;
+        rb.linearVelocity = new Vector2(jumpDirection * wallJumpXForce, wallJumpYForce);
+
+        isWallGrabbing = false;
+        isWallJumping = true;
+
+        wallJumpTimer = wallJumpControlLockTime;
+        lastWallJumpTime = Time.time;
+        airJumpCount = 0;
+
+        if ((jumpDirection > 0 && !facingRight) || (jumpDirection < 0 && facingRight))
+        {
+            Flip();
+        }
+    }
+
+    private void TryDash()
+    {
+        if (rb == null || !canMove || isDashing) return;
+
+        if (Time.time < lastDashTime + dashCooldown)
+        {
+            Debug.Log("Dash đang hồi chiêu.");
+            return;
+        }
+
+        StartCoroutine(DashRoutine());
+    }
+
+    private IEnumerator DashRoutine()
+    {
+        isDashing = true;
+        lastDashTime = Time.time;
+
+        isWallGrabbing = false;
+        isWallJumping = false;
+
+        rb.gravityScale = 0f;
+
+        int dashDirection = (xInput != 0) ? (xInput > 0 ? 1 : -1) : (facingRight ? 1 : -1);
+        rb.linearVelocity = new Vector2(dashDirection * dashSpeed, 0f);
+
+        SetAnimatorTriggerIfExists("dash");
+
+        yield return new WaitForSeconds(dashDuration);
+
+        rb.gravityScale = normalGravityScale;
+        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+
+        isDashing = false;
+    }
+
+    protected override void HandleAnimations()
+    {
+        base.HandleAnimations();
+
+        SetAnimatorBoolIfExists("isWallGrabbing", isWallGrabbing);
+        SetAnimatorBoolIfExists("isWallJumping", isWallJumping);
+        SetAnimatorBoolIfExists("isDashing", isDashing);
+    }
+
+    private void SetAnimatorBoolIfExists(string parameterName, bool value)
+    {
+        if (anim == null) return;
+
+        foreach (AnimatorControllerParameter parameter in anim.parameters)
+        {
+            if (parameter.name == parameterName && parameter.type == AnimatorControllerParameterType.Bool)
+            {
+                anim.SetBool(parameterName, value);
+                return;
+            }
+        }
+    }
+
+    private void SetAnimatorTriggerIfExists(string parameterName)
+    {
+        if (anim == null) return;
+
+        foreach (AnimatorControllerParameter parameter in anim.parameters)
+        {
+            if (parameter.name == parameterName && parameter.type == AnimatorControllerParameterType.Trigger)
+            {
+                anim.SetTrigger(parameterName);
+                return;
+            }
         }
     }
 
     private void TryToAttack()
     {
-        if (!isGrounded)
-            return;
+        if (!isGrounded || isDashing) return;
 
         if (!isAttacking)
         {
@@ -161,7 +490,6 @@ public class Player : Entity
         while (true)
         {
             Debug.Log("Play Attack " + comboStep);
-
             ResetAttackTriggers();
 
             if (anim != null)
@@ -187,8 +515,7 @@ public class Player : Entity
 
     private void ResetAttackTriggers()
     {
-        if (anim == null)
-            return;
+        if (anim == null) return;
 
         anim.ResetTrigger("attack1");
         anim.ResetTrigger("attack2");
@@ -219,6 +546,12 @@ public class Player : Entity
 
     public override void TakeDamage(int damage)
     {
+        if (isDashing && invincibleWhileDashing)
+        {
+            Debug.Log("Dash né sát thương.");
+            return;
+        }
+
         base.TakeDamage(damage);
 
         if (PlayerUI.Instance != null)
@@ -231,8 +564,7 @@ public class Player : Entity
     {
         currentMana -= amount;
 
-        if (currentMana < 0)
-            currentMana = 0;
+        if (currentMana < 0) currentMana = 0;
 
         if (PlayerUI.Instance != null)
         {
@@ -269,6 +601,7 @@ public class Player : Entity
         Debug.Log("Animation Finish Attack");
     }
 
+    // GỘP: Giữ lại hàm Save trạng thái từ HEAD
     public void SaveCurrentState()
     {
         SaveSystem.currentData.playerX = transform.position.x;
@@ -284,6 +617,7 @@ public class Player : Entity
     {
         SaveCurrentState();
     }
+
     protected override void Die()
     {
         if (isDead) return;
@@ -291,23 +625,42 @@ public class Player : Entity
         canMove = false;
         canJump = false;
 
-        // 1. Khóa vật lý
+        Debug.Log("Player đã tử trận!");
+
+        // GỘP: Dọn dẹp trạng thái di chuyển từ nhánh phụ
+        StopAllCoroutines();
+        isAttacking = false;
+        isDashing = false;
+        isWallGrabbing = false;
+        isWallJumping = false;
+
         if (rb != null)
         {
+            rb.gravityScale = normalGravityScale;
             rb.linearVelocity = Vector2.zero;
             rb.bodyType = RigidbodyType2D.Static;
         }
+
+        if (anim != null)
+        {
+            anim.SetTrigger("die");
+        }
+
         if (col != null) col.enabled = false;
 
-        // 2. Chạy Coroutine xử lý chuỗi sự kiện chết theo thời gian
-        StartCoroutine(PlayerDeathRoutine());
+        // Chạy Coroutine xử lý cái chết (Đã gộp hoàn chỉnh và sửa lỗi)
+        StartCoroutine(PlayerDeathRoutine(1.5f));
     }
 
-    private IEnumerator PlayerDeathRoutine()
+    // GỘP và SỬA LỖI: Gom logic tắt SpriteRenderer và hiển thị GameOverScreen mượt mà
+    private IEnumerator PlayerDeathRoutine(float delay)
     {
-        yield return new WaitForSeconds(0.001f);
+        yield return new WaitForSeconds(delay);
 
-        if (GameManager.Instance != null) GameManager.Instance.ShowGameOverScreen();
+        if (GameManager.Instance != null) 
+        {
+            GameManager.Instance.ShowGameOverScreen();
+        }
 
         SpriteRenderer[] allSprites = GetComponentsInChildren<SpriteRenderer>();
         foreach (SpriteRenderer s in allSprites)
@@ -315,6 +668,7 @@ public class Player : Entity
             if (s != null) s.enabled = false;
         }
     }
+
     public void syncBeforeLoad()
     {
         if (SaveSystem.LoadGame())
@@ -322,5 +676,23 @@ public class Player : Entity
             SaveSystem.currentData.currentHealth = currentHealth;
             SaveSystem.currentData.currentMana = currentMana;
         }
+    }
+
+    protected override void OnDrawGizmos()
+    {
+        base.OnDrawGizmos();
+
+        Collider2D gizmoCol = GetComponent<Collider2D>() ?? GetComponentInChildren<Collider2D>();
+        if (gizmoCol == null) return;
+
+        Bounds bounds = gizmoCol.bounds;
+        Vector2 boxSize = new Vector2(0.08f, bounds.size.y * 0.75f);
+
+        Vector2 rightBoxCenter = new Vector2(bounds.max.x, bounds.center.y);
+        Vector2 leftBoxCenter = new Vector2(bounds.min.x, bounds.center.y);
+
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireCube(rightBoxCenter, boxSize);
+        Gizmos.DrawWireCube(leftBoxCenter, boxSize);
     }
 }
