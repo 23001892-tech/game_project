@@ -1,0 +1,427 @@
+fileFormatVersion: 2
+guid: 41e0cb078e95cfe468dae26315bc8f4d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7871434734786512518
+    second: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+      (6)-Sheet_0
+  - first:
+      213: -3517809524786592666
+    second: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+      (6)-Sheet_1
+  - first:
+      213: -6943654325766945722
+    second: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+      (6)-Sheet_2
+  - first:
+      213: -512939759414418081
+    second: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+      (6)-Sheet_3
+  - first:
+      213: -2315333172671358837
+    second: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+      (6)-Sheet_4
+  - first:
+      213: 7499453048432242801
+    second: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+      (6)-Sheet_5
+  - first:
+      213: -6445179461444545848
+    second: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+      (6)-Sheet_6
+  - first:
+      213: 4795536110684369485
+    second: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+      (6)-Sheet_7
+  - first:
+      213: -6983974048027799401
+    second: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+      (6)-Sheet_8
+  - first:
+      213: -2683686571373536067
+    second: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+      (6)-Sheet_9
+  - first:
+      213: -6423743415448982737
+    second: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+      (6)-Sheet_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+        (6)-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 19
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6860f97cf24fc3d60800000000000000
+      internalID: 7871434734786512518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+        (6)-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 19
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6640c9710ea3e2fc0800000000000000
+      internalID: -3517809524786592666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+        (6)-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 19
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6448e850e2f23af90800000000000000
+      internalID: -6943654325766945722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+        (6)-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 19
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55ede8a10ca1e8f0800000000000000
+      internalID: -512939759414418081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+        (6)-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 19
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b88de322fb84edfd0800000000000000
+      internalID: -2315333172671358837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+        (6)-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 19
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170368150d8631860800000000000000
+      internalID: 7499453048432242801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+        (6)-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 19
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c254f68d6f1e86a0800000000000000
+      internalID: -6445179461444545848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+        (6)-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 19
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4276e05faa2d8240800000000000000
+      internalID: 4795536110684369485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+        (6)-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 19
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79091c22b90f31f90800000000000000
+      internalID: -6983974048027799401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+        (6)-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 19
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc5bc83841a1cad0800000000000000
+      internalID: -2683686571373536067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+        (6)-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 19
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ba8e9e5674ad6a0800000000000000
+      internalID: -6423743415448982737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9d807de1244e0c543974ae2b1fd7f574
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a (6)-Sheet_0: 7871434734786512518
+      A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a (6)-Sheet_1: -3517809524786592666
+      A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a (6)-Sheet_10: -6423743415448982737
+      A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a (6)-Sheet_2: -6943654325766945722
+      A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a (6)-Sheet_3: -512939759414418081
+      A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a (6)-Sheet_4: -2315333172671358837
+      A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a (6)-Sheet_5: 7499453048432242801
+      A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a (6)-Sheet_6: -6445179461444545848
+      A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a (6)-Sheet_7: 4795536110684369485
+      A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a (6)-Sheet_8: -6983974048027799401
+      A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a (6)-Sheet_9: -2683686571373536067
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

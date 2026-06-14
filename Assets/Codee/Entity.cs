@@ -122,21 +122,26 @@ public class Entity : MonoBehaviour
     }
 
     protected virtual void HandleAnimations()
-{
-    if (anim == null) return;
-
-    if (HasParameter("isGrounded", anim))
     {
-        anim.SetBool("isGrounded", isGrounded);
-    }
-    
-    if (HasParameter("yVelocity", anim))
-    {
-        anim.SetFloat("yVelocity", rb.linearVelocity.y);
-    }
-}
+        if (anim == null || rb == null) return;
 
-private bool HasParameter(string paramName, Animator animator)
+        if (HasParameter("isGrounded", anim))
+        {
+            anim.SetBool("isGrounded", isGrounded);
+        }
+
+        if (HasParameter("yVelocity", anim))
+        {
+            anim.SetFloat("yVelocity", rb.linearVelocity.y);
+        }
+
+        if (HasParameter("xVelocity", anim))
+        {
+            anim.SetFloat("xVelocity", Mathf.Abs(rb.linearVelocity.x));
+        }
+    }
+
+    private bool HasParameter(string paramName, Animator animator)
 {
     foreach (AnimatorControllerParameter param in animator.parameters)
     {

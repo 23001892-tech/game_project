@@ -1,19 +1,27 @@
 fileFormatVersion: 2
-guid: 8efc5735b681ceb4280b9eed548ec150
+guid: 6ba5200150152054d8eb714e48a0864d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5687229223528037969
-    second: ChatGPT Image Jun 10, 2026, 11_30_47 PM_0
+      213: 8990546035502143573
+    second: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+      (5)-Sheet_0
   - first:
-      213: -5140576204072990397
-    second: ChatGPT Image Jun 10, 2026, 11_30_47 PM_1
+      213: 619213821679824987
+    second: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+      (5)-Sheet_1
   - first:
-      213: -2410977699994557459
-    second: ChatGPT Image Jun 10, 2026, 11_30_47 PM_2
+      213: -1437947204952839872
+    second: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+      (5)-Sheet_2
   - first:
-      213: 6257474795495238029
-    second: ChatGPT Image Jun 10, 2026, 11_30_47 PM_3
+      213: -6487019497754583071
+    second: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+      (5)-Sheet_3
+  - first:
+      213: 8805722079166643353
+    second: A_young_male_adventurer_exploring_a_dark_underground_crystal_mine_designed_for_a
+      (5)-Sheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +54,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 2
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +68,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,10 +89,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,35 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: buttonmenu_0
+      name: fall_0
       rect:
         serializedVersion: 2
-        x: 443
-        y: 648
-        width: 660
-        height: 297
-      alignment: 9
-      pivot: {x: 0.5, y: 0.18680096}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9aadb1c6bb105e149b0181ce9bcf9684
-      internalID: -901350758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buttonmenu_1
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 512
-        width: 512
-        height: 109
+        x: 15
+        y: 13
+        width: 36
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6c149d309f65a24e89a54d45d8bcb18
-      internalID: 2015842316
+      spriteID: ef617516e3344eb44b7667699253b065
+      internalID: 357794805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buttonmenu_2
+      name: fall_1
       rect:
         serializedVersion: 2
-        x: 513
-        y: 419
-        width: 513
-        height: 85
+        x: 91
+        y: 10
+        width: 36
+        height: 54
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66bad5a3fe834a24da2abab14b98b96b
-      internalID: -114063148
+      spriteID: ad3ce6e645d479b40adbc28798ee1d4e
+      internalID: -515850529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buttonmenu_3
+      name: fall_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 326
-        width: 514
-        height: 87
+        x: 167
+        y: 11
+        width: 36
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +176,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eeae60c5c6a1134ba0c18757826f47d
-      internalID: -1880340679
+      spriteID: b404a4520b2050640b3282f4a0da8404
+      internalID: 1546370413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_3
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 12
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4f1ba1a80ff3744b430db1f5862d9b
+      internalID: 1593955350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fall_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 11
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d3072d912f5bf47a846e1f32cbc71a
+      internalID: -1849427134
       vertices: []
       indices: 
       edges: []
@@ -200,7 +230,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 10f8c462d708f8d449569029ba4eed1f
+    spriteID: 6563593a50f87e148abf0e4e1a524ff3
     internalID: 0
     vertices: []
     indices: 
@@ -210,12 +240,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":4.0},"gridSpriteSize":{"x":1536.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      buttonmenu_0: -901350758
-      buttonmenu_1: 2015842316
-      buttonmenu_2: -114063148
-      buttonmenu_3: -1880340679
+      fall_0: 357794805
+      fall_1: -515850529
+      fall_2: 1546370413
+      fall_3: 1593955350
+      fall_4: -1849427134
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -12,38 +12,51 @@ public class Player : Entity
     [SerializeField] private PlayerUI playerUI;
 
     [Header("Attack Combo")]
-    [SerializeField] private int maxCombo = 4;
+    [SerializeField] private int maxCombo = 3;
     [SerializeField] private float attack1Duration = 0.6f;
     [SerializeField] private float attack2Duration = 0.55f;
     [SerializeField] private float attack3Duration = 0.7f;
-    [SerializeField] private float attack4Duration = 0.8f;
+
+    [Header("Attack Cancel")]
+    [SerializeField] private bool canCancelAttackByMove = true;
+    [SerializeField] private bool canCancelAttackByJump = true;
+    [SerializeField] private bool canCancelAttackByDash = true;
+    [SerializeField] private float attackCancelInputDelay = 0.03f;
+    [SerializeField] private float attackCancelTransitionTime = 0.05f;
+    [SerializeField] private string locomotionStateName = "idle/move";
+    [SerializeField] private string airStateName = "jump/fall";
 
     private int comboStep = 0;
     private bool isAttacking = false;
     private int queuedComboClicks = 0;
+    private Coroutine comboCoroutine;
+    private float attackStartTime;
 
     [Header("Jump")]
     [SerializeField] private int maxAirJumps = 1;
     [SerializeField] private float fallMultiplier = 2.2f;
     [SerializeField] private float lowJumpMultiplier = 1.6f;
     [SerializeField] private float maxFallSpeed = 18f;
+    [SerializeField] private float jumpGroundCheckDisableTime = 0.1f;
 
     private int airJumpCount = 0;
+    private float groundCheckDisableTimer;
 
     [Header("Wall Grab / Wall Jump")]
     [SerializeField] private KeyCode wallGrabKey = KeyCode.LeftControl;
-    [SerializeField] private float wallCheckDistance = 0.18f;
-    [SerializeField] private float wallJumpXForce = 8f;
-    [SerializeField] private float wallJumpYForce = 10f;
-    [SerializeField] private float wallJumpControlLockTime = 0.18f;
+    [SerializeField] private float wallCheckDistance = 0.25f;
+    [SerializeField] private float wallGrabJumpXForce = 10f;
+    [SerializeField] private float wallJumpControlLockTime = 0.2f;
     [SerializeField] private float wallJumpCooldown = 0.15f;
+    [SerializeField] private float wallGrabReEnableDelay = 0.3f;
 
     private bool isTouchingWall;
     private bool isWallGrabbing;
     private bool isWallJumping;
 
-    private int wallSide; // -1 = tường bên trái, 1 = tường bên phải
+    private int wallSide;
     private float wallJumpTimer;
+    private float wallGrabDisableTimer;
     private float lastWallJumpTime = -999f;
 
     [Header("Dash / Dodge")]
@@ -56,7 +69,11 @@ public class Player : Entity
     private bool isDashing;
     private float lastDashTime = -999f;
 
+    [Header("Physics Fix")]
+    [SerializeField] private bool autoSetNoFrictionMaterial = true;
+
     private float normalGravityScale = 1f;
+    private PhysicsMaterial2D noFrictionMaterial;
 
     protected override void Awake()
     {
@@ -68,25 +85,26 @@ public class Player : Entity
         {
             normalGravityScale = rb.gravityScale;
         }
+
+        if (autoSetNoFrictionMaterial && col != null)
+        {
+            noFrictionMaterial = new PhysicsMaterial2D("Player_No_Friction");
+            noFrictionMaterial.friction = 0f;
+            noFrictionMaterial.bounciness = 0f;
+            col.sharedMaterial = noFrictionMaterial;
+        }
     }
 
     private void Start()
     {
-        // GỘP: Vừa bật SpriteRenderer, vừa check cả playerUI cục bộ lẫn Singleton Instance
-        var sprite = GetComponentInChildren<SpriteRenderer>();
-        if (sprite != null) sprite.enabled = true;
+        SpriteRenderer sprite = GetComponentInChildren<SpriteRenderer>();
 
-        if (playerUI != null)
+        if (sprite != null)
         {
-            playerUI.UpdateHealthBar(currentHealth, maxHealth);
-            playerUI.UpdateManaBar(currentMana, maxMana);
+            sprite.enabled = true;
         }
 
-        if (PlayerUI.Instance != null)
-        {
-            PlayerUI.Instance.UpdateHealthBar(currentHealth, maxHealth);
-            PlayerUI.Instance.UpdateManaBar(currentMana, maxMana);
-        }
+        UpdateUI();
 
         if (!GameSession.SessionStarted)
         {
@@ -101,7 +119,11 @@ public class Player : Entity
 
                 if (SaveSystem.currentData.lastSavedScene == currentSceneName)
                 {
-                    transform.position = new Vector3(SaveSystem.currentData.playerX, SaveSystem.currentData.playerY, 0f);
+                    transform.position = new Vector3(
+                        SaveSystem.currentData.playerX,
+                        SaveSystem.currentData.playerY,
+                        0f
+                    );
                 }
 
                 currentHealth = SaveSystem.currentData.currentHealth;
@@ -111,19 +133,8 @@ public class Player : Entity
             GameSession.SessionStarted = true;
         }
 
-        SaveSystem.currentData.lastSavedScene = SceneManager.GetActiveScene().name;
-        SaveSystem.currentData.playerX = transform.position.x;
-        SaveSystem.currentData.playerY = transform.position.y;
-        SaveSystem.currentData.currentHealth = currentHealth;
-        SaveSystem.currentData.currentMana = currentMana;
-
-        SaveSystem.SaveGame();
-
-        if (PlayerUI.Instance != null)
-        {
-            PlayerUI.Instance.UpdateHealthBar(currentHealth, maxHealth);
-            PlayerUI.Instance.UpdateManaBar(currentMana, maxMana);
-        }
+        SaveCurrentState();
+        UpdateUI();
 
         string savedScene = PlayerPrefs.GetString("LastSavedScene", "");
         string currentScene = SceneManager.GetActiveScene().name;
@@ -134,22 +145,22 @@ public class Player : Entity
         {
             float x = PlayerPrefs.GetFloat("PlayerX");
             float y = PlayerPrefs.GetFloat("PlayerY");
+
             transform.position = new Vector3(x, y, 0f);
 
             currentHealth = PlayerPrefs.GetInt("PlayerHealth", maxHealth);
             currentMana = PlayerPrefs.GetInt("PlayerMana", maxMana);
 
-            if (playerUI != null)
-            {
-                playerUI.UpdateHealthBar(currentHealth, maxHealth);
-                playerUI.UpdateManaBar(currentMana, maxMana);
-            }
+            UpdateUI();
         }
     }
 
     protected override void Update()
     {
         base.Update();
+
+        if (isDead)
+            return;
 
         if (Input.GetKeyDown(KeyCode.H))
         {
@@ -165,6 +176,13 @@ public class Player : Entity
     protected override void HandleCollision()
     {
         base.HandleCollision();
+
+        if (groundCheckDisableTimer > 0f)
+        {
+            groundCheckDisableTimer -= Time.deltaTime;
+            isGrounded = false;
+        }
+
         CheckWall();
 
         if (isGrounded)
@@ -172,6 +190,7 @@ public class Player : Entity
             airJumpCount = 0;
             isWallJumping = false;
             isWallGrabbing = false;
+            wallGrabDisableTimer = 0f;
 
             if (!isDashing && rb != null)
             {
@@ -190,13 +209,39 @@ public class Player : Entity
         }
 
         Bounds bounds = col.bounds;
-        Vector2 boxSize = new Vector2(0.08f, bounds.size.y * 0.75f);
 
-        Vector2 rightBoxCenter = new Vector2(bounds.max.x, bounds.center.y);
-        Vector2 leftBoxCenter = new Vector2(bounds.min.x, bounds.center.y);
+        Vector2 boxSize = new Vector2(
+            0.08f,
+            bounds.size.y * 0.75f
+        );
 
-        RaycastHit2D rightHit = Physics2D.BoxCast(rightBoxCenter, boxSize, 0f, Vector2.right, wallCheckDistance, whatIsGround);
-        RaycastHit2D leftHit = Physics2D.BoxCast(leftBoxCenter, boxSize, 0f, Vector2.left, wallCheckDistance, whatIsGround);
+        Vector2 rightBoxCenter = new Vector2(
+            bounds.max.x,
+            bounds.center.y
+        );
+
+        Vector2 leftBoxCenter = new Vector2(
+            bounds.min.x,
+            bounds.center.y
+        );
+
+        RaycastHit2D rightHit = Physics2D.BoxCast(
+            rightBoxCenter,
+            boxSize,
+            0f,
+            Vector2.right,
+            wallCheckDistance,
+            whatIsGround
+        );
+
+        RaycastHit2D leftHit = Physics2D.BoxCast(
+            leftBoxCenter,
+            boxSize,
+            0f,
+            Vector2.left,
+            wallCheckDistance,
+            whatIsGround
+        );
 
         if (rightHit.collider != null)
         {
@@ -215,9 +260,40 @@ public class Player : Entity
         }
     }
 
+    private bool IsPressingIntoWall()
+    {
+        if (!isTouchingWall || wallSide == 0)
+            return false;
+
+        if (wallSide == 1 && xInput > 0.1f)
+            return true;
+
+        if (wallSide == -1 && xInput < -0.1f)
+            return true;
+
+        return false;
+    }
+
+    private bool IsPressingAwayFromWall()
+    {
+        if (!isTouchingWall || wallSide == 0)
+            return false;
+
+        if (wallSide == 1 && xInput < -0.1f)
+            return true;
+
+        if (wallSide == -1 && xInput > 0.1f)
+            return true;
+
+        return false;
+    }
+
     protected override void HandleInput()
     {
         xInput = Input.GetAxisRaw("Horizontal");
+
+        if (HandleAttackCancelInput())
+            return;
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -235,12 +311,107 @@ public class Player : Entity
         }
     }
 
+    private bool HandleAttackCancelInput()
+    {
+        if (!isAttacking)
+            return false;
+
+        if (Time.time < attackStartTime + attackCancelInputDelay)
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                TryToAttack();
+                return true;
+            }
+
+            return false;
+        }
+
+        if (canCancelAttackByDash && Input.GetKeyDown(dashKey))
+        {
+            CancelAttack(false);
+            TryDash();
+            return true;
+        }
+
+        if (canCancelAttackByJump && Input.GetKeyDown(KeyCode.Space))
+        {
+            CancelAttack(false);
+            TryToJump();
+
+            if (anim != null && !string.IsNullOrEmpty(airStateName))
+            {
+                anim.CrossFadeInFixedTime(airStateName, attackCancelTransitionTime);
+            }
+
+            return true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            TryToAttack();
+            return true;
+        }
+
+        if (canCancelAttackByMove)
+        {
+            bool pressedMoveKey =
+                Input.GetKeyDown(KeyCode.A) ||
+                Input.GetKeyDown(KeyCode.D) ||
+                Input.GetKeyDown(KeyCode.LeftArrow) ||
+                Input.GetKeyDown(KeyCode.RightArrow);
+
+            if (pressedMoveKey)
+            {
+                CancelAttack(true);
+                MoveX(xInput);
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private void CancelAttack(bool crossFadeToLocomotion)
+    {
+        if (!isAttacking)
+            return;
+
+        Debug.Log("Cancel Attack");
+
+        if (comboCoroutine != null)
+        {
+            StopCoroutine(comboCoroutine);
+            comboCoroutine = null;
+        }
+
+        ResetAttackTriggers();
+
+        isAttacking = false;
+        queuedComboClicks = 0;
+        comboStep = 0;
+
+        SetAnimatorBoolIfExists("isAttacking", false);
+
+        EnableMovement(true);
+
+        if (crossFadeToLocomotion && anim != null && !string.IsNullOrEmpty(locomotionStateName))
+        {
+            anim.CrossFadeInFixedTime(locomotionStateName, attackCancelTransitionTime);
+        }
+    }
+
     protected override void HandleMovement()
     {
         if (!canMove)
         {
             StopMove();
             return;
+        }
+
+        if (wallGrabDisableTimer > 0f)
+        {
+            wallGrabDisableTimer -= Time.deltaTime;
         }
 
         if (isDashing)
@@ -254,7 +425,7 @@ public class Player : Entity
         {
             wallJumpTimer -= Time.deltaTime;
 
-            if (wallJumpTimer <= 0)
+            if (wallJumpTimer <= 0f)
             {
                 isWallJumping = false;
             }
@@ -265,6 +436,16 @@ public class Player : Entity
 
         if (!isWallGrabbing)
         {
+            if (!isGrounded &&
+                isTouchingWall &&
+                !Input.GetKey(wallGrabKey) &&
+                IsPressingIntoWall())
+            {
+                rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+                ApplyBetterJump();
+                return;
+            }
+
             MoveX(xInput);
             ApplyBetterJump();
         }
@@ -272,11 +453,26 @@ public class Player : Entity
 
     private void HandleWallGrab()
     {
-        if (rb == null) return;
+        if (rb == null)
+            return;
+
+        if (wallGrabDisableTimer > 0f)
+        {
+            isWallGrabbing = false;
+            rb.gravityScale = normalGravityScale;
+            return;
+        }
 
         bool holdingGrabKey = Input.GetKey(wallGrabKey);
+        bool pressingAwayFromWall = IsPressingAwayFromWall();
 
-        isWallGrabbing = holdingGrabKey && isTouchingWall && !isGrounded && !isWallJumping && !isDashing;
+        isWallGrabbing =
+            holdingGrabKey &&
+            isTouchingWall &&
+            !isGrounded &&
+            !isWallJumping &&
+            !isDashing &&
+            !pressingAwayFromWall;
 
         if (isWallGrabbing)
         {
@@ -291,8 +487,11 @@ public class Player : Entity
 
     private void ApplyBetterJump()
     {
-        if (rb == null) return;
-        if (isWallGrabbing || isDashing) return;
+        if (rb == null)
+            return;
+
+        if (isWallGrabbing || isDashing)
+            return;
 
         if (rb.linearVelocity.y < 0)
         {
@@ -311,12 +510,15 @@ public class Player : Entity
 
     protected override void TryToJump()
     {
-        if (!canJump || rb == null) return;
-        if (isDashing) return;
+        if (!canJump || rb == null)
+            return;
+
+        if (isDashing)
+            return;
 
         if (CanWallJump())
         {
-            WallJump();
+            WallGrabJump();
             return;
         }
 
@@ -337,17 +539,22 @@ public class Player : Entity
 
     private bool CanWallJump()
     {
-        if (!isTouchingWall || isGrounded) return false;
-        if (!Input.GetKey(wallGrabKey) && !isWallGrabbing) return false;
-        if (Time.time < lastWallJumpTime + wallJumpCooldown) return false;
+        if (isGrounded)
+            return false;
 
-        return true;
+        if (Time.time < lastWallJumpTime + wallJumpCooldown)
+            return false;
+
+        return isWallGrabbing;
     }
 
     private void NormalJump()
     {
         rb.gravityScale = normalGravityScale;
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+
+        isGrounded = false;
+        groundCheckDisableTimer = jumpGroundCheckDisableTime;
 
         airJumpCount = 0;
         isWallGrabbing = false;
@@ -358,13 +565,16 @@ public class Player : Entity
         rb.gravityScale = normalGravityScale;
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
 
+        isGrounded = false;
+        groundCheckDisableTimer = jumpGroundCheckDisableTime;
+
         airJumpCount++;
         isWallGrabbing = false;
 
         Debug.Log("Air Jump: " + airJumpCount + "/" + maxAirJumps);
     }
 
-    private void WallJump()
+    private void WallGrabJump()
     {
         int jumpDirection = -wallSide;
 
@@ -374,24 +584,41 @@ public class Player : Entity
         }
 
         rb.gravityScale = normalGravityScale;
-        rb.linearVelocity = new Vector2(jumpDirection * wallJumpXForce, wallJumpYForce);
 
+        rb.linearVelocity = new Vector2(
+            jumpDirection * wallGrabJumpXForce,
+            jumpForce
+        );
+
+        isGrounded = false;
         isWallGrabbing = false;
         isWallJumping = true;
 
+        groundCheckDisableTimer = jumpGroundCheckDisableTime;
         wallJumpTimer = wallJumpControlLockTime;
+        wallGrabDisableTimer = wallGrabReEnableDelay;
         lastWallJumpTime = Time.time;
+
         airJumpCount = 0;
 
         if ((jumpDirection > 0 && !facingRight) || (jumpDirection < 0 && facingRight))
         {
             Flip();
         }
+
+        Debug.Log("Wall Jump: " + jumpDirection);
     }
 
     private void TryDash()
     {
-        if (rb == null || !canMove || isDashing) return;
+        if (rb == null)
+            return;
+
+        if (!canMove)
+            return;
+
+        if (isDashing)
+            return;
 
         if (Time.time < lastDashTime + dashCooldown)
         {
@@ -409,10 +636,21 @@ public class Player : Entity
 
         isWallGrabbing = false;
         isWallJumping = false;
+        wallGrabDisableTimer = wallGrabReEnableDelay;
 
         rb.gravityScale = 0f;
 
-        int dashDirection = (xInput != 0) ? (xInput > 0 ? 1 : -1) : (facingRight ? 1 : -1);
+        int dashDirection;
+
+        if (xInput != 0)
+        {
+            dashDirection = xInput > 0 ? 1 : -1;
+        }
+        else
+        {
+            dashDirection = facingRight ? 1 : -1;
+        }
+
         rb.linearVelocity = new Vector2(dashDirection * dashSpeed, 0f);
 
         SetAnimatorTriggerIfExists("dash");
@@ -430,17 +668,19 @@ public class Player : Entity
         base.HandleAnimations();
 
         SetAnimatorBoolIfExists("isWallGrabbing", isWallGrabbing);
-        SetAnimatorBoolIfExists("isWallJumping", isWallJumping);
         SetAnimatorBoolIfExists("isDashing", isDashing);
+        SetAnimatorBoolIfExists("isAttacking", isAttacking);
     }
 
     private void SetAnimatorBoolIfExists(string parameterName, bool value)
     {
-        if (anim == null) return;
+        if (anim == null)
+            return;
 
         foreach (AnimatorControllerParameter parameter in anim.parameters)
         {
-            if (parameter.name == parameterName && parameter.type == AnimatorControllerParameterType.Bool)
+            if (parameter.name == parameterName &&
+                parameter.type == AnimatorControllerParameterType.Bool)
             {
                 anim.SetBool(parameterName, value);
                 return;
@@ -450,11 +690,13 @@ public class Player : Entity
 
     private void SetAnimatorTriggerIfExists(string parameterName)
     {
-        if (anim == null) return;
+        if (anim == null)
+            return;
 
         foreach (AnimatorControllerParameter parameter in anim.parameters)
         {
-            if (parameter.name == parameterName && parameter.type == AnimatorControllerParameterType.Trigger)
+            if (parameter.name == parameterName &&
+                parameter.type == AnimatorControllerParameterType.Trigger)
             {
                 anim.SetTrigger(parameterName);
                 return;
@@ -464,13 +706,24 @@ public class Player : Entity
 
     private void TryToAttack()
     {
-        if (!isGrounded || isDashing) return;
+        if (!isGrounded)
+            return;
+
+        if (isDashing)
+            return;
+
+        if (isWallGrabbing)
+            return;
 
         if (!isAttacking)
         {
             queuedComboClicks = 0;
             comboStep = 1;
-            StartCoroutine(ComboRoutine());
+
+            StopMove();
+            EnableMovement(false);
+
+            comboCoroutine = StartCoroutine(ComboRoutine());
         }
         else
         {
@@ -485,11 +738,17 @@ public class Player : Entity
     private IEnumerator ComboRoutine()
     {
         isAttacking = true;
+        SetAnimatorBoolIfExists("isAttacking", true);
+
         EnableMovement(false);
+        StopMove();
 
         while (true)
         {
+            attackStartTime = Time.time;
+
             Debug.Log("Play Attack " + comboStep);
+
             ResetAttackTriggers();
 
             if (anim != null)
@@ -515,12 +774,12 @@ public class Player : Entity
 
     private void ResetAttackTriggers()
     {
-        if (anim == null) return;
+        if (anim == null)
+            return;
 
         anim.ResetTrigger("attack1");
         anim.ResetTrigger("attack2");
         anim.ResetTrigger("attack3");
-        anim.ResetTrigger("attack4");
     }
 
     private float GetAttackDuration(int step)
@@ -528,7 +787,6 @@ public class Player : Entity
         if (step == 1) return attack1Duration;
         if (step == 2) return attack2Duration;
         if (step == 3) return attack3Duration;
-        if (step == 4) return attack4Duration;
 
         return 0.6f;
     }
@@ -537,9 +795,13 @@ public class Player : Entity
     {
         Debug.Log("End Combo");
 
+        comboCoroutine = null;
+
         isAttacking = false;
         queuedComboClicks = 0;
         comboStep = 0;
+
+        SetAnimatorBoolIfExists("isAttacking", false);
 
         EnableMovement(true);
     }
@@ -553,21 +815,32 @@ public class Player : Entity
         }
 
         base.TakeDamage(damage);
-
-        if (PlayerUI.Instance != null)
-        {
-            PlayerUI.Instance.UpdateHealthBar(currentHealth, maxHealth);
-        }
+        UpdateUI();
     }
 
     public void UseMana(int amount)
     {
         currentMana -= amount;
 
-        if (currentMana < 0) currentMana = 0;
+        if (currentMana < 0)
+        {
+            currentMana = 0;
+        }
+
+        UpdateUI();
+    }
+
+    private void UpdateUI()
+    {
+        if (playerUI != null)
+        {
+            playerUI.UpdateHealthBar(currentHealth, maxHealth);
+            playerUI.UpdateManaBar(currentMana, maxMana);
+        }
 
         if (PlayerUI.Instance != null)
         {
+            PlayerUI.Instance.UpdateHealthBar(currentHealth, maxHealth);
             PlayerUI.Instance.UpdateManaBar(currentMana, maxMana);
         }
     }
@@ -601,7 +874,6 @@ public class Player : Entity
         Debug.Log("Animation Finish Attack");
     }
 
-    // GỘP: Giữ lại hàm Save trạng thái từ HEAD
     public void SaveCurrentState()
     {
         SaveSystem.currentData.playerX = transform.position.x;
@@ -620,15 +892,18 @@ public class Player : Entity
 
     protected override void Die()
     {
-        if (isDead) return;
+        if (isDead)
+            return;
+
         isDead = true;
+        isDying = false;
         canMove = false;
         canJump = false;
 
         Debug.Log("Player đã tử trận!");
 
-        // GỘP: Dọn dẹp trạng thái di chuyển từ nhánh phụ
         StopAllCoroutines();
+
         isAttacking = false;
         isDashing = false;
         isWallGrabbing = false;
@@ -641,31 +916,33 @@ public class Player : Entity
             rb.bodyType = RigidbodyType2D.Static;
         }
 
-        if (anim != null)
+        SetAnimatorTriggerIfExists("die");
+
+        if (col != null)
         {
-            anim.SetTrigger("die");
+            col.enabled = false;
         }
 
-        if (col != null) col.enabled = false;
-
-        // Chạy Coroutine xử lý cái chết (Đã gộp hoàn chỉnh và sửa lỗi)
         StartCoroutine(PlayerDeathRoutine(1.5f));
     }
 
-    // GỘP và SỬA LỖI: Gom logic tắt SpriteRenderer và hiển thị GameOverScreen mượt mà
     private IEnumerator PlayerDeathRoutine(float delay)
     {
         yield return new WaitForSeconds(delay);
 
-        if (GameManager.Instance != null) 
+        if (GameManager.Instance != null)
         {
             GameManager.Instance.ShowGameOverScreen();
         }
 
         SpriteRenderer[] allSprites = GetComponentsInChildren<SpriteRenderer>();
+
         foreach (SpriteRenderer s in allSprites)
         {
-            if (s != null) s.enabled = false;
+            if (s != null)
+            {
+                s.enabled = false;
+            }
         }
     }
 
@@ -682,14 +959,32 @@ public class Player : Entity
     {
         base.OnDrawGizmos();
 
-        Collider2D gizmoCol = GetComponent<Collider2D>() ?? GetComponentInChildren<Collider2D>();
-        if (gizmoCol == null) return;
+        Collider2D gizmoCol = GetComponent<Collider2D>();
+
+        if (gizmoCol == null)
+        {
+            gizmoCol = GetComponentInChildren<Collider2D>();
+        }
+
+        if (gizmoCol == null)
+            return;
 
         Bounds bounds = gizmoCol.bounds;
-        Vector2 boxSize = new Vector2(0.08f, bounds.size.y * 0.75f);
 
-        Vector2 rightBoxCenter = new Vector2(bounds.max.x, bounds.center.y);
-        Vector2 leftBoxCenter = new Vector2(bounds.min.x, bounds.center.y);
+        Vector2 boxSize = new Vector2(
+            0.08f,
+            bounds.size.y * 0.75f
+        );
+
+        Vector2 rightBoxCenter = new Vector2(
+            bounds.max.x,
+            bounds.center.y
+        );
+
+        Vector2 leftBoxCenter = new Vector2(
+            bounds.min.x,
+            bounds.center.y
+        );
 
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireCube(rightBoxCenter, boxSize);

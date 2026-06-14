@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 947323572985543905}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7, y: -0.51, z: 0}
+  m_LocalPosition: {x: 0.59, y: -0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59,8 +59,8 @@ Transform:
   m_GameObject: {fileID: 2435434038065082388}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.16, y: -0.6082, z: 0}
-  m_LocalScale: {x: 5.5671816, y: 3.899899, z: 1}
+  m_LocalPosition: {x: 0.179, y: -0.354, z: 0}
+  m_LocalScale: {x: 1.886704, y: 1.9550903, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8413928941734933122}
@@ -114,7 +114,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1684687934892386565, guid: 7293ead4d3929a243bae1324a1c1cc7b, type: 3}
+  m_Sprite: {fileID: 7991326760598467518, guid: 5ce65b7327b42894997a228f7d9c7421, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -187,8 +187,8 @@ Transform:
   m_GameObject: {fileID: 3106833775815027145}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.98, y: 0.53, z: 0}
-  m_LocalScale: {x: 0.66543055, y: 0.6251288, z: 1}
+  m_LocalPosition: {x: 4.932, y: 0.375, z: 0}
+  m_LocalScale: {x: 0.43339595, y: 0.39093253, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4777924561000296704}
@@ -344,7 +344,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   attackPoint: {fileID: 3743415535883653298}
-  attackRadius: 0.65
+  attackRadius: 0.29
   attackDamage: 10
   whatIsTarget:
     serializedVersion: 2
@@ -356,4 +356,27 @@ MonoBehaviour:
   attack1Duration: 0.6
   attack2Duration: 0.55
   attack3Duration: 0.7
-  attack4Duration: 0.8
+  canCancelAttackByMove: 1
+  canCancelAttackByJump: 1
+  canCancelAttackByDash: 1
+  attackCancelInputDelay: 0.03
+  attackCancelTransitionTime: 0.05
+  locomotionStateName: idle/move
+  airStateName: jump/fall
+  maxAirJumps: 1
+  fallMultiplier: 2.2
+  lowJumpMultiplier: 1.6
+  maxFallSpeed: 18
+  jumpGroundCheckDisableTime: 0.1
+  wallGrabKey: 306
+  wallCheckDistance: 0.18
+  wallGrabJumpXForce: 10
+  wallJumpControlLockTime: 0.18
+  wallJumpCooldown: 0.15
+  wallGrabReEnableDelay: 0.3
+  dashKey: 324
+  dashSpeed: 14
+  dashDuration: 0.18
+  dashCooldown: 1
+  invincibleWhileDashing: 1
+  autoSetNoFrictionMaterial: 1
