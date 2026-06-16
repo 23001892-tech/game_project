@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 947323572985543905}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.59, y: -0.3, z: 0}
+  m_LocalPosition: {x: 0.71, y: -0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59,8 +59,8 @@ Transform:
   m_GameObject: {fileID: 2435434038065082388}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.179, y: -0.354, z: 0}
-  m_LocalScale: {x: 1.886704, y: 1.9550903, z: 1}
+  m_LocalPosition: {x: -0.0806, y: -0.075, z: 0}
+  m_LocalScale: {x: 2.86155, y: 2.535262, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8413928941734933122}
@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 1855898300455629107}
   - component: {fileID: 3459219866586930355}
   - component: {fileID: 143397505969699680}
+  - component: {fileID: 312224446413464348}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -188,7 +189,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.932, y: 0.375, z: 0}
-  m_LocalScale: {x: 0.43339595, y: 0.39093253, z: 1}
+  m_LocalScale: {x: 0.4552391, y: 0.4499343, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4777924561000296704}
@@ -344,7 +345,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   attackPoint: {fileID: 3743415535883653298}
-  attackRadius: 0.29
+  attackRadius: 0.6
   attackDamage: 10
   whatIsTarget:
     serializedVersion: 2
@@ -369,7 +370,7 @@ MonoBehaviour:
   maxFallSpeed: 18
   jumpGroundCheckDisableTime: 0.1
   wallGrabKey: 306
-  wallCheckDistance: 0.18
+  wallCheckDistance: 0.2
   wallGrabJumpXForce: 10
   wallJumpControlLockTime: 0.18
   wallJumpCooldown: 0.15
@@ -380,3 +381,23 @@ MonoBehaviour:
   dashCooldown: 1
   invincibleWhileDashing: 1
   autoSetNoFrictionMaterial: 1
+--- !u!114 &312224446413464348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3106833775815027145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a66c11eb7bf444e8442934bf04d5f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerLevelSystem
+  currentLevel: 1
+  currentExp: 0
+  baseExpToLevelUp: 100
+  expMultiplierPerLevel: 1.123
+  attributePoints: 0
+  hpPerPoint: 10
+  manaPerPoint: 8
+  atkPerPoint: 2
