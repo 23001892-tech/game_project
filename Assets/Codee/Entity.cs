@@ -69,6 +69,10 @@ public class Entity : MonoBehaviour
     }
 
     currentHealth = maxHealth;
+
+    // Ensure facing flags match the transform's x scale on startup
+    facingRight = transform.localScale.x > 0f;
+    facDir = facingRight ? 1 : -1;
 }
 
     protected virtual void Update()
@@ -208,11 +212,15 @@ public class Entity : MonoBehaviour
 
         float direction = target.position.x - transform.position.x;
 
-        if (direction > 0 && !facingRight)
+        // Small deadzone to avoid flipping when nearly aligned
+        if (Mathf.Abs(direction) < 0.1f)
+            return;
+
+        if (direction > 0f && !facingRight)
         {
             Flip();
         }
-        else if (direction < 0 && facingRight)
+        else if (direction < 0f && facingRight)
         {
             Flip();
         }

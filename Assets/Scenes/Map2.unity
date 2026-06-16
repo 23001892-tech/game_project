@@ -5680,12 +5680,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 143397505969699680, guid: 184c035a4afeb3540b283474874341ca, type: 3}
+      propertyPath: attackRadius
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 143397505969699680, guid: 184c035a4afeb3540b283474874341ca, type: 3}
       propertyPath: wallCheckDistance
       value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3106833775815027145, guid: 184c035a4afeb3540b283474874341ca, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3743415535883653298, guid: 184c035a4afeb3540b283474874341ca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 3743415535883653298, guid: 184c035a4afeb3540b283474874341ca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 4777924561000296704, guid: 184c035a4afeb3540b283474874341ca, type: 3}
       propertyPath: m_LocalScale.x
@@ -5705,11 +5717,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8413928941734933122, guid: 184c035a4afeb3540b283474874341ca, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.45073178
+      value: 0.4552391
       objectReference: {fileID: 0}
     - target: {fileID: 8413928941734933122, guid: 184c035a4afeb3540b283474874341ca, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.33870393
+      value: 0.4499343
       objectReference: {fileID: 0}
     - target: {fileID: 8413928941734933122, guid: 184c035a4afeb3540b283474874341ca, type: 3}
       propertyPath: m_LocalPosition.x
