@@ -1183,7 +1183,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.476263, y: 2.968679, z: -20}
+  m_LocalPosition: {x: -1.4814129, y: 2.9686787, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3715,7 +3715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 143397505969699680, guid: 184c035a4afeb3540b283474874341ca, type: 3}
       propertyPath: attackRadius
-      value: 0.77
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 3106833775815027145, guid: 184c035a4afeb3540b283474874341ca, type: 3}
       propertyPath: m_Name
@@ -3723,11 +3723,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3743415535883653298, guid: 184c035a4afeb3540b283474874341ca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.64
+      value: 0.58
       objectReference: {fileID: 0}
     - target: {fileID: 3743415535883653298, guid: 184c035a4afeb3540b283474874341ca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: -0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777924561000296704, guid: 184c035a4afeb3540b283474874341ca, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7637539
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777924561000296704, guid: 184c035a4afeb3540b283474874341ca, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.6351279
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777924561000296704, guid: 184c035a4afeb3540b283474874341ca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1225
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777924561000296704, guid: 184c035a4afeb3540b283474874341ca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4032
       objectReference: {fileID: 0}
     - target: {fileID: 8007615771925386642, guid: 184c035a4afeb3540b283474874341ca, type: 3}
       propertyPath: m_SortingOrder
