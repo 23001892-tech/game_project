@@ -1020,4 +1020,20 @@ public class Player : Entity
     {
         attackDamage += amount;
     }
+
+    public override void DamageTargets()
+{
+    // 1. Gọi lại logic gây sát thương mặc định của Entity
+    base.DamageTargets();
+
+    if (attackPoint != null)
+    {
+        Collider2D[] targets = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget);
+        
+        if (targets.Length > 0)
+        {
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.PlayerHit);
+        }
+    }
+}
 }
