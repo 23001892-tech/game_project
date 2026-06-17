@@ -129,6 +129,19 @@ public class Entity : MonoBehaviour
     {
         if (anim == null || rb == null) return;
 
+        if (isDying || isDead)
+        {
+            if (HasParameter("isDie", anim))
+            {
+                anim.SetBool("isDie", true);
+            }
+            if (HasParameter("playerDie", anim))
+            {
+                anim.SetTrigger("playerDie");
+            }
+            return;
+        }
+
         if (HasParameter("isGrounded", anim))
         {
             anim.SetBool("isGrounded", isGrounded);
@@ -342,7 +355,24 @@ public class Entity : MonoBehaviour
     var enemySave = GetComponent<EnemyDeadSave>();
     if (enemySave != null) enemySave.MarkAsDead();
 
-    if (anim != null) anim.enabled = false;
+    // Set animator parameters for death
+    if (anim != null)
+    {
+        if (HasParameter("isDie", anim))
+        {
+            anim.SetBool("isDie", true);
+        }
+        if (HasParameter("playerDie", anim))
+        {
+            anim.SetTrigger("playerDie");
+        }
+        if (HasParameter("die", anim))
+        {
+            anim.SetTrigger("die");
+        }
+        anim.enabled = false;
+    }
+
     if (col != null) col.enabled = false;
     if (rb != null)
     {

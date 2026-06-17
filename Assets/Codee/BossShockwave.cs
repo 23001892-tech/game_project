@@ -19,6 +19,10 @@ public class BossShockwave : MonoBehaviour
     [SerializeField] private float expandSpeedX = 1.5f;
     [SerializeField] private float maxScaleX = 3f;
 
+    [Header("Hitbox")]
+    [SerializeField] private Vector2 hitboxScale = new Vector2(0.75f, 0.75f);
+    [SerializeField] private Vector2 hitboxOffset = Vector2.zero;
+
     [Header("Render")]
     [SerializeField] private bool forceVisibleOrder = true;
     [SerializeField] private int visibleOrder = 999;
@@ -27,6 +31,12 @@ public class BossShockwave : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Vector3 originalScale;
     private Entity owner;
+    private BoxCollider2D boxCollider;
+    private CircleCollider2D circleCollider;
+    private CapsuleCollider2D capsuleCollider;
+    private Vector2 originalBoxSize;
+    private float originalCircleRadius;
+    private Vector2 originalCapsuleSize;
 
     private readonly HashSet<Entity> damagedTargets = new HashSet<Entity>();
 
@@ -36,12 +46,31 @@ public class BossShockwave : MonoBehaviour
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         originalScale = transform.localScale;
 
-        Collider2D col = GetComponent<Collider2D>();
+        boxCollider = GetComponent<BoxCollider2D>();
+        circleCollider = GetComponent<CircleCollider2D>();
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
+
+        Collider2D col = boxCollider != null ? boxCollider : circleCollider != null ? (Collider2D)circleCollider : capsuleCollider;
 
         if (col != null)
         {
             col.isTrigger = true;
         }
+
+        if (boxCollider != null)
+        {
+            originalBoxSize = boxCollider.size;
+        }
+        else if (circleCollider != null)
+        {
+            originalCircleRadius = circleCollider.radius;
+        }
+        else if (capsuleCollider != null)
+        {
+            originalCapsuleSize = capsuleCollider.size;
+        }
+
+        ApplyHitboxScale();
 
         if (rb != null)
         {
@@ -101,6 +130,8 @@ public class BossShockwave : MonoBehaviour
 
         scale.x = absX * direction;
         transform.localScale = scale;
+
+        ApplyHitboxScale();
     }
 
     private void FixedUpdate()
@@ -130,5 +161,24 @@ public class BossShockwave : MonoBehaviour
         damagedTargets.Add(target);
 
         target.TakeDamage(damage);
+    }
+
+    private void ApplyHitboxScale()
+    {
+        if (boxCollider != null)
+        {
+            boxCollider.size = new Vector2(originalBoxSize.x * hitboxScale.x, originalBoxSize.y * hitboxScale.y);
+            boxCollider.offset = hitboxOffset;
+        }
+        else if (circleCollider != null)
+        {
+            circleCollider.radius = originalCircleRadius * Mathf.Max(hitboxScale.x, hitboxScale.y);
+            circleCollider.offset = hitboxOffset;
+        }
+        else if (capsuleCollider != null)
+        {
+            capsuleCollider.size = new Vector2(originalCapsuleSize.x * hitboxScale.x, originalCapsuleSize.y * hitboxScale.y);
+            capsuleCollider.offset = hitboxOffset;
+        }
     }
 }

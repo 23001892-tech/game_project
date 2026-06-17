@@ -9,7 +9,8 @@ public class Boss : Entity
         Idle,
         Chase,
         Attack,
-        Skill,
+        JumpSkill,
+        DashSkill,
         Dead
     }
 
@@ -29,7 +30,7 @@ public class Boss : Entity
     [SerializeField] private float normalAttackDamageDelay = 0.45f;
     [SerializeField] private bool useAnimationEventForNormalDamage = false;
 
-    [Header("Jump Slam Skill")]
+    [Header("Jump Slam Skill 1")]
     [SerializeField] private bool useJumpSlamSkill = true;
     [SerializeField] private float skillMinRange = 3f;
     [SerializeField] private float skillMaxRange = 7f;
@@ -46,7 +47,7 @@ public class Boss : Entity
     [Tooltip("Thời gian cho animation Impact chạy xong. Hết thời gian này mới tạo 1 sóng.")]
     [SerializeField] private float skillImpactLockTime = 0.7f;
 
-    [Header("Skill Impact Damage")]
+    [Header("Skill 1 Impact Damage")]
     [SerializeField] private Transform impactPoint;
     [SerializeField] private float impactRadius = 1.8f;
     [SerializeField] private int impactDamage = 20;
@@ -61,6 +62,24 @@ public class Boss : Entity
     [SerializeField] private bool spawnShockwaveBothSides = true;
     [SerializeField] private bool spawnShockwaveAfterImpactEnd = true;
 
+    [Header("Dash Skill 2")]
+    [SerializeField] private bool useDashSkill = true;
+    [SerializeField] private float dashSkillMinRange = 2.5f;
+    [SerializeField] private float dashSkillMaxRange = 9f;
+    [SerializeField] private float dashSkillCooldown = 6f;
+
+    [SerializeField] private float dashStartTime = 0.25f;
+    [SerializeField] private float dashSpeed = 14f;
+    [SerializeField] private float dashDuration = 0.45f;
+    [SerializeField] private float dashImpactLockTime = 0.35f;
+
+    [SerializeField] private Transform dashHitPoint;
+    [SerializeField] private float dashHitRadius = 0.9f;
+    [SerializeField] private LayerMask dashTargetLayer;
+
+    [SerializeField] private int dashDamage = 18;
+    [SerializeField] private float dashStunDuration = 1.2f;
+
     [Header("Animator Params")]
     [SerializeField] private string xVelocityParam = "xVelocity";
     [SerializeField] private string yVelocityParam = "yVelocity";
@@ -68,17 +87,25 @@ public class Boss : Entity
     [SerializeField] private string isMovingParam = "isMoving";
     [SerializeField] private string isAttackingParam = "isAttacking";
     [SerializeField] private string isUsingSkillParam = "isUsingSkill";
+    [SerializeField] private string isUsingDashSkillParam = "isUsingDashSkill";
 
     [SerializeField] private string attackTriggerParam = "attack";
     [SerializeField] private string skillJumpStartTriggerParam = "skillJumpStart";
     [SerializeField] private string skillFallTriggerParam = "skillFall";
     [SerializeField] private string skillImpactTriggerParam = "skillImpact";
+    [SerializeField] private string dashStartTriggerParam = "dashStart";
+    [SerializeField] private string dashImpactTriggerParam = "dashImpact";
 
-    [Header("Skill Animation State Names")]
+    [Header("Animation State Names")]
     [SerializeField] private string skillStartStateName = "bossSkillStart1";
     [SerializeField] private string skillFallStateName = "bossSkillFall1";
     [SerializeField] private string skillImpactStateName = "bossSkillImpact1";
-    [SerializeField] private float skillAnimTransitionTime = 0.03f;
+
+    [SerializeField] private string dashStartStateName = "bossDashStart";
+    [SerializeField] private string dashMoveStateName = "bossDashMove";
+    [SerializeField] private string dashImpactStateName = "bossDashImpact";
+
+    [SerializeField] private float animTransitionTime = 0.03f;
 
     [Header("Debug Gizmos")]
     [SerializeField] private bool showDebugRanges = true;
@@ -87,19 +114,21 @@ public class Boss : Entity
 
     private bool isAttacking;
     private bool isUsingSkill;
+    private bool hasHitPlayerDuringDash;
 
     private float lastNormalAttackTime = -999f;
-    private float lastSkillTime = -999f;
+    private float lastJumpSkillTime = -999f;
+    private float lastDashSkillTime = -999f;
 
     private Coroutine normalAttackResetCoroutine;
     private Coroutine normalAttackDamageCoroutine;
-    private Coroutine skillCoroutine;
+    private Coroutine jumpSkillCoroutine;
+    private Coroutine dashSkillCoroutine;
 
-    private HashSet<string> animatorParams = new HashSet<string>();
+    private readonly HashSet<string> animatorParams = new HashSet<string>();
 
     private Vector3 originalScale;
     private float originalGravityScale;
-    private float attackPointStartAbsX;
     private int facingDirection = 1;
 
     protected override void Awake()
@@ -112,11 +141,6 @@ public class Boss : Entity
         {
             originalGravityScale = rb.gravityScale;
             rb.freezeRotation = true;
-        }
-
-        if (attackPoint != null)
-        {
-            attackPointStartAbsX = Mathf.Abs(attackPoint.localPosition.x);
         }
 
         CacheAnimatorParams();
@@ -145,7 +169,7 @@ public class Boss : Entity
             return;
         }
 
-        if (isUsingSkill)
+        if (currentState == BossState.JumpSkill || currentState == BossState.DashSkill)
         {
             UpdateBossAnimator();
             return;
@@ -171,6 +195,14 @@ public class Boss : Entity
         }
 
         FacePlayer();
+
+        // Ưu tiên Skill 2 dash trước Skill 1 nếu cả hai đủ điều kiện
+        if (CanUseDashSkill(distanceX))
+        {
+            StartDashSkill();
+            UpdateBossAnimator();
+            return;
+        }
 
         if (CanUseJumpSlamSkill(distanceX))
         {
@@ -264,7 +296,7 @@ public class Boss : Entity
         }
     }
 
-    private void PlaySkillState(string stateName)
+    private void PlayState(string stateName)
     {
         if (anim == null)
             return;
@@ -272,12 +304,7 @@ public class Boss : Entity
         if (string.IsNullOrEmpty(stateName))
             return;
 
-        ResetTriggerSafe(attackTriggerParam);
-        ResetTriggerSafe(skillJumpStartTriggerParam);
-        ResetTriggerSafe(skillFallTriggerParam);
-        ResetTriggerSafe(skillImpactTriggerParam);
-
-        anim.CrossFadeInFixedTime(stateName, skillAnimTransitionTime, 0, 0f);
+        anim.CrossFadeInFixedTime(stateName, animTransitionTime, 0, 0f);
     }
 
     private void UpdateBossAnimator()
@@ -294,7 +321,8 @@ public class Boss : Entity
         SetBoolSafe(isGroundedParam, isGrounded);
         SetBoolSafe(isMovingParam, Mathf.Abs(xVel) > 0.05f && !isAttacking && !isUsingSkill);
         SetBoolSafe(isAttackingParam, isAttacking);
-        SetBoolSafe(isUsingSkillParam, isUsingSkill);
+        SetBoolSafe(isUsingSkillParam, currentState == BossState.JumpSkill);
+        SetBoolSafe(isUsingDashSkillParam, currentState == BossState.DashSkill);
     }
 
     private int GetDirectionToPlayer()
@@ -335,13 +363,6 @@ public class Boss : Entity
 
         transform.localScale = newScale;
 
-        if (attackPoint != null)
-        {
-            Vector3 localPos = attackPoint.localPosition;
-            localPos.x = attackPointStartAbsX * direction;
-            attackPoint.localPosition = localPos;
-        }
-
         facDir = direction;
         facingRight = direction > 0;
     }
@@ -365,6 +386,10 @@ public class Boss : Entity
         rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
     }
 
+    // =========================
+    // NORMAL ATTACK
+    // =========================
+
     private void TryNormalAttack()
     {
         if (isAttacking)
@@ -380,10 +405,6 @@ public class Boss : Entity
 
         StopBossMove();
         FacePlayer();
-
-        ResetTriggerSafe(skillJumpStartTriggerParam);
-        ResetTriggerSafe(skillFallTriggerParam);
-        ResetTriggerSafe(skillImpactTriggerParam);
 
         ResetTriggerSafe(attackTriggerParam);
         SetTriggerSafe(attackTriggerParam);
@@ -410,7 +431,7 @@ public class Boss : Entity
     {
         yield return new WaitForSeconds(normalAttackDamageDelay);
 
-        if (isAttacking && !isUsingSkill)
+        if (isAttacking && currentState == BossState.Attack)
         {
             DamageTargets();
         }
@@ -481,12 +502,19 @@ public class Boss : Entity
         UpdateBossAnimator();
     }
 
+    // =========================
+    // SKILL 1: JUMP SLAM
+    // =========================
+
     private bool CanUseJumpSlamSkill(float distanceX)
     {
         if (!useJumpSlamSkill)
             return false;
 
-        if (Time.time < lastSkillTime + skillCooldown)
+        if (jumpSkillCoroutine != null)
+            return false;
+
+        if (Time.time < lastJumpSkillTime + skillCooldown)
             return false;
 
         return distanceX >= skillMinRange && distanceX <= skillMaxRange;
@@ -494,22 +522,22 @@ public class Boss : Entity
 
     private void StartJumpSlamSkill()
     {
-        if (skillCoroutine != null)
+        if (jumpSkillCoroutine != null)
             return;
 
-        ChangeState(BossState.Skill);
+        ChangeState(BossState.JumpSkill);
 
         isUsingSkill = true;
         isAttacking = true;
 
-        lastSkillTime = Time.time;
+        lastJumpSkillTime = Time.time;
 
         StopBossMove();
         FacePlayer();
 
-        PlaySkillState(skillStartStateName);
+        PlayState(skillStartStateName);
 
-        skillCoroutine = StartCoroutine(JumpSlamRoutine());
+        jumpSkillCoroutine = StartCoroutine(JumpSlamRoutine());
     }
 
     private IEnumerator JumpSlamRoutine()
@@ -541,7 +569,7 @@ public class Boss : Entity
             yield return null;
         }
 
-        PlaySkillState(skillFallStateName);
+        PlayState(skillFallStateName);
 
         rb.gravityScale = skillGravityScale;
 
@@ -562,7 +590,7 @@ public class Boss : Entity
         rb.linearVelocity = Vector2.zero;
         rb.gravityScale = originalGravityScale;
 
-        PlaySkillState(skillImpactStateName);
+        PlayState(skillImpactStateName);
 
         DamageImpactArea();
 
@@ -602,19 +630,183 @@ public class Boss : Entity
         }
     }
 
+    private void EndJumpSlamSkill()
+    {
+        isUsingSkill = false;
+        isAttacking = false;
+        jumpSkillCoroutine = null;
+
+        if (rb != null)
+        {
+            rb.gravityScale = originalGravityScale;
+        }
+
+        StopBossMove();
+
+        ChangeState(BossState.Idle);
+
+        UpdateBossAnimator();
+    }
+
     public void Animation_BossImpactShockwave()
     {
         // Không dùng Animation Event để tạo sóng nữa.
         // Giữ hàm này để nếu clip còn event cũ thì không bị lỗi.
     }
 
+    // =========================
+    // SKILL 2: DASH CHARGE
+    // =========================
+
+    private bool CanUseDashSkill(float distanceX)
+    {
+        if (!useDashSkill)
+            return false;
+
+        if (dashSkillCoroutine != null)
+            return false;
+
+        if (Time.time < lastDashSkillTime + dashSkillCooldown)
+            return false;
+
+        return distanceX >= dashSkillMinRange && distanceX <= dashSkillMaxRange;
+    }
+
+    private void StartDashSkill()
+    {
+        if (dashSkillCoroutine != null)
+            return;
+
+        ChangeState(BossState.DashSkill);
+
+        isUsingSkill = true;
+        isAttacking = true;
+        hasHitPlayerDuringDash = false;
+
+        lastDashSkillTime = Time.time;
+
+        StopBossMove();
+        FacePlayer();
+
+        ResetTriggerSafe(dashStartTriggerParam);
+        SetTriggerSafe(dashStartTriggerParam);
+
+        PlayState(dashStartStateName);
+
+        dashSkillCoroutine = StartCoroutine(DashSkillRoutine());
+    }
+
+    private IEnumerator DashSkillRoutine()
+    {
+        if (rb == null)
+        {
+            EndDashSkill();
+            yield break;
+        }
+
+        yield return new WaitForSeconds(dashStartTime);
+
+        int direction = GetDirectionToPlayer();
+        FaceDirection(direction);
+
+        PlayState(dashMoveStateName);
+
+        float timer = 0f;
+
+        while (timer < dashDuration)
+        {
+            timer += Time.deltaTime;
+
+            rb.linearVelocity = new Vector2(
+                direction * dashSpeed,
+                rb.linearVelocity.y
+            );
+
+            CheckDashHit();
+
+            if (hasHitPlayerDuringDash)
+                break;
+
+            UpdateBossAnimator();
+            yield return null;
+        }
+
+        StopBossMove();
+
+        ResetTriggerSafe(dashImpactTriggerParam);
+        SetTriggerSafe(dashImpactTriggerParam);
+
+        PlayState(dashImpactStateName);
+
+        yield return new WaitForSeconds(dashImpactLockTime);
+
+        EndDashSkill();
+    }
+
+    private void CheckDashHit()
+    {
+        if (hasHitPlayerDuringDash)
+            return;
+
+        Vector3 center = transform.position;
+
+        if (dashHitPoint != null)
+        {
+            center = dashHitPoint.position;
+        }
+
+        Collider2D[] hits = Physics2D.OverlapCircleAll(
+            center,
+            dashHitRadius,
+            dashTargetLayer
+        );
+
+        foreach (Collider2D hit in hits)
+        {
+            Entity target = hit.GetComponentInParent<Entity>();
+
+            if (target == null)
+                continue;
+
+            if (target == this)
+                continue;
+
+            target.TakeDamage(dashDamage);
+
+            hit.SendMessageUpwards(
+                "ApplyStun",
+                dashStunDuration,
+                SendMessageOptions.DontRequireReceiver
+            );
+
+            hasHitPlayerDuringDash = true;
+
+            break;
+        }
+    }
+
+    private void EndDashSkill()
+    {
+        isUsingSkill = false;
+        isAttacking = false;
+        hasHitPlayerDuringDash = false;
+        dashSkillCoroutine = null;
+
+        StopBossMove();
+
+        ChangeState(BossState.Idle);
+
+        UpdateBossAnimator();
+    }
+
+    // =========================
+    // SHOCKWAVE
+    // =========================
+
     private void SpawnShockwave()
     {
         if (shockwavePrefab == null)
-        {
-            Debug.LogWarning(gameObject.name + " chưa gắn Shockwave Prefab");
             return;
-        }
 
         Vector3 spawnPos = transform.position;
 
@@ -683,29 +875,19 @@ public class Boss : Entity
 
             if (shockwaveRb != null)
             {
-                shockwaveRb.linearVelocity = new Vector2(direction * shockwaveSpeed, 0f);
+                shockwaveRb.linearVelocity = new Vector2(
+                    direction * shockwaveSpeed,
+                    0f
+                );
             }
 
             Destroy(shockwave, shockwaveLifeTime);
         }
     }
 
-    public void EndJumpSlamSkill()
-    {
-        isUsingSkill = false;
-        isAttacking = false;
-        skillCoroutine = null;
-
-        ChangeState(BossState.Idle);
-
-        if (rb != null)
-        {
-            rb.gravityScale = originalGravityScale;
-        }
-
-        StopBossMove();
-        UpdateBossAnimator();
-    }
+    // =========================
+    // COMMON
+    // =========================
 
     private void ChangeState(BossState newState)
     {
@@ -727,8 +909,10 @@ public class Boss : Entity
             return;
 
         currentState = BossState.Dead;
+
         isAttacking = false;
         isUsingSkill = false;
+        hasHitPlayerDuringDash = false;
 
         StopNormalAttackResetCoroutine();
 
@@ -738,10 +922,16 @@ public class Boss : Entity
             normalAttackDamageCoroutine = null;
         }
 
-        if (skillCoroutine != null)
+        if (jumpSkillCoroutine != null)
         {
-            StopCoroutine(skillCoroutine);
-            skillCoroutine = null;
+            StopCoroutine(jumpSkillCoroutine);
+            jumpSkillCoroutine = null;
+        }
+
+        if (dashSkillCoroutine != null)
+        {
+            StopCoroutine(dashSkillCoroutine);
+            dashSkillCoroutine = null;
         }
 
         if (rb != null)
@@ -782,6 +972,12 @@ public class Boss : Entity
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(center, attackRange);
 
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(center, dashSkillMaxRange);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(center, dashSkillMinRange);
+
         if (attackPoint != null)
         {
             Gizmos.color = Color.green;
@@ -794,9 +990,15 @@ public class Boss : Entity
             Gizmos.DrawWireSphere(impactPoint.position, impactRadius);
         }
 
+        if (dashHitPoint != null)
+        {
+            Gizmos.color = Color.white;
+            Gizmos.DrawWireSphere(dashHitPoint.position, dashHitRadius);
+        }
+
         if (shockwaveSpawnPoint != null)
         {
-            Gizmos.color = Color.cyan;
+            Gizmos.color = Color.gray;
             Gizmos.DrawWireSphere(shockwaveSpawnPoint.position, 0.15f);
         }
     }

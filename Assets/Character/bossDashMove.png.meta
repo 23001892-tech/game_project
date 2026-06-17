@@ -1,0 +1,417 @@
+fileFormatVersion: 2
+guid: 4b123745623131e41a28fb3cf4028bd1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4255176518544965580
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_0
+  - first:
+      213: -5514168833758003458
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_1
+  - first:
+      213: -61662532189636932
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_2
+  - first:
+      213: 702208180630328862
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_3
+  - first:
+      213: 2670979142519723021
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_4
+  - first:
+      213: -5409227059355668492
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_5
+  - first:
+      213: 5591134796000529450
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_6
+  - first:
+      213: -4557893228497727258
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_7
+  - first:
+      213: -2554935966730340366
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_8
+  - first:
+      213: 3841474276089113815
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_9
+  - first:
+      213: -8965270139127425953
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_10
+  - first:
+      213: -8422201006728191431
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_11
+  - first:
+      213: -4244573538857375923
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_12
+  - first:
+      213: 595411072443739914
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_13
+  - first:
+      213: 4373056136045222023
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_14
+  - first:
+      213: 5209838910147985091
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_15
+  - first:
+      213: -7180429610502476816
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_16
+  - first:
+      213: -5011462647200270115
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_17
+  - first:
+      213: 8003467209788496693
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_18
+  - first:
+      213: -8801755241429932876
+    second: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_4
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 21
+        width: 68
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d049d50f069311520800000000000000
+      internalID: 2670979142519723021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_7
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 16
+        width: 62
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e01c37e14c1fb0c0800000000000000
+      internalID: -4557893228497727258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_8
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 17
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f73b2f564b0b8cd0800000000000000
+      internalID: -2554935966730340366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_9
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 62
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dca7184088af4530800000000000000
+      internalID: 3841474276089113815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_12
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 20
+        width: 71
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d472269eade3815c0800000000000000
+      internalID: -4244573538857375923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_14
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 16
+        width: 63
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78851d3e26730bc30800000000000000
+      internalID: 4373056136045222023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_16
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 16
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fbad43105df95c90800000000000000
+      internalID: -7180429610502476816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_17
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 16
+        width: 66
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd83d743645b37ab0800000000000000
+      internalID: -5011462647200270115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_18
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 16
+        width: 66
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b1eeae507021f60800000000000000
+      internalID: 8003467209788496693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_19
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 15
+        width: 72
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b4e2aadd32e9d580800000000000000
+      internalID: -8801755241429932876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f20b0a2effa1a7448bf67932e9a46642
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_0: 4255176518544965580
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_1: -5514168833758003458
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_10: -8965270139127425953
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_11: -8422201006728191431
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_12: -4244573538857375923
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_13: 595411072443739914
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_14: 4373056136045222023
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_15: 5209838910147985091
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_16: -7180429610502476816
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_17: -5011462647200270115
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_18: 8003467209788496693
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_19: -8801755241429932876
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_2: -61662532189636932
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_3: 702208180630328862
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_4: 2670979142519723021
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_5: -5409227059355668492
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_6: 5591134796000529450
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_7: -4557893228497727258
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_8: -2554935966730340366
+      A_gigantic_final_boss_for_a_2D_pixel_art_side-scroller_fantasy_cave_game_9: 3841474276089113815
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

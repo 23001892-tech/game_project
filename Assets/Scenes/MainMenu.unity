@@ -1313,7 +1313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e127b02e9023e8342b57a5424ed9a811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
-  newGameSceneName: SampleScene
+  newGameSceneName: IntroStory
   continueButton: {fileID: 1584682806}
 --- !u!4 &1858377124
 Transform:

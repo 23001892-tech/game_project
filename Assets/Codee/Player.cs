@@ -32,6 +32,9 @@ public class Player : Entity
     private Coroutine comboCoroutine;
     private float attackStartTime;
 
+    [SerializeField] private bool isStunned;
+    [SerializeField] private float stunTimer;
+
     [Header("Jump")]
     [SerializeField] private int maxAirJumps = 1;
     [SerializeField] private float fallMultiplier = 2.2f;
@@ -157,6 +160,24 @@ public class Player : Entity
 
     protected override void Update()
     {
+
+        if (isStunned)
+{
+    stunTimer -= Time.deltaTime;
+
+    if (rb != null)
+    {
+        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+    }
+
+    if (stunTimer <= 0f)
+    {
+        stunTimer = 0f;
+        isStunned = false;
+    }
+
+    return;
+}
         base.Update();
 
         if (isDead)
@@ -198,6 +219,25 @@ public class Player : Entity
             }
         }
     }
+
+    public void ApplyStun(float duration)
+{
+    if (duration <= 0f) return;
+
+    isStunned = true;
+    stunTimer = Mathf.Max(stunTimer, duration);
+
+    if (rb != null)
+    {
+        rb.linearVelocity = Vector2.zero;
+    }
+
+    if (anim != null)
+    {
+        anim.SetFloat("xVelocity", 0f);
+        anim.SetFloat("yVelocity", 0f);
+    }
+}
 
     private void CheckWall()
     {
@@ -916,6 +956,9 @@ public class Player : Entity
             rb.bodyType = RigidbodyType2D.Static;
         }
 
+        // Set animator parameters for death
+        SetAnimatorBoolIfExists("isDie", true);
+        SetAnimatorTriggerIfExists("playerDie");
         SetAnimatorTriggerIfExists("die");
 
         if (col != null)
