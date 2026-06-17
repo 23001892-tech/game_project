@@ -99,64 +99,57 @@ public class Player : Entity
     }
 
     private void Start()
+{
+    SpriteRenderer sprite = GetComponentInChildren<SpriteRenderer>();
+    if (sprite != null)
     {
-        SpriteRenderer sprite = GetComponentInChildren<SpriteRenderer>();
-
-        if (sprite != null)
-        {
-            sprite.enabled = true;
-        }
-
-        UpdateUI();
-
-        if (!GameSession.SessionStarted)
-        {
-            if (GameSession.CurrentGameState == GameState.NewGame || !SaveSystem.LoadGame())
-            {
-                currentHealth = maxHealth;
-                currentMana = maxMana;
-            }
-            else
-            {
-                string currentSceneName = SceneManager.GetActiveScene().name;
-
-                if (SaveSystem.currentData.lastSavedScene == currentSceneName)
-                {
-                    transform.position = new Vector3(
-                        SaveSystem.currentData.playerX,
-                        SaveSystem.currentData.playerY,
-                        0f
-                    );
-                }
-
-                currentHealth = SaveSystem.currentData.currentHealth;
-                currentMana = SaveSystem.currentData.currentMana;
-            }
-
-            GameSession.SessionStarted = true;
-        }
-
-        SaveCurrentState();
-        UpdateUI();
-
-        string savedScene = PlayerPrefs.GetString("LastSavedScene", "");
-        string currentScene = SceneManager.GetActiveScene().name;
-
-        if (savedScene == currentScene &&
-            PlayerPrefs.HasKey("PlayerX") &&
-            PlayerPrefs.HasKey("PlayerY"))
-        {
-            float x = PlayerPrefs.GetFloat("PlayerX");
-            float y = PlayerPrefs.GetFloat("PlayerY");
-
-            transform.position = new Vector3(x, y, 0f);
-
-            currentHealth = PlayerPrefs.GetInt("PlayerHealth", maxHealth);
-            currentMana = PlayerPrefs.GetInt("PlayerMana", maxMana);
-
-            UpdateUI();
-        }
+        sprite.enabled = true;
     }
+
+    // 1. Đọc dữ liệu từ file JSON lên RAM
+    if (!GameSession.SessionStarted)
+    {
+        if (GameSession.CurrentGameState == GameState.NewGame || !SaveSystem.LoadGame())
+        {
+            currentHealth = maxHealth;
+            currentMana = maxMana;
+        }
+        else
+        {
+            string currentSceneName = SceneManager.GetActiveScene().name;
+
+            if (SaveSystem.currentData.lastSavedScene == currentSceneName)
+            {
+                transform.position = new Vector3(
+                    SaveSystem.currentData.playerX,
+                    SaveSystem.currentData.playerY,
+                    0f
+                );
+            }
+
+            currentHealth = SaveSystem.currentData.currentHealth;
+            currentMana = SaveSystem.currentData.currentMana;
+        }
+
+        GameSession.SessionStarted = true;
+    }
+    else
+    {
+        SaveSystem.LoadGame();
+        currentHealth = SaveSystem.currentData.currentHealth;
+        currentMana = SaveSystem.currentData.currentMana;
+    }
+
+    if (currentHealth <= 0)
+    {
+        currentHealth = maxHealth;
+        currentMana = maxMana;
+    }
+
+    UpdateUI();
+    
+    SaveCurrentState();
+}
 
     protected override void Update()
     {
@@ -1033,4 +1026,57 @@ public class Player : Entity
         Gizmos.DrawWireCube(rightBoxCenter, boxSize);
         Gizmos.DrawWireCube(leftBoxCenter, boxSize);
     }
+
+    public int GetCurrentHealth() => currentHealth;
+    public int GetCurrentMana() => currentMana;
+    public int GetMaxHealth() => maxHealth;
+    public int GetMaxMana() => maxMana;
+    public int GetAttackDamage() => attackDamage;
+
+    public void AddHealth(int amount)
+    {
+        maxHealth += amount;
+        currentHealth += amount;
+
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+
+        UpdateUI();
+    }
+
+    public void AddMana(int amount)
+    {
+        maxMana += amount;
+        currentMana += amount;
+
+        if (currentMana > maxMana)
+        {
+            currentMana = maxMana;
+        }
+
+        UpdateUI();
+    }
+
+    public void AddAttackDamage(int amount)
+    {
+        attackDamage += amount;
+    }
+
+    public override void DamageTargets()
+{
+    // 1. Gọi lại logic gây sát thương mặc định của Entity
+    base.DamageTargets();
+
+    if (attackPoint != null)
+    {
+        Collider2D[] targets = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget);
+        
+        if (targets.Length > 0)
+        {
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.PlayerHit);
+        }
+    }
+}
 }

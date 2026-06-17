@@ -592,6 +592,7 @@ public class Boss : Entity
 
         PlayState(skillImpactStateName);
 
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.BossAttack);
         DamageImpactArea();
 
         yield return new WaitForSeconds(skillImpactLockTime);

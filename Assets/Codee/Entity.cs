@@ -260,6 +260,7 @@ public class Entity : MonoBehaviour
             if (targetEntity != null && targetEntity != this)
             {
                 targetEntity.TakeDamage(attackDamage);
+                AudioManager.Instance.PlaySFX(AudioManager.Instance.EnemyHit);
             }
         }
     }

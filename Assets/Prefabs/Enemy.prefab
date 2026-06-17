@@ -170,6 +170,7 @@ GameObject:
   - component: {fileID: 8759934069538026439}
   - component: {fileID: 1009062230432335078}
   - component: {fileID: 7784044441673041057}
+  - component: {fileID: 7466873224839491313}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
@@ -291,3 +292,16 @@ CapsuleCollider2D:
   m_Offset: {x: -0.04859203, y: -0.038179457}
   m_Size: {x: 0.5277668, y: 0.9236411}
   m_Direction: 0
+--- !u!114 &7466873224839491313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4048947922152017046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3153c63e50dea4146abeaa2e74b4c1ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExpDrop
+  expAmount: 1000

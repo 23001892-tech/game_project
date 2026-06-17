@@ -1,33 +1,57 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerUI : MonoBehaviour
 {
-
     public static PlayerUI Instance { get; private set; }
-    [SerializeField] private Transform healthBarFill;
-    [SerializeField] private Transform manaBarFill;
+
+    [SerializeField] private Slider healthSlider;
+    [SerializeField] private Slider manaSlider;
 
     private void Awake()
     {
         Instance = this;
     }
+
+    private void InitSlider(Slider slider, float max)
+    {
+        if (slider == null) return;
+        slider.minValue = 0;
+        slider.maxValue = max;
+        slider.value = max; // Bắt đầu full
+    }
+
+    public void InitBars(float maxHealth, float maxMana)
+    {
+        InitSlider(healthSlider, maxHealth);
+        InitSlider(manaSlider, maxMana);
+    }
+
     public void UpdateHealthBar(float current, float max)
+{
+    if (healthSlider == null) return;
+
+    healthSlider.maxValue = max;
+    healthSlider.value = current; 
+
+    // Tự động ẩn cái chấm trắng (thanh Fill) khi máu bằng 0
+    if (healthSlider.fillRect != null)
     {
-        if (healthBarFill == null || max <= 0) return;
-
-        float value = current / max;
-        Vector3 scale = healthBarFill.localScale;
-        scale.x = value;
-        healthBarFill.localScale = scale;
+        healthSlider.fillRect.gameObject.SetActive(current > 0);
     }
+}
 
-    public void UpdateManaBar(float current, float max)
+public void UpdateManaBar(float current, float max)
+{
+    if (manaSlider == null) return;
+
+    manaSlider.maxValue = max;
+    manaSlider.value = current;
+
+    // Tự động ẩn thanh Fill của Mana khi mana bằng 0
+    if (manaSlider.fillRect != null)
     {
-        if (manaBarFill == null || max <= 0) return;
-
-        float value = current / max;
-        Vector3 scale = manaBarFill.localScale;
-        scale.x = value;
-        manaBarFill.localScale = scale;
+        manaSlider.fillRect.gameObject.SetActive(current > 0);
     }
+}
 }
