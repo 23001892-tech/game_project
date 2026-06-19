@@ -298,7 +298,7 @@ MonoBehaviour:
     m_Bits: 64
   attackPoint: {fileID: 3008346740351584515}
   attackRadius: 0.84
-  attackDamage: 2
+  attackDamage: 15
   whatIsTarget:
     serializedVersion: 2
     m_Bits: 256

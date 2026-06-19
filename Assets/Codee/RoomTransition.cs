@@ -51,10 +51,12 @@ public class RoomTransition : MonoBehaviour
 
     private void EnterNewRoom()
     {
-        // Gọi hàm chuyển scene ở đây
-        if (!string.IsNullOrEmpty(sceneToLoad))
-            SceneManager.LoadScene(sceneToLoad);
-        else 
-            Debug.LogWarning("Tên scene không được để trống!");
+    Player player = FindFirstObjectByType<Player>();
+    if (player != null)
+    {
+        player.syncBeforeLoad();
+    }
+
+    SceneManager.LoadScene(sceneToLoad);
     }
 }

@@ -19,6 +19,8 @@ public class Boss : Entity
     [SerializeField] private float detectRange = 8f;
     [SerializeField] private float attackRange = 2.5f;
     [SerializeField] private float bossMoveSpeed = 2.5f;
+    [SerializeField] private GameObject bossBar;
+    [SerializeField] private UnityEngine.UI.Slider bossHP;
 
     [Header("Facing")]
     [Tooltip("Bật nếu sprite boss gốc nhìn sang phải. Tắt nếu sprite boss gốc nhìn sang trái.")]
@@ -29,6 +31,10 @@ public class Boss : Entity
     [SerializeField] private float normalAttackLockTime = 0.9f;
     [SerializeField] private float normalAttackDamageDelay = 0.45f;
     [SerializeField] private bool useAnimationEventForNormalDamage = false;
+
+    [Header("Skill Cooldowns")]
+    [SerializeField] private float GlobalSkillCooldown = 3f;
+    private float lastAnySkillTime = -999f;
 
     [Header("Jump Slam Skill 1")]
     [SerializeField] private bool useJumpSlamSkill = true;
@@ -63,6 +69,7 @@ public class Boss : Entity
     [SerializeField] private bool spawnShockwaveAfterImpactEnd = true;
 
     [Header("Dash Skill 2")]
+    [SerializeField] private float dashKnockbackForce = 8f;
     [SerializeField] private bool useDashSkill = true;
     [SerializeField] private float dashSkillMinRange = 2.5f;
     [SerializeField] private float dashSkillMaxRange = 9f;
@@ -155,9 +162,33 @@ public class Boss : Entity
 
     protected override void Update()
     {
+        float distanceFull = Vector2.Distance(transform.position, player.position);
         if (isDead)
             return;
 
+        if (distanceFull > detectRange)
+        {
+            ChangeState(BossState.Idle);
+            StopBossMove();
+            UpdateBossAnimator();
+
+            if (bossBar != null && bossBar.activeSelf) 
+                bossBar.SetActive(false);
+
+            return;
+        }
+
+        // Khi Player vào tầm: Bật UI và cài đặt chỉ số Slider
+        if (bossBar != null && !bossBar.activeSelf)
+        {
+            bossBar.SetActive(true);
+            
+            if (bossHP != null)
+            {
+                bossHP.maxValue = maxHealth; // Giả sử class cha Entity có biến maxHealth
+                bossHP.value = currentHealth; // Giả sử class cha Entity có biến currentHealth
+            }
+        }
         FindPlayer();
         HandleCollision();
 
@@ -183,7 +214,6 @@ public class Boss : Entity
             return;
         }
 
-        float distanceFull = Vector2.Distance(transform.position, player.position);
         float distanceX = Mathf.Abs(player.position.x - transform.position.x);
 
         if (distanceFull > detectRange)
@@ -517,7 +547,9 @@ public class Boss : Entity
         if (Time.time < lastJumpSkillTime + skillCooldown)
             return false;
 
-        return distanceX >= skillMinRange && distanceX <= skillMaxRange;
+        if (Time.time < lastAnySkillTime + GlobalSkillCooldown)
+            return false;
+        return true;
     }
 
     private void StartJumpSlamSkill()
@@ -530,6 +562,7 @@ public class Boss : Entity
         isUsingSkill = true;
         isAttacking = true;
 
+        lastAnySkillTime = Time.time;
         lastJumpSkillTime = Time.time;
 
         StopBossMove();
@@ -670,7 +703,9 @@ public class Boss : Entity
         if (Time.time < lastDashSkillTime + dashSkillCooldown)
             return false;
 
-        return distanceX >= dashSkillMinRange && distanceX <= dashSkillMaxRange;
+        if (Time.time < lastAnySkillTime + GlobalSkillCooldown)
+            return false;
+        return true;
     }
 
     private void StartDashSkill()
@@ -684,6 +719,7 @@ public class Boss : Entity
         isAttacking = true;
         hasHitPlayerDuringDash = false;
 
+        lastAnySkillTime = Time.time;
         lastDashSkillTime = Time.time;
 
         StopBossMove();
@@ -711,6 +747,7 @@ public class Boss : Entity
         FaceDirection(direction);
 
         PlayState(dashMoveStateName);
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.BossSkill2);
 
         float timer = 0f;
 
@@ -726,7 +763,7 @@ public class Boss : Entity
             CheckDashHit();
 
             if (hasHitPlayerDuringDash)
-                break;
+                
 
             UpdateBossAnimator();
             yield return null;
@@ -745,46 +782,40 @@ public class Boss : Entity
     }
 
     private void CheckDashHit()
+{
+    if (hasHitPlayerDuringDash) return;
+
+    Vector3 center = dashHitPoint != null ? dashHitPoint.position : transform.position;
+
+    Collider2D[] hits = Physics2D.OverlapCircleAll(center, dashHitRadius, dashTargetLayer);
+
+    foreach (Collider2D hit in hits)
     {
-        if (hasHitPlayerDuringDash)
-            return;
+        Entity target = hit.GetComponentInParent<Entity>();
+        if (target == null || target == this) continue;
 
-        Vector3 center = transform.position;
+        target.TakeDamage(dashDamage);
 
-        if (dashHitPoint != null)
+        // Hất văng player
+        Rigidbody2D targetRb = hit.GetComponentInParent<Rigidbody2D>();
+        if (targetRb != null)
         {
-            center = dashHitPoint.position;
-        }
+            Vector2 knockbackDir = new Vector2(facingDirection, 0.8f).normalized;
+            targetRb.linearVelocity = Vector2.zero; // reset trước
+            targetRb.AddForce(knockbackDir * dashKnockbackForce, ForceMode2D.Impulse);
 
-        Collider2D[] hits = Physics2D.OverlapCircleAll(
-            center,
-            dashHitRadius,
-            dashTargetLayer
-        );
+            Debug.Log($"Knockback applied! Dir={knockbackDir}, Force={dashKnockbackForce}, Velocity after={targetRb.linearVelocity}");
 
-        foreach (Collider2D hit in hits)
-        {
-            Entity target = hit.GetComponentInParent<Entity>();
+        }   else
+            {
+                            Debug.LogWarning("Không tìm thấy Rigidbody2D trên player!");
 
-            if (target == null)
-                continue;
+            }
 
-            if (target == this)
-                continue;
-
-            target.TakeDamage(dashDamage);
-
-            hit.SendMessageUpwards(
-                "ApplyStun",
-                dashStunDuration,
-                SendMessageOptions.DontRequireReceiver
-            );
-
-            hasHitPlayerDuringDash = true;
-
-            break;
-        }
+        hasHitPlayerDuringDash = true;
+        break;
     }
+}
 
     private void EndDashSkill()
     {
@@ -1002,5 +1033,19 @@ public class Boss : Entity
             Gizmos.color = Color.gray;
             Gizmos.DrawWireSphere(shockwaveSpawnPoint.position, 0.15f);
         }
+    }
+    private void UpdateBossHpUI()
+    {
+        if (bossHP != null)
+        {
+            bossHP.value = currentHealth;
+            bossHP.gameObject.SetActive(currentHealth > 0); 
+        }
+    }
+
+    public override void TakeDamage(int damage)
+    {
+        base.TakeDamage(damage); // Gọi logic trừ máu của Entity
+        UpdateBossHpUI();        // Slider tự động tụt thanh máu
     }
 }

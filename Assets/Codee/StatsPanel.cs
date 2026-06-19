@@ -114,7 +114,7 @@ public class StatsPanel : MonoBehaviour
             RefreshAll();
 
             // Pause movement input while panel is open (optional)
-            Time.timeScale = 0f; // Comment dòng này nếu không muốn pause game
+            Time.timeScale = 0f; 
         }
         else
         {

@@ -12,6 +12,16 @@ public class GameSaveData
     public int currentMana;
     public int maxMana;
 
+    public int currentLevel;
+    public int currentExp;
+    public int attributePoints;
+
+    public int playerLevel; // Cấp độ của nhân vật
+    public int playerExp;   // EXP hiện tại của nhân vật
+    public int bonusMaxHp;
+    public int bonusMaxMana;
+    public int bonusAtk;
+
     // --- DỮ LIỆU THẾ GIỚI (Mở rương, Cốt truyện) ---
     // Dùng Dictionary hoặc List để lưu ID của những rương đã mở
     public List<string> openedChestIDs = new List<string>();

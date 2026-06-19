@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd77e38df772e044ba45dc5ea57d88ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  maxHealth: 10
+  maxHealth: 50
   currentHealth: 0
   damageMaterial: {fileID: 2100000, guid: 8646453728596ba40b87ca0020cb7685, type: 2}
   damageFeedbackDuration: 0.1
@@ -222,7 +222,7 @@ MonoBehaviour:
     m_Bits: 64
   attackPoint: {fileID: 7511681271575498348}
   attackRadius: 0.59
-  attackDamage: 1
+  attackDamage: 5
   whatIsTarget:
     serializedVersion: 2
     m_Bits: 256

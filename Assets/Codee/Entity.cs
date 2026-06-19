@@ -20,6 +20,7 @@ public class Entity : MonoBehaviour
     protected Coroutine damageFeedbackCoroutine;
     protected bool isDead;
     protected bool isDying;
+    public bool IsDead => isDead;
 
     [Header("Death Details")]
     [SerializeField] protected float deathDestroyDelay = 3f;
@@ -49,31 +50,31 @@ public class Entity : MonoBehaviour
     [SerializeField] protected LayerMask whatIsTarget;
 
     protected virtual void Awake()
-{
-    rb = GetComponent<Rigidbody2D>();
-    anim = GetComponentInChildren<Animator>();
-
-    col = GetComponent<Collider2D>();
-
-    if (col == null)
     {
-        col = GetComponentInChildren<Collider2D>();
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponentInChildren<Animator>();
+
+        col = GetComponent<Collider2D>();
+
+        if (col == null)
+        {
+            col = GetComponentInChildren<Collider2D>();
+        }
+
+        spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
+        originalMaterials = new Material[spriteRenderers.Length];
+
+        for (int i = 0; i < spriteRenderers.Length; i++)
+        {
+            originalMaterials[i] = spriteRenderers[i].material;
+        }
+
+        currentHealth = maxHealth;
+
+        // Ensure facing flags match the transform's x scale on startup
+        facingRight = transform.localScale.x > 0f;
+        facDir = facingRight ? 1 : -1;
     }
-
-    spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
-    originalMaterials = new Material[spriteRenderers.Length];
-
-    for (int i = 0; i < spriteRenderers.Length; i++)
-    {
-        originalMaterials[i] = spriteRenderers[i].material;
-    }
-
-    currentHealth = maxHealth;
-
-    // Ensure facing flags match the transform's x scale on startup
-    facingRight = transform.localScale.x > 0f;
-    facDir = facingRight ? 1 : -1;
-}
 
     protected virtual void Update()
     {
@@ -94,30 +95,30 @@ public class Entity : MonoBehaviour
     }
 
     protected virtual void HandleCollision()
-{
-    if (col == null)
     {
-        Debug.LogWarning(gameObject.name + " không có Collider2D để check ground.");
-        isGrounded = false;
-        return;
+        if (col == null)
+        {
+            Debug.LogWarning(gameObject.name + " không có Collider2D để check ground.");
+            isGrounded = false;
+            return;
+        }
+
+        Bounds bounds = col.bounds;
+
+        Vector2 boxCenter = new Vector2(bounds.center.x, bounds.min.y);
+        Vector2 boxSize = new Vector2(bounds.size.x * 0.8f, 0.08f);
+
+        RaycastHit2D hit = Physics2D.BoxCast(
+            boxCenter,
+            boxSize,
+            0f,
+            Vector2.down,
+            groundCheckDistance,
+            whatIsGround
+        );
+
+        isGrounded = hit.collider != null;
     }
-
-    Bounds bounds = col.bounds;
-
-    Vector2 boxCenter = new Vector2(bounds.center.x, bounds.min.y);
-    Vector2 boxSize = new Vector2(bounds.size.x * 0.8f, 0.08f);
-
-    RaycastHit2D hit = Physics2D.BoxCast(
-        boxCenter,
-        boxSize,
-        0f,
-        Vector2.down,
-        groundCheckDistance,
-        whatIsGround
-    );
-
-    isGrounded = hit.collider != null;
-}
 
     protected virtual void HandleMovement()
     {
@@ -159,13 +160,13 @@ public class Entity : MonoBehaviour
     }
 
     private bool HasParameter(string paramName, Animator animator)
-{
-    foreach (AnimatorControllerParameter param in animator.parameters)
     {
-        if (param.name == paramName) return true;
+        foreach (AnimatorControllerParameter param in animator.parameters)
+        {
+            if (param.name == paramName) return true;
+        }
+        return false;
     }
-    return false;
-}
 
     protected virtual void TryToJump()
     {
@@ -260,7 +261,7 @@ public class Entity : MonoBehaviour
             if (targetEntity != null && targetEntity != this)
             {
                 targetEntity.TakeDamage(attackDamage);
-                AudioManager.Instance.PlaySFX(AudioManager.Instance.EnemyHit);
+                AudioManager.Instance.PlaySFX(AudioManager.Instance.EnemyAttack);
             }
         }
     }
@@ -274,7 +275,7 @@ public class Entity : MonoBehaviour
     {
         if (isDead || isDying)
             return;
-
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.EnemyHit);
         currentHealth -= damage;
 
         if (currentHealth < 0)
@@ -344,45 +345,48 @@ public class Entity : MonoBehaviour
     }
 
     protected virtual void Die()
-{
-    if (isDead) return;
-
-    isDead = true;
-    isDying = false;
-    canMove = false;
-    canJump = false;
-
-    // Lưu trạng thái chết nếu là enemy
-    var enemySave = GetComponent<EnemyDeadSave>();
-    if (enemySave != null) enemySave.MarkAsDead();
-
-    // Set animator parameters for death
-    if (anim != null)
     {
-        if (HasParameter("isDie", anim))
-        {
-            anim.SetBool("isDie", true);
-        }
-        if (HasParameter("playerDie", anim))
-        {
-            anim.SetTrigger("playerDie");
-        }
-        if (HasParameter("die", anim))
-        {
-            anim.SetTrigger("die");
-        }
-        anim.enabled = false;
-    }
+        if (isDead) return;
 
-    if (col != null) col.enabled = false;
-    if (rb != null)
-    {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, deathJumpForce);
-        rb.gravityScale = deathGravityScale;
-    }
+        isDead = true;
+        isDying = false;
+        canMove = false;
+        canJump = false;
 
-    Destroy(gameObject, deathDestroyDelay);
-}
+        // Lưu trạng thái chết nếu là enemy
+        var enemySave = GetComponent<EnemyDeadSave>();
+        if (enemySave != null) enemySave.MarkAsDead();
+
+        var expDrop = GetComponent<ExpDrop>();
+        if (expDrop != null) expDrop.MarkAsDiedNaturally();
+
+        // Set animator parameters for death
+        if (anim != null)
+        {
+            if (HasParameter("isDie", anim))
+            {
+                anim.SetBool("isDie", true);
+            }
+            if (HasParameter("playerDie", anim))
+            {
+                anim.SetTrigger("playerDie");
+            }
+            if (HasParameter("die", anim))
+            {
+                anim.SetTrigger("die");
+            }
+            anim.enabled = false;
+        }
+
+        if (col != null) col.enabled = false;
+        if (rb != null)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, deathJumpForce);
+            rb.gravityScale = deathGravityScale;
+        }
+
+        Destroy(gameObject, deathDestroyDelay);
+    }
 
     public virtual void EnableMovement(bool enable)
     {
@@ -432,29 +436,29 @@ public class Entity : MonoBehaviour
     }
 
     protected virtual void OnDrawGizmos()
-{
-    Collider2D gizmoCol = GetComponent<Collider2D>();
-
-    if (gizmoCol == null)
     {
-        gizmoCol = GetComponentInChildren<Collider2D>();
+        Collider2D gizmoCol = GetComponent<Collider2D>();
+
+        if (gizmoCol == null)
+        {
+            gizmoCol = GetComponentInChildren<Collider2D>();
+        }
+
+        if (gizmoCol != null)
+        {
+            Bounds bounds = gizmoCol.bounds;
+
+            Vector2 boxCenter = new Vector2(bounds.center.x, bounds.min.y - groundCheckDistance);
+            Vector2 boxSize = new Vector2(bounds.size.x * 0.8f, 0.08f);
+
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireCube(boxCenter, boxSize);
+        }
+
+        if (attackPoint != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
+        }
     }
-
-    if (gizmoCol != null)
-    {
-        Bounds bounds = gizmoCol.bounds;
-
-        Vector2 boxCenter = new Vector2(bounds.center.x, bounds.min.y - groundCheckDistance);
-        Vector2 boxSize = new Vector2(bounds.size.x * 0.8f, 0.08f);
-
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireCube(boxCenter, boxSize);
-    }
-
-    if (attackPoint != null)
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
-    }
-}
 }

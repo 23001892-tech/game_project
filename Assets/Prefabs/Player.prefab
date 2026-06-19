@@ -172,6 +172,7 @@ GameObject:
   - component: {fileID: 3459219866586930355}
   - component: {fileID: 143397505969699680}
   - component: {fileID: 312224446413464348}
+  - component: {fileID: 1743674428136591858}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -364,6 +365,8 @@ MonoBehaviour:
   attackCancelTransitionTime: 0.05
   locomotionStateName: idle/move
   airStateName: jump/fall
+  isStunned: 0
+  stunTimer: 0
   maxAirJumps: 1
   fallMultiplier: 2.2
   lowJumpMultiplier: 1.6
@@ -401,3 +404,18 @@ MonoBehaviour:
   hpPerPoint: 10
   manaPerPoint: 8
   atkPerPoint: 2
+--- !u!114 &1743674428136591858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3106833775815027145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a5d03b0a00378f428e7fa85aee553f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthRegen
+  regenPercenPerTick: 0.01
+  regenInterval: 1
+  combatCooldown: 5

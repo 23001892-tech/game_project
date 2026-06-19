@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 
+
 public class PlayerLevelSystem : MonoBehaviour
 {
     public static PlayerLevelSystem Instance { get; private set; }
@@ -21,6 +22,10 @@ public class PlayerLevelSystem : MonoBehaviour
     [SerializeField] private int manaPerPoint = 8;
     [SerializeField] private int atkPerPoint = 2;
 
+    private int totalHpSpent = 0;
+    private int totalManaSpent = 0;
+    private int totalAtkSpent = 0;
+
     // Cached references
     private Player playerComponent;
 
@@ -36,24 +41,24 @@ public class PlayerLevelSystem : MonoBehaviour
     public int ExpToNextLevel => CalculateExpToLevelUp(currentLevel);
 
     private void Awake()
+{
+    if (Instance != null && Instance != this)
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        Instance = this;
-
-        playerComponent = GetComponent<Player>();
+        Destroy(gameObject);
+        return;
     }
+    Instance = this;
+    playerComponent = GetComponent<Player>();
 
-    private void Start()
-    {
-        // Load saved data nếu có
-        LoadLevelData();
-        OnExpChanged?.Invoke(currentExp, ExpToNextLevel, currentLevel);
-        OnAttributePointsChanged?.Invoke(attributePoints);
-    }
+    LoadLevelData(); // Chuyển vào đây
+}
+
+private void Start()
+{
+    // Bỏ LoadLevelData() ở đây
+    OnExpChanged?.Invoke(currentExp, ExpToNextLevel, currentLevel);
+    OnAttributePointsChanged?.Invoke(attributePoints);
+}
 
     /// <summary>
     /// Tính lượng EXP cần để lên từ level hiện tại lên level tiếp theo.
@@ -108,17 +113,9 @@ public class PlayerLevelSystem : MonoBehaviour
     public bool SpendPointOnHP()
     {
         if (!HasPoints()) return false;
-
         attributePoints--;
-
-        // Tăng maxHealth trên Entity (Player)
-        // Dùng reflection-free: Entity expose method AddMaxHealth
-        if (playerComponent != null)
-        {
-            playerComponent.AddHealth(hpPerPoint);
-        }
-
-        Debug.Log($"[LevelSystem] +{hpPerPoint} MaxHP | Points còn: {attributePoints}");
+        totalHpSpent += hpPerPoint;
+        playerComponent?.AddHealth(hpPerPoint);
         OnAttributePointsChanged?.Invoke(attributePoints);
         SaveLevelData();
         return true;
@@ -130,15 +127,9 @@ public class PlayerLevelSystem : MonoBehaviour
     public bool SpendPointOnMana()
     {
         if (!HasPoints()) return false;
-
         attributePoints--;
-
-        if (playerComponent != null)
-        {
-            playerComponent.AddMana(manaPerPoint);
-        }
-
-        Debug.Log($"[LevelSystem] +{manaPerPoint} MaxMana | Points còn: {attributePoints}");
+        totalManaSpent += manaPerPoint;
+        playerComponent?.AddMana(manaPerPoint);
         OnAttributePointsChanged?.Invoke(attributePoints);
         SaveLevelData();
         return true;
@@ -150,15 +141,9 @@ public class PlayerLevelSystem : MonoBehaviour
     public bool SpendPointOnAttack()
     {
         if (!HasPoints()) return false;
-
         attributePoints--;
-
-        if (playerComponent != null)
-        {
-            playerComponent.AddAttackDamage(atkPerPoint);
-        }
-
-        Debug.Log($"[LevelSystem] +{atkPerPoint} ATK | Points còn: {attributePoints}");
+        totalAtkSpent += atkPerPoint;
+        playerComponent?.AddAttackDamage(atkPerPoint);
         OnAttributePointsChanged?.Invoke(attributePoints);
         SaveLevelData();
         return true;
@@ -169,24 +154,42 @@ public class PlayerLevelSystem : MonoBehaviour
 
     private void SaveLevelData()
     {
-        PlayerPrefs.SetInt("PlayerLevel", currentLevel);
-        PlayerPrefs.SetInt("PlayerExp", currentExp);
-        PlayerPrefs.SetInt("AttributePoints", attributePoints);
-        PlayerPrefs.Save();
+        SaveSystem.currentData.playerLevel = currentLevel;
+        SaveSystem.currentData.playerExp = currentExp;
+        SaveSystem.currentData.attributePoints = attributePoints;
+        SaveSystem.currentData.bonusMaxHp = totalHpSpent;
+        SaveSystem.currentData.bonusMaxMana = totalManaSpent;
+        SaveSystem.currentData.bonusAtk = totalAtkSpent;
+        SaveSystem.SaveGame();
     }
 
     private void LoadLevelData()
     {
-        if (PlayerPrefs.HasKey("PlayerLevel"))
+        if (GameSession.CurrentGameState == GameState.Continue && SaveSystem.LoadGame())
         {
-            currentLevel     = PlayerPrefs.GetInt("PlayerLevel", 1);
-            currentExp       = PlayerPrefs.GetInt("PlayerExp", 0);
-            attributePoints  = PlayerPrefs.GetInt("AttributePoints", 0);
+            currentLevel = SaveSystem.currentData.playerLevel;
+            currentExp = SaveSystem.currentData.playerExp;
+            attributePoints = SaveSystem.currentData.attributePoints;
+            totalHpSpent = SaveSystem.currentData.bonusMaxHp;
+            totalManaSpent = SaveSystem.currentData.bonusMaxMana;
+            totalAtkSpent = SaveSystem.currentData.bonusAtk;
+
+            if (playerComponent != null)
+            {
+                if (totalHpSpent > 0) playerComponent.ApplyMaxHealthBonus(totalHpSpent);
+                if (totalManaSpent > 0) playerComponent.ApplyMaxManaBonus(totalManaSpent);
+                if (totalAtkSpent > 0) playerComponent.AddAttackDamage(totalAtkSpent);
+            }
+        }
+        else
+        {
+            currentLevel = 1; currentExp = 0; attributePoints = 0;
+            totalHpSpent = 0; totalManaSpent = 0; totalAtkSpent = 0;
         }
     }
 
 
-    public int GetHpBonus()   => hpPerPoint;
+    public int GetHpBonus() => hpPerPoint;
     public int GetManaBonus() => manaPerPoint;
-    public int GetAtkBonus()  => atkPerPoint;
+    public int GetAtkBonus() => atkPerPoint;
 }

@@ -9,6 +9,12 @@ public class ExpDrop : MonoBehaviour
     [SerializeField] private int expAmount = 10;
 
     private bool hasDropped = false;
+    private bool diedNaturally = false; // Biến này để kiểm tra xem Enemy có chết tự nhiên hay không (không phải bị destroy bằng code)
+
+    public void MarkAsDiedNaturally()
+    {
+        diedNaturally = true;
+    }
 
     private void Update()
     {
@@ -22,6 +28,8 @@ public class ExpDrop : MonoBehaviour
     public void DropExp()
     {
         if (hasDropped) return;
+        if (!diedNaturally) return; // Chỉ drop exp khi enemy chết tự nhiên, không drop khi bị destroy bằng code
+        
         hasDropped = true;
 
         // Tìm Player trong scene

@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
+        AudioManager.Instance.PlayMainMenuMusic();
         if (continueButton != null)
         {
             // 1. Kiểm tra chính xác xem có file JSON tồn tại hay không thông qua SaveSystem
@@ -51,7 +52,7 @@ public class MainMenu : MonoBehaviour
         SaveSystem.currentData.lastSavedScene = newGameSceneName;
         SaveSystem.SaveGame();
 
-        
+
         GameSession.CurrentGameState = GameState.NewGame;
         GameSession.SessionStarted = false; // Đặt lại trạng thái session để khi vào scene mới sẽ biết là bắt đầu mới chứ không phải tiếp tục
 
@@ -71,12 +72,12 @@ public class MainMenu : MonoBehaviour
     {
         GameSession.CurrentGameState = GameState.Continue;
         GameSession.SessionStarted = false; // Đặt lại trạng thái session để khi vào scene mới sẽ biết là tiếp tục chứ không phải bắt đầu mới
-        
+
         if (SaveSystem.LoadGame() && !string.IsNullOrEmpty(SaveSystem.currentData.lastSavedScene))
         {
             string savedScene = SaveSystem.currentData.lastSavedScene;
             Debug.Log("Đang tải lại màn chơi cũ từ JSON: " + savedScene);
-            
+
             if (LoadingProgress.Instance != null)
             {
                 LoadingProgress.Instance.LoadScene(savedScene);
@@ -92,17 +93,29 @@ public class MainMenu : MonoBehaviour
         }
     }
 
+    // Gọi từ nút "Settings" trong Main Menu
+    public void OpenSettings()
+    {
+        if (SettingsManager.Instance != null) SettingsManager.Instance.Open();
+    }
+
+    // Gọi từ nút "Back" trong Settings Panel
+    public void CloseSettings()
+    {
+        if (SettingsManager.Instance != null) SettingsManager.Instance.Close();
+    }
+
     // Hàm gọi khi nhấn vào nút EXIT
     public void ExitGame()
     {
         Debug.Log("Đang thoát game...");
-        
+
         // Thoát ứng dụng
         Application.Quit();
-        
-        #if UNITY_EDITOR
+
+#if UNITY_EDITOR
         // Nếu đang chạy thử bằng Unity Editor thì dừng chế độ Play
         UnityEditor.EditorApplication.isPlaying = false;
-        #endif
+#endif
     }
 }

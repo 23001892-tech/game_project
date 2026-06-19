@@ -99,78 +99,87 @@ public class Player : Entity
     }
 
     private void Start()
-{
-    SpriteRenderer sprite = GetComponentInChildren<SpriteRenderer>();
-    if (sprite != null)
     {
-        sprite.enabled = true;
-    }
-
-    // 1. Đọc dữ liệu từ file JSON lên RAM
-    if (!GameSession.SessionStarted)
-    {
-        if (GameSession.CurrentGameState == GameState.NewGame || !SaveSystem.LoadGame())
+        SpriteRenderer sprite = GetComponentInChildren<SpriteRenderer>();
+        if (sprite != null)
         {
-            currentHealth = maxHealth;
-            currentMana = maxMana;
+            sprite.enabled = true;
+        }
+
+        // 1. Đọc dữ liệu từ file JSON lên RAM
+        if (!GameSession.SessionStarted)
+        {
+            if (GameSession.CurrentGameState == GameState.NewGame || !SaveSystem.LoadGame())
+            {
+                currentHealth = maxHealth;
+                currentMana = maxMana;
+            }
+            else
+            {
+                string currentSceneName = SceneManager.GetActiveScene().name;
+
+                if (SaveSystem.currentData.lastSavedScene == currentSceneName)
+                {
+                    transform.position = new Vector3(
+                        SaveSystem.currentData.playerX,
+                        SaveSystem.currentData.playerY,
+                        0f
+                    );
+                }
+
+                currentHealth = SaveSystem.currentData.currentHealth;
+                currentMana = SaveSystem.currentData.currentMana;
+            }
+
+            GameSession.SessionStarted = true;
         }
         else
         {
-            string currentSceneName = SceneManager.GetActiveScene().name;
-
-            if (SaveSystem.currentData.lastSavedScene == currentSceneName)
-            {
-                transform.position = new Vector3(
-                    SaveSystem.currentData.playerX,
-                    SaveSystem.currentData.playerY,
-                    0f
-                );
-            }
-
+            SaveSystem.LoadGame();
             currentHealth = SaveSystem.currentData.currentHealth;
             currentMana = SaveSystem.currentData.currentMana;
         }
 
-        GameSession.SessionStarted = true;
-    }
-    else
-    {
-        SaveSystem.LoadGame();
-        currentHealth = SaveSystem.currentData.currentHealth;
-        currentMana = SaveSystem.currentData.currentMana;
-    }
+        if (currentHealth <= 0)
+        {
+            currentHealth = maxHealth;
+            currentMana = maxMana;
+        }
 
-    if (currentHealth <= 0)
-    {
-        currentHealth = maxHealth;
-        currentMana = maxMana;
-    }
+        UpdateUI();
 
-    UpdateUI();
-    
-    SaveCurrentState();
-}
+        SaveCurrentState();
+    }
 
     protected override void Update()
     {
 
         if (isStunned)
-{
-    stunTimer -= Time.deltaTime;
+        {
+            stunTimer -= Time.deltaTime;
 
-    if (rb != null)
-    {
-        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
-    }
+            if (knockbackActive)
+            {
+                knockbackTimer -= Time.deltaTime;
+                if (knockbackTimer <= 0f)
+                {
+                    knockbackActive = false;
+                }
+            }
+            else if (rb != null)
+            {
+                rb.linearVelocity = Vector2.zero;
+            }
 
-    if (stunTimer <= 0f)
-    {
-        stunTimer = 0f;
-        isStunned = false;
-    }
+            if (stunTimer <= 0f)
+            {
+                stunTimer = 0f;
+                isStunned = false;
+                knockbackActive = false;
+            }
 
-    return;
-}
+            return;
+        }
         base.Update();
 
         if (isDead)
@@ -213,24 +222,24 @@ public class Player : Entity
         }
     }
 
+
+    private bool knockbackActive = false;
+    private float knockbackTimer = 0f;
     public void ApplyStun(float duration)
-{
-    if (duration <= 0f) return;
-
-    isStunned = true;
-    stunTimer = Mathf.Max(stunTimer, duration);
-
-    if (rb != null)
     {
-        rb.linearVelocity = Vector2.zero;
-    }
+        if (duration <= 0f) return;
 
-    if (anim != null)
-    {
-        anim.SetFloat("xVelocity", 0f);
-        anim.SetFloat("yVelocity", 0f);
+        isStunned = true;
+        stunTimer = Mathf.Max(stunTimer, duration);
+        knockbackActive = true;
+        knockbackTimer = 0.3f;
+
+        if (anim != null)
+        {
+            anim.SetFloat("xVelocity", 0f);
+            anim.SetFloat("yVelocity", 0f);
+        }
     }
-}
 
     private void CheckWall()
     {
@@ -846,9 +855,11 @@ public class Player : Entity
             Debug.Log("Dash né sát thương.");
             return;
         }
-
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.PlayerHit);
         base.TakeDamage(damage);
         UpdateUI();
+
+        GetComponent<HealthRegen>()?.NotifyCombat();
     }
 
     public void UseMana(int amount)
@@ -984,11 +995,11 @@ public class Player : Entity
 
     public void syncBeforeLoad()
     {
-        if (SaveSystem.LoadGame())
-        {
-            SaveSystem.currentData.currentHealth = currentHealth;
-            SaveSystem.currentData.currentMana = currentMana;
-        }
+
+        SaveSystem.currentData.currentHealth = currentHealth;
+        SaveSystem.currentData.currentMana = currentMana;
+        SaveSystem.SaveGame();
+
     }
 
     protected override void OnDrawGizmos()
@@ -1046,6 +1057,34 @@ public class Player : Entity
         UpdateUI();
     }
 
+    public void ApplyMaxHealthBonus(int amount)
+    {
+        maxHealth += amount;
+        if (currentHealth >= maxHealth)
+            currentHealth = maxHealth;
+        UpdateUI();
+    }
+
+    public void ApplyMaxManaBonus(int amount)
+    {
+        maxMana += amount;
+        if (currentMana >= maxMana)
+            currentMana = maxMana;
+        UpdateUI();
+    }
+
+    public void Heal(float amount)
+    {
+        currentHealth += Mathf.RoundToInt(amount);
+
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+
+        UpdateUI();
+    }
+
     public void AddMana(int amount)
     {
         maxMana += amount;
@@ -1065,18 +1104,19 @@ public class Player : Entity
     }
 
     public override void DamageTargets()
-{
-    // 1. Gọi lại logic gây sát thương mặc định của Entity
-    base.DamageTargets();
-
-    if (attackPoint != null)
     {
-        Collider2D[] targets = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget);
-        
-        if (targets.Length > 0)
+        // 1. Gọi lại logic gây sát thương mặc định của Entity
+        base.DamageTargets();
+
+        if (attackPoint != null)
         {
-            AudioManager.Instance.PlaySFX(AudioManager.Instance.PlayerHit);
+            Collider2D[] targets = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget);
+
+            if (targets.Length > 0)
+            {
+                AudioManager.Instance.PlaySFX(AudioManager.Instance.PlayerAttack);
+                GetComponent<HealthRegen>()?.NotifyCombat();
+            }
         }
     }
-}
 }

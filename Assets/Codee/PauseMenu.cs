@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement; // Bắt buộc phải có để chuyển c�
 public class PauseMenu : MonoBehaviour
 {
     // Kéo cái PauseMenuPanel trong Unity vào đây
-    public GameObject pauseMenuUI; 
-    
+    public GameObject pauseMenuUI;
+
     private bool isPaused = false;
 
     void Update()
@@ -30,7 +30,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false); // Ẩn Menu đi
         Time.timeScale = 1f;          // Cho thời gian game chạy bình thường trở lại
         isPaused = false;
-        
+
         // Thêm dòng này nếu game của bạn có khóa chuột (bắn súng, góc nhìn thứ 1...)
         // Cursor.lockState = CursorLockMode.Locked; 
     }
@@ -43,21 +43,32 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
 
         // Hiện chuột lên để người chơi còn click được nút
-        Cursor.lockState = CursorLockMode.None; 
+        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+    }
+
+    public void OpenSettings()
+    {
+        if (SettingsManager.Instance != null) SettingsManager.Instance.Open();
+    }
+
+    // Gọi từ nút "Back" trong Settings Panel
+    public void CloseSettings()
+    {
+        if (SettingsManager.Instance != null) SettingsManager.Instance.Close();
     }
 
     // 2. Hàm xử lý nút EXIT TO MAIN MENU
     public void ExitToMainMenu()
-{
-    Time.timeScale = 1f;
-
-    Player player = FindAnyObjectByType<Player>(); // Unity mới dùng FindAnyObjectByType, bản cũ dùng FindObjectOfType
-    if (player != null)
     {
-        player.SaveCurrentState();
-    }
+        Time.timeScale = 1f;
 
-    SceneManager.LoadScene("MainMenu");
+        Player player = FindAnyObjectByType<Player>(); // Unity mới dùng FindAnyObjectByType, bản cũ dùng FindObjectOfType
+        if (player != null)
+        {
+            player.SaveCurrentState();
+        }
+
+        SceneManager.LoadScene("MainMenu");
     }
 }
