@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1da77b9cc766f5449abe6b55ee82825e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NurseEnemy
-  maxHealth: 100
+  maxHealth: 80
   currentHealth: 0
   damageMaterial: {fileID: 2100000, guid: 8646453728596ba40b87ca0020cb7685, type: 2}
   damageFeedbackDuration: 0.15
@@ -300,26 +300,26 @@ MonoBehaviour:
     m_Bits: 64
   attackPoint: {fileID: 3008346740351584515}
   attackRadius: 0.84
-  attackDamage: 15
+  attackDamage: 12
   whatIsTarget:
     serializedVersion: 2
     m_Bits: 256
-  detectRange: 5
+  detectRange: 4.01
   attackCooldown: 1.5
-  normalAttackDamage: 8
+  normalAttackDamage: 10
   normalAttackCooldown: 0.8
   normalAttackRadius: 0.55
   normalAttackRange: 1
   normalAttackLockTime: 0.8
   skillDamage: 15
-  skillRadius: 1.21
+  skillRadius: 1.01
   skillMinRange: 2
-  skillMaxRange: 5
-  skillCooldown: 1.33
+  skillMaxRange: 4.6
+  skillCooldown: 3
   skillLockTime: 1.2
   useHpCondition: 1
   skillHpPercent: 0.7
-  skillDashSpeed: 15
+  skillDashSpeed: 14.9
   skillDashMaxTime: 0.35
   skillStopDistance: 0.75
   applyInfection: 1

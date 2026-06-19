@@ -261,7 +261,8 @@ public class Entity : MonoBehaviour
             if (targetEntity != null && targetEntity != this)
             {
                 targetEntity.TakeDamage(attackDamage);
-                AudioManager.Instance.PlaySFX(AudioManager.Instance.EnemyAttack);
+                if (AudioManager.Instance != null)
+                    AudioManager.Instance.PlaySFX(AudioManager.Instance.EnemyAttack);
             }
         }
     }
@@ -275,7 +276,8 @@ public class Entity : MonoBehaviour
     {
         if (isDead || isDying)
             return;
-        AudioManager.Instance.PlaySFX(AudioManager.Instance.EnemyHit);
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.EnemyHit);
         currentHealth -= damage;
 
         if (currentHealth < 0)

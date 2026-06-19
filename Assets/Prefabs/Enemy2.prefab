@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd77e38df772e044ba45dc5ea57d88ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  maxHealth: 75
+  maxHealth: 65
   currentHealth: 0
   damageMaterial: {fileID: 2100000, guid: 8646453728596ba40b87ca0020cb7685, type: 2}
   damageFeedbackDuration: 0.15
@@ -217,7 +217,7 @@ MonoBehaviour:
   deathGravityScale: 3.5
   moveSpeed: 2
   jumpForce: 8
-  groundCheckDistance: 1.2
+  groundCheckDistance: 1.36
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
@@ -227,7 +227,7 @@ MonoBehaviour:
   whatIsTarget:
     serializedVersion: 2
     m_Bits: 256
-  detectRange: 5
+  detectRange: 3.72
   attackCooldown: 1.5
 --- !u!50 &2672813520389116078
 Rigidbody2D:

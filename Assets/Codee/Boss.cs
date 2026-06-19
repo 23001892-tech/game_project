@@ -87,6 +87,9 @@ public class Boss : Entity
     [SerializeField] private int dashDamage = 18;
     [SerializeField] private float dashStunDuration = 1.2f;
 
+    [Header("Boss Clear")]
+    [SerializeField] private BossDoor bossDoor;
+
     [Header("Animator Params")]
     [SerializeField] private string xVelocityParam = "xVelocity";
     [SerializeField] private string yVelocityParam = "yVelocity";
@@ -971,6 +974,23 @@ public class Boss : Entity
             rb.gravityScale = originalGravityScale;
             rb.linearVelocity = Vector2.zero;
         }
+        if (rb != null)
+{
+    rb.gravityScale = originalGravityScale;
+    rb.linearVelocity = Vector2.zero;
+}
+
+if (bossDoor != null)
+{
+    Debug.Log("Boss chết, gọi mở cửa!");
+    bossDoor.OpenDoor();
+}
+else
+{
+    Debug.LogWarning("Boss chết nhưng chưa kéo BossDoor vào Inspector!");
+}
+
+base.Die();
 
         base.Die();
     }

@@ -227,7 +227,7 @@ MonoBehaviour:
   whatIsTarget:
     serializedVersion: 2
     m_Bits: 256
-  detectRange: 4.5
+  detectRange: 3.75
   attackCooldown: 1.5
 --- !u!50 &1009062230432335078
 Rigidbody2D:
