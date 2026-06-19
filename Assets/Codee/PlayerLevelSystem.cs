@@ -41,24 +41,24 @@ public class PlayerLevelSystem : MonoBehaviour
     public int ExpToNextLevel => CalculateExpToLevelUp(currentLevel);
 
     private void Awake()
-{
-    if (Instance != null && Instance != this)
     {
-        Destroy(gameObject);
-        return;
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        playerComponent = GetComponent<Player>();
+
+        LoadLevelData(); // Chuyển vào đây
     }
-    Instance = this;
-    playerComponent = GetComponent<Player>();
 
-    LoadLevelData(); // Chuyển vào đây
-}
-
-private void Start()
-{
-    // Bỏ LoadLevelData() ở đây
-    OnExpChanged?.Invoke(currentExp, ExpToNextLevel, currentLevel);
-    OnAttributePointsChanged?.Invoke(attributePoints);
-}
+    private void Start()
+    {
+        // Bỏ LoadLevelData() ở đây
+        OnExpChanged?.Invoke(currentExp, ExpToNextLevel, currentLevel);
+        OnAttributePointsChanged?.Invoke(attributePoints);
+    }
 
     /// <summary>
     /// Tính lượng EXP cần để lên từ level hiện tại lên level tiếp theo.
@@ -165,26 +165,43 @@ private void Start()
 
     private void LoadLevelData()
     {
-        if (GameSession.CurrentGameState == GameState.Continue && SaveSystem.LoadGame())
+        // Đã có dữ liệu currentData hợp lệ trong RAM từ trước (đang ở giữa phiên chơi)
+        if (GameSession.SessionStarted)
         {
-            currentLevel = SaveSystem.currentData.playerLevel;
-            currentExp = SaveSystem.currentData.playerExp;
-            attributePoints = SaveSystem.currentData.attributePoints;
-            totalHpSpent = SaveSystem.currentData.bonusMaxHp;
-            totalManaSpent = SaveSystem.currentData.bonusMaxMana;
-            totalAtkSpent = SaveSystem.currentData.bonusAtk;
+            ApplyLevelDataFromCurrentData();
+            return;
+        }
 
-            if (playerComponent != null)
-            {
-                if (totalHpSpent > 0) playerComponent.ApplyMaxHealthBonus(totalHpSpent);
-                if (totalManaSpent > 0) playerComponent.ApplyMaxManaBonus(totalManaSpent);
-                if (totalAtkSpent > 0) playerComponent.AddAttackDamage(totalAtkSpent);
-            }
+        // Lần đầu tiên của phiên chơi: quyết định New Game hay Continue
+        if (GameSession.CurrentGameState != GameState.NewGame && SaveSystem.LoadGame())
+        {
+            ApplyLevelDataFromCurrentData();
         }
         else
         {
             currentLevel = 1; currentExp = 0; attributePoints = 0;
             totalHpSpent = 0; totalManaSpent = 0; totalAtkSpent = 0;
+        }
+
+        // Lưu ý: KHÔNG set GameSession.SessionStarted = true ở đây.
+        // Player.Start() đã làm việc đó, và Awake() của PlayerLevelSystem
+        // chạy TRƯỚC Start() của Player nên cờ vẫn còn là false đúng lúc cần.
+    }
+
+    private void ApplyLevelDataFromCurrentData()
+    {
+        currentLevel = SaveSystem.currentData.playerLevel;
+        currentExp = SaveSystem.currentData.playerExp;
+        attributePoints = SaveSystem.currentData.attributePoints;
+        totalHpSpent = SaveSystem.currentData.bonusMaxHp;
+        totalManaSpent = SaveSystem.currentData.bonusMaxMana;
+        totalAtkSpent = SaveSystem.currentData.bonusAtk;
+
+        if (playerComponent != null)
+        {
+            if (totalHpSpent > 0) playerComponent.ApplyMaxHealthBonus(totalHpSpent);
+            if (totalManaSpent > 0) playerComponent.ApplyMaxManaBonus(totalManaSpent);
+            if (totalAtkSpent > 0) playerComponent.AddAttackDamage(totalAtkSpent);
         }
     }
 

@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 2672813520389116078}
   - component: {fileID: 8179114610331527929}
   - component: {fileID: 1616789659715966739}
+  - component: {fileID: -7074978733034557771}
   m_Layer: 7
   m_Name: Enemy2
   m_TagString: Untagged
@@ -304,4 +305,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3153c63e50dea4146abeaa2e74b4c1ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExpDrop
-  expAmount: 1000
+  expAmount: 50
+--- !u!114 &-7074978733034557771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6325477660767125786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a0036171242cde41ae387de574e8f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeadSave

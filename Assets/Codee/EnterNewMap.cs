@@ -9,8 +9,25 @@ public class EnterNewMap : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            if (!AllEnemiesDefeated())
+            {
+                NotificationUI.Instance.ShowMessage("CẦN ĐÁNH HẾT QUÁI ĐỂ SANG MAP!");
+                return;
+            }
+
             StartCoroutine(PlayerFall(collision.gameObject));
         }
+    }
+
+    private bool AllEnemiesDefeated()
+    {
+        Enemy[] enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
+        foreach (Enemy enemy in enemies)
+        {
+            if (!enemy.IsDead)
+                return false;
+        }
+        return true;
     }
 
     private IEnumerator PlayerFall(GameObject player)

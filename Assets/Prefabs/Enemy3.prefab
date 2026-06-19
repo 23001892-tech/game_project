@@ -183,6 +183,8 @@ GameObject:
   - component: {fileID: 7967002901854077902}
   - component: {fileID: 6169773354353446861}
   - component: {fileID: 2828844883947499258}
+  - component: {fileID: 4993840102238919124}
+  - component: {fileID: 772932394815974278}
   m_Layer: 7
   m_Name: Enemy3
   m_TagString: Untagged
@@ -331,3 +333,28 @@ MonoBehaviour:
   attackTriggerParam: attack
   skillDashTriggerParam: skill
   skillStabTriggerParam: skillHit
+--- !u!114 &4993840102238919124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6422463643457658782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a0036171242cde41ae387de574e8f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeadSave
+--- !u!114 &772932394815974278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6422463643457658782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3153c63e50dea4146abeaa2e74b4c1ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExpDrop
+  expAmount: 70

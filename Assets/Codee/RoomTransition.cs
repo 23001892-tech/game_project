@@ -5,14 +5,14 @@ using TMPro; // Nếu bạn sử dụng TextMeshPro cho UI, nếu không thì c�
 public class RoomTransition : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    
+
     [Header("Cấu hìn chuyển phòng")]
     [SerializeField] private string sceneToLoad; // Tên của scene tiếp theo
 
     [Header("Giao diện tương tác chuyển phòng")]
     [SerializeField] private GameObject interactMessageUI; // UI hiển thị khi người chơi có thể chuyển phòng
     private bool playerInZone = false; // Biến để kiểm tra xem người chơi có đang trong vùng trigger hay không
-    
+
     private void Start()
     {
         if (interactMessageUI != null)
@@ -40,23 +40,38 @@ public class RoomTransition : MonoBehaviour
     }
 
 
-    // Update is called once per frame
     void Update()
     {
         if (playerInZone && Input.GetKeyDown(KeyCode.E))
         {
+            if (!AllEnemiesDefeated())
+            {
+                NotificationUI.Instance.ShowMessage("CẦN ĐÁNH HẾT QUÁI ĐỂ SANG MAP!");
+                return;
+            }
             EnterNewRoom();
         }
     }
 
-    private void EnterNewRoom()
+    private bool AllEnemiesDefeated()
     {
-    Player player = FindFirstObjectByType<Player>();
-    if (player != null)
-    {
-        player.syncBeforeLoad();
+        Enemy[] enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
+        foreach (Enemy enemy in enemies)
+        {
+            if (!enemy.IsDead)
+                return false;
+        }
+        return true;
     }
 
-    SceneManager.LoadScene(sceneToLoad);
+    private void EnterNewRoom()
+    {
+        Player player = FindFirstObjectByType<Player>();
+        if (player != null)
+        {
+            player.syncBeforeLoad();
+        }
+
+        SceneManager.LoadScene(sceneToLoad);
     }
 }

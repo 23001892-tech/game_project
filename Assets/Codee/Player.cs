@@ -106,10 +106,10 @@ public class Player : Entity
             sprite.enabled = true;
         }
 
-        // 1. Đọc dữ liệu từ file JSON lên RAM
         if (!GameSession.SessionStarted)
         {
-            if (GameSession.CurrentGameState == GameState.NewGame || !SaveSystem.LoadGame())
+            // Lần đầu tiên của phiên chơi: quyết định New Game hay Continue
+            if (!GameSession.ShouldLoadFromFile())
             {
                 currentHealth = maxHealth;
                 currentMana = maxMana;
@@ -135,7 +135,8 @@ public class Player : Entity
         }
         else
         {
-            SaveSystem.LoadGame();
+            // Đang chuyển scene giữa phiên chơi: lấy thẳng từ RAM (currentData),
+            // không cần đọc lại file vì SaveGame() luôn cập nhật currentData song song.
             currentHealth = SaveSystem.currentData.currentHealth;
             currentMana = SaveSystem.currentData.currentMana;
         }
