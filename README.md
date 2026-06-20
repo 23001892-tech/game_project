@@ -60,7 +60,7 @@ By 2037, catastrophe struck. Those who had been saved began transforming into cr
 
 | Member | Role |
 |---|---|
-| 23001892-tech (Nông Gia Khánh) | Player controller, combat system, map design, player & enemy animation, enemy AI |
+| 23001892-tech (Nông Gia Khánh) | Player controller, combat system, player & enemy animation, enemy AI |
 | Maramoce (Nguyễn Quốc Duy) | Game Concept & Story, Level/EXP & save system, UI, loading screen |
 
 **Map design:** Both members
