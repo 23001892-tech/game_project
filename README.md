@@ -13,6 +13,15 @@
 
 ---
 
+<!-- Thêm ảnh/GIF gameplay ở đây, vd: -->
+<!-- ![gameplay](./docs/gameplay.gif) -->
+
+## 🎮 Play / Download
+
+[Download the latest build](LINK_ITCH_IO_HOẶC_DRIVE_Ở_ĐÂY)
+
+---
+
 ## Story
 
 In 2034, a dual-colored mineral called **Lumenite** was discovered with miraculous healing properties. The world believed it was humanity's next evolution — but Lumenite was never truly healing anyone. **It was preparing its hosts.**
@@ -25,12 +34,25 @@ By 2037, catastrophe struck. Those who had been saved began transforming into cr
 
 ## Current Features
 
-- **Player Movement** — walking, jumping, dashing
-- **Combat System** — attacks, combos, enemy interaction
-- **HP / Mana** — health and energy system
+- **Player Movement** — walking, jumping, dashing, wall grab/wall jump
+- **Combat System** — combo attacks, attack cancel, dash invincibility
+- **Level / EXP System** — leveling, attribute points, persistent stat upgrades
+- **Save/Load System** — JSON-based save, scene-persistent player state
+- **HP / Mana** — health and energy system with regen
 - **Enemy Chase AI** — enemies detect and pursue the player
+- **Boss Fight** — Boss AI with skill states, intro story sequence
 - **Loading Screen** — themed loading screen
-- **Map 1** — Abandoned medical station (outer zone)
+- **Map 1–3** — multiple level zones
+
+---
+
+## Tech Stack
+
+- **Engine:** Unity 6 (6000.4.5f1)
+- **Language:** C#
+- **Rendering:** Universal Render Pipeline (URP)
+- **Packages:** Cinemachine, TextMesh Pro, Input System
+
 
 ---
 
@@ -38,13 +60,9 @@ By 2037, catastrophe struck. Those who had been saved began transforming into cr
 
 | Member | Role |
 |---|---|
-| Maramoce (Nguyễn Quốc Duy) | Gameplay · Map design · UI · Loading screen |
-| 23001892-tech (Nông Gia Khánh)| Player & enemy animation · Enemy AI |
+| 23001892-tech (Nông Gia Khánh) | Player controller, combat system, map design, player & enemy animation, enemy AI |
+| Maramoce (Nguyễn Quốc Duy) | Game Concept & Story, Level/EXP & save system, UI, loading screen |
 
----
-
-<div align="center">
-
-**SLASH/DIVIDE** · Unity 6 + C# · 2D Action Platformer
+**Map design:** Both members
 
 </div>
