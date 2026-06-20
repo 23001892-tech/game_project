@@ -30,6 +30,29 @@ https://github.com/23001892-tech/game_project/releases/latest
 4. Run the `.exe` file.
 ---
 
+
+## 🖼 Gameplay Screenshots
+
+<p align="center">
+  <img src="./Docs/OurGame%206_21_2026%202_59_24%20AM.png" width="700">
+</p>
+
+<p align="center">
+  <img src="./Docs/OurGame%206_21_2026%202_59_52%20AM.png" width="700">
+</p>
+
+<p align="center">
+  <img src="./Docs/OurGame%206_21_2026%203_00_21%20AM.png" width="700">
+</p>
+
+<p align="center">
+  <img src="./Docs/OurGame%206_21_2026%203_02_54%20AM.png" width="700">
+</p>
+
+<p align="center">
+  <img src="./Docs/Screenshot%202026-06-21%20031634.png" width="700">
+</p>
+
 ## Story
 
 In 2034, a dual-colored mineral called **Lumenite** was discovered with miraculous healing properties. The world believed it was humanity's next evolution — but Lumenite was never truly healing anyone. **It was preparing its hosts.**
