@@ -14,10 +14,20 @@
 <!-- Thêm ảnh/GIF gameplay ở đây, vd: -->
 <!-- ![gameplay](./docs/gameplay.gif) -->
 
-## 🎮 Play / Download
+## 🎮 Download
 
-[Download the latest build](LINK_ITCH_IO_HOẶC_DRIVE_Ở_ĐÂY)
+### Windows Build
 
+➡️ **Download the latest release here:**
+
+https://github.com/23001892-tech/game_project/releases/latest
+
+### How to Run
+
+1. Download the Windows build from **Assets**.
+2. Extract the `.zip` file.
+3. Open the extracted folder.
+4. Run the `.exe` file.
 ---
 
 ## Story
