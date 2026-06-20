@@ -1,7 +1,5 @@
 <div align="center">
 
-# SLASH/DIVIDE
-
 *The only one who kept their identity in a world devoured by crystals.*
 
 ![Unity](https://img.shields.io/badge/Unity_6-C%23-black?style=flat-square&logo=unity)
@@ -39,7 +37,7 @@ By 2037, catastrophe struck. Those who had been saved began transforming into cr
 - **Level / EXP System** — leveling, attribute points, persistent stat upgrades
 - **Save/Load System** — JSON-based save, scene-persistent player state
 - **HP / Mana** — health and energy system with regen
-- **Enemy Chase AI** — enemies detect and pursue the player
+- **Enemy Chase** — enemies detect and pursue the player
 - **Boss Fight** — Boss AI with skill states, intro story sequence
 - **Loading Screen** — themed loading screen
 - **Map 1–3** — multiple level zones
