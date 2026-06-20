@@ -331,7 +331,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   openStateName: DoorOpen
   interactKey: 101
-  nextSceneName: Map2
+  nextSceneName: tb
   showDebugLog: 1
 --- !u!61 &251495054
 BoxCollider2D:
@@ -899,7 +899,7 @@ MonoBehaviour:
   skillImpactLockTime: 0.7
   impactPoint: {fileID: 0}
   impactRadius: 1.8
-  impactDamage: 20
+  impactDamage: 15
   shockwavePrefab: {fileID: 2459629054131098433, guid: dff89e65d1a879945952e4f38704dd51, type: 3}
   shockwaveSpawnPoint: {fileID: 1230756398}
   shockwaveTargetLayer:
@@ -1565,6 +1565,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 143397505969699680, guid: 184c035a4afeb3540b283474874341ca, type: 3}
+      propertyPath: attackDamage
+      value: 1500
+      objectReference: {fileID: 0}
     - target: {fileID: 143397505969699680, guid: 184c035a4afeb3540b283474874341ca, type: 3}
       propertyPath: attackRadius
       value: 0.8
